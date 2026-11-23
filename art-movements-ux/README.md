@@ -12,9 +12,11 @@
   <img src="assets/works/riley.jpg" height="96" alt="Movement in Squares">
   <img src="assets/works/scher.jpg" height="96" alt="National Theatre 50th anniversary (poster)">
   <img src="assets/works/haeckel.jpg" height="96" alt="Kunstformen der Natur, Tafel 4: Diatomea">
+  <img src="assets/works/eames.jpg" height="96" alt="ESU 421-C (Eames Storage Unit)">
+  <img src="assets/works/leonardo.jpg" height="96" alt="The muscles of the shoulder and arm">
 </p>
 
-**Fifty-five artists, eleven movements, one design system that looks like none of them.**
+**Sixty-five artists, thirteen movements, one design system that looks like none of them.**
 
 Ask a model for a UI and you get the statistical median: rounded cards on soft shadows, a centered hero, Inter at three weights, one brand blue. This skill replaces that default with a studio method. It reads your product's real design problems, pulls the artworks that already solved them, and distils those solutions into a locked brand book and UI kit. Every screen is then built from that kit, and only from it.
 
@@ -77,7 +79,7 @@ A mobile bank, end to end: board **"Rail"** → kit → Home → Send money, wit
 
 Read [`references/WORKED-EXAMPLE-rail.md`](references/WORKED-EXAMPLE-rail.md), open the built files in [`references/worked-example/`](references/worked-example/), and see two triad fusions (one plain, one hard) in [`references/EXPLORATION-EXAMPLE.md`](references/EXPLORATION-EXAMPLE.md).
 
-## The library: 11 movements, 55 artists
+## The library: 13 movements, 65 artists
 
 Each image is one work the study examines. Each name links to the full study: key works examined (and which were visually checked), process and measured relations, composition, colour, type, motion, UI translations, what the artist would reject, and sources. One-line summaries live in [`references/library.md`](references/library.md); the problem-to-process index is [`references/principles.md`](references/principles.md).
 
@@ -213,6 +215,30 @@ Each image is one work the study examines. Each name links to the full study: ke
 | <img src="assets/works/hepworth.jpg" width="150" alt="Pelagos"> | **[Barbara Hepworth](references/11-growth-form/hepworth.md)**<br><sub>*Pelagos*, 1946</sub> | Make one closed convex whole, then open it once, off-centre; the opening, finished as the inside of the same surface, becomes the subject. |
 | <img src="assets/works/nervous-system.jpg" width="150" alt="Hyphae series"> | **[Nervous System](references/11-growth-form/nervous-system.md)**<br><sub>*Hyphae series*, 2011</sub> | Design the rule and not the object: a seed, an environment and one gradient, stepped locally until the space is full, and shown as a family of outcomes. |
 
+### 12 · Cranbrook & Organic Modernism
+
+*One school, every scale: forms moulded to body and load, one frame carried from campus to chair, variety left to the user.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/eliel-saarinen.jpg" width="150" alt="Saarinen House, dining room"> | **[Eliel Saarinen](references/12-cranbrook/eliel-saarinen.md)**<br><sub>*Saarinen House, dining room*, 1928–30</sub> | Lay one axis to a compact goal seen from the first step, pass one plain figure down through every scale and change it by one step per level, rule every surface by symmetry and nested grids, then move exactly one element off the axis; the strongest colour goes to the smallest, most recessed places. |
+| <img src="assets/works/eero-saarinen.jpg" width="150" alt="Tulip (Pedestal) armchair, Model 150"> | **[Eero Saarinen](references/12-cranbrook/eero-saarinen.md)**<br><sub>*Tulip (Pedestal) armchair, Model 150*, 1955–56</sub> | Find the one element that carries the view and make it the whole form: nothing else bears, supports gather to a few narrow contacts that widen into what they hold, thickness follows load, and the only strong colour goes where the user touches. |
+| <img src="assets/works/eames.jpg" width="150" alt="ESU 421-C (Eames Storage Unit)"> | **[Charles and Ray Eames](references/12-cranbrook/eames.md)**<br><sub>*ESU 421-C (Eames Storage Unit)*, 1949–50</sub> | Set out one plain, uncoloured frame of equal cells and a short catalogue of infill types named by job; fill each cell as its own decision, keep the parts inside separate with visible joints, place strong colour only as small cells that never touch, and leave the variety to what the user puts in. |
+| <img src="assets/works/knoll.jpg" width="150" alt="Paste-up for Cowles Publications offices"> | **[Florence Knoll](references/12-cranbrook/knoll.md)**<br><sub>*Paste-up for Cowles Publications offices*, c. 1961–62</sub> | Lay every surface flat with real samples and settle the area shares before composing any view; then clear the centre, give colour to whole planes only (one extreme, one inset hue), and split a tiny accent into two or three small pieces around the open middle. |
+| <img src="assets/works/bertoia.jpg" width="150" alt="Diamond chair (model 421)"> | **[Harry Bertoia](references/12-cranbrook/bertoia.md)**<br><sub>*Diamond chair (model 421)*, 1952</sub> | Build the form as an open field of one thin unit with gaps as wide as the unit, and draw with crowding and thinning in place of outlines; weight goes only to a rim or root, hue only to one applied solid patch, and the viewer's movement finishes it. |
+
+### 13 · Renaissance
+
+*Construction as content: a stated unit and axis first, measures written into the view, notes tied to their parts.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/leonardo.jpg" width="150" alt="The muscles of the shoulder and arm (RCIN 919003)"> | **[Leonardo da Vinci](references/13-renaissance/leonardo.md)**<br><sub>*The muscles of the shoulder and arm (RCIN 919003)*, c. 1510–11</sub> | Rule the measuring scaffold first and leave it showing; give one object a dominant view, with its cut, turned and changed-state views around it at a fixed lower scale; let the notes take the shape of the gaps and tie them to the parts by shared letters; put the one colour on the subject only. |
+| <img src="assets/works/piero.jpg" width="150" alt="Flagellation of Christ"> | **[Piero della Francesca](references/13-renaissance/piero.md)**<br><sub>*Flagellation of Christ*, c. 1455–60</sub> | Fix an exact centre axis, one datum line and one unit before any content; stack the subject on the axis and split the field once, off-centre, with a divider that holds nothing; hang items of unequal scale from the datum and hold their key parts in one narrow band; leave a measured empty interval between groups; letter every station and tabulate it in the same view. |
+| <img src="assets/works/alberti.jpg" width="150" alt="Palazzo Rucellai, Florence"> | **[Leon Battista Alberti](references/13-renaissance/alberti.md)**<br><sub>*Palazzo Rucellai, Florence*, c. 1446–51</sub> | Fix the whole as one simple figure and divide it only by halving; stack every singular thing in one channel that lines up through all registers; fill the rest with one repeated module per level, each a whole fraction of the whole; draw that grid as a flat second-value layer over whatever lies beneath, and state it in numbers so the view can be rebuilt without the picture. |
+| <img src="assets/works/durer.jpg" width="150" alt="Constructed capitals K and L, Underweysung der Messung"> | **[Albrecht Dürer](references/13-renaissance/durer.md)**<br><sub>*Constructed capitals K and L, Underweysung der Messung*, 1525</sub> | Declare one square module and take every stroke, gap and size from it; print the rule beside its result at the same height and line weight, one rule feeding a row of outcomes that differ only in where their inner divisions fall; name every division level with its line; sign and date each view in its open corner. |
+| <img src="assets/works/palladio.jpg" width="150" alt="Villa Rotonda, I quattro libri dell'architettura, Book II"> | **[Andrea Palladio](references/13-renaissance/palladio.md)**<br><sub>*Villa Rotonda, I quattro libri dell'architettura, Book II*, 1570</sub> | Draw every size from one short list of whole-number ratios and derive the rest as means; show one object as two views stacked on one axis at one scale and width; write each measure inside the thing it measures; spend tone on openings only. |
+
 ## What's inside
 
 ```
@@ -220,9 +246,9 @@ art-movements-ux/
 ├── SKILL.md                   the method: stages, lock rules, guardrails, templates
 ├── CHANGELOG.md               every correction made after checking the real works
 ├── references/
-│   ├── library.md             55 artist processes (opened in Stages 2–3 only)
+│   ├── library.md             65 artist processes (opened in Stages 2–3 only)
 │   ├── principles.md          UI problems → processes, calibration ranges, tensions
-│   ├── 01-bauhaus/ … 11-growth-form/   one full study per artist
+│   ├── 01-bauhaus/ … 13-renaissance/   one full study per artist
 │   ├── WORKED-EXAMPLE-rail.md
 │   ├── EXPLORATION-EXAMPLE.md
 │   ├── worked-example/        kit.css, brand-book.html, home.html, send.html
@@ -243,7 +269,7 @@ Entries were written from museum, foundation and scholarly sources, then checked
 Thumbnails illustrate the commentary on each artist's method. Copyrighted works are shown small, credited to their rights holders.
 
 <details>
-<summary>All 55 works, sources and licenses</summary>
+<summary>All 65 works, sources and licenses</summary>
 
 | Artist | Work | License | Source |
 |---|---|---|---|
@@ -267,7 +293,6 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Emil Ruder | [Typographische Monatsblätter No. 10 (cover), 1961](https://fontsinuse.com/uses/18507/typographische-monatsblaetter-1961-no-10) | © Emil Ruder estate, small thumbnail for commentary | Fonts In Use |
 | Karl Gerstner | [kalte Kunst? (book cover), 1957](https://commons.wikimedia.org/wiki/File:Karl_Gerstner_Kalte_Kunst_1957.jpg) | © Karl Gerstner estate, small thumbnail for commentary | Wikimedia Commons |
 | Wim Crouwel | [New Alphabet, 1967](https://commons.wikimedia.org/wiki/File:NewAlphabetSpec2.png) | © Wim Crouwel estate, small thumbnail for commentary | Wikimedia Commons |
-| Wolfgang Weingart | [Kunsthalle Basel, Kunstkredit 76/77 (poster), 1977](https://collections.vam.ac.uk/item/O1155283/) | © Wolfgang Weingart estate, small thumbnail for commentary | V&A |
 | Le Corbusier | [Villa Savoye, Poissy, 1928–31](https://en.wikipedia.org/wiki/File:VillaSavoye.jpg) | CC BY-SA 3.0 (photo) | Wikipedia |
 | Ludwig Mies van der Rohe | [Barcelona Pavilion (1986 reconstruction), 1929](https://commons.wikimedia.org/wiki/File:The_Barcelona_Pavilion,_Barcelona,_2010.jpg) | CC BY 3.0 | Ashley Pomeroy, Wikimedia Commons |
 | Frank Lloyd Wright | [Tree of Life window, Darwin D. Martin House (Princeton University Art Museum), 1904](https://commons.wikimedia.org/wiki/File:Tree_of_Life_window_for_the_Darwin_D._Martin_House,_by_Frank_Lloyd_Wright,_American,_1904,_glass,_brass_-_Princeton_University_Art_Museum_-_DSC06964.jpg) | Public domain | Daderot, Wikimedia Commons |
@@ -293,6 +318,7 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Carlos Cruz-Diez | [Physichromie No. 113, 1963, reconstructed 1976](https://www.tate.org.uk/art/artworks/cruz-diez-physichromie-no-113-t02094) | © Carlos Cruz-Diez estate, small thumbnail for commentary | Tate |
 | Jesús Rafael Soto | [Cardinal, 1965](https://www.tate.org.uk/art/artworks/soto-cardinal-t00793) | © Estate of Jesús Rafael Soto, small thumbnail for commentary | Tate |
 | Julio Le Parc | [Continual Mobile, Continual Light, 1963](https://www.tate.org.uk/art/artworks/le-parc-continual-mobile-continual-light-t00678) | © Julio Le Parc, small thumbnail for commentary | Tate |
+| Wolfgang Weingart | [Kunsthalle Basel, Kunstkredit 76/77 (poster), 1977](https://collections.vam.ac.uk/item/O1155283/) | © Wolfgang Weingart estate, small thumbnail for commentary | V&A |
 | Ettore Sottsass | [Carlton room divider (Memphis), 1981](https://commons.wikimedia.org/wiki/File:Ettore_sottsass_per_memphis_srl.,_libreria_carlton,_milano_1981.jpg) | CC BY 3.0 (photo) | Wikimedia Commons |
 | April Greiman | [Design Quarterly #133, "Does It Make Sense?", 1986](https://commons.wikimedia.org/wiki/File:DQ133.jpg) | CC BY-SA 4.0 (photo) | Wikimedia Commons |
 | David Carson | [National Theatre 50th anniversary (poster), 2013](https://collections.vam.ac.uk/item/O1364133/) | © David Carson, small thumbnail for commentary | V&A |
@@ -302,5 +328,15 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Frei Otto | [Roofs of the Olympic Park, Munich (with Behnisch & Partner), 1968-72](https://commons.wikimedia.org/wiki/File:Olympic_Roof_Munich,_July_2018_-02.jpg) | CC BY-SA 4.0 | Martin Falbisoner, Wikimedia Commons |
 | Barbara Hepworth | [Pelagos, 1946](https://www.tate.org.uk/art/artworks/hepworth-pelagos-t00699) | © Bowness, small thumbnail for commentary | Tate |
 | Nervous System | [Hyphae series, 2011](https://n-e-r-v-o-u-s.com/pressKit/hyphaeLamp.html) | © Nervous System, small thumbnail for commentary | Nervous System |
+| Eliel Saarinen | [Saarinen House, dining room, 1928–30](https://cranbrookartmuseum.org/artwork/eliel-saarinen-saarinen-house-dining-room/) | © Cranbrook Art Museum, small thumbnail for commentary | Cranbrook Art Museum |
+| Eero Saarinen | [Tulip (Pedestal) armchair, Model 150, 1955–56](https://www.brooklynmuseum.org/opencollection/objects/1588) | © Eero Saarinen estate / Knoll, small thumbnail for commentary | Brooklyn Museum |
+| Charles and Ray Eames | [ESU 421-C (Eames Storage Unit), 1949–50](https://collections.vam.ac.uk/item/O70986/) | © Eames Office LLC, small thumbnail for commentary | V&A |
+| Florence Knoll | [Paste-up for Cowles Publications offices, c. 1961–62](https://knoll.com/story/shop/the-planning-unit) | © Knoll, Inc., small thumbnail for commentary | Knoll Archive |
+| Harry Bertoia | [Diamond chair (model 421), 1952](https://commons.wikimedia.org/wiki/File:Diamond_Chair_-_Harry_Bertoia_MNAM.jpg) | © Harry Bertoia Foundation, small thumbnail for commentary | Wikimedia Commons (Centre Pompidou) |
+| Leonardo da Vinci | [The muscles of the shoulder and arm (RCIN 919003), c. 1510–11](https://col.rct.uk/collection/919003/the-muscles-of-the-shoulder-and-arm-and-the-bones-of-the-neck) | Public domain | Royal Collection Trust, via Wikimedia Commons |
+| Piero della Francesca | [Flagellation of Christ, c. 1455–60](https://en.wikipedia.org/wiki/Flagellation_of_Christ_(Piero_della_Francesca)) | Public domain | Galleria Nazionale delle Marche, via Web Gallery of Art |
+| Leon Battista Alberti | [Palazzo Rucellai, Florence, c. 1446–51](https://commons.wikimedia.org/wiki/File:Palazzo_Rucellai_2018.jpg) | Public domain (work); photo via Wikimedia Commons | Wikimedia Commons |
+| Albrecht Dürer | [Constructed capitals K and L, Underweysung der Messung, 1525](https://archive.org/details/vnderweysungderm00drer) | Public domain | Getty Research Institute, via Internet Archive |
+| Andrea Palladio | [Villa Rotonda, I quattro libri dell'architettura, Book II, 1570](https://archive.org/details/HArteR07T25) | Public domain | Internet Archive |
 
 </details>

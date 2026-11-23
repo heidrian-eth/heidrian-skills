@@ -30,6 +30,16 @@
   "credit": "Photo: Selena N. B. H., via Wikimedia Commons"
  },
  {
+  "stem": "alberti",
+  "artist": "Leon Battista Alberti",
+  "work": "Palazzo Rucellai, Florence",
+  "year": "c. 1446–51",
+  "image": "assets/works/alberti.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Palazzo_Rucellai_2018.jpg",
+  "license": "Public domain (work); photo via Wikimedia Commons",
+  "credit": "Wikimedia Commons"
+ },
+ {
   "stem": "ando",
   "artist": "Tadao Ando",
   "work": "Church of the Light, Ibaraki",
@@ -58,6 +68,16 @@
   "link": "https://collections.vam.ac.uk/item/O1348589",
   "license": "© Herbert Bayer estate / VG Bild-Kunst, small thumbnail for commentary",
   "credit": "Victoria and Albert Museum, London"
+ },
+ {
+  "stem": "bertoia",
+  "artist": "Harry Bertoia",
+  "work": "Diamond chair (model 421)",
+  "year": "1952",
+  "image": "assets/works/bertoia.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Diamond_Chair_-_Harry_Bertoia_MNAM.jpg",
+  "license": "© Harry Bertoia Foundation, small thumbnail for commentary",
+  "credit": "Wikimedia Commons (Centre Pompidou)"
  },
  {
   "stem": "blossfeldt",
@@ -98,6 +118,46 @@
   "link": "https://www.tate.org.uk/art/artworks/cruz-diez-physichromie-no-113-t02094",
   "license": "© Carlos Cruz-Diez estate, small thumbnail for commentary",
   "credit": "Tate"
+ },
+ {
+  "stem": "durer",
+  "artist": "Albrecht Dürer",
+  "work": "Constructed capitals K and L, Underweysung der Messung",
+  "year": "1525",
+  "image": "assets/works/durer.jpg",
+  "link": "https://archive.org/details/vnderweysungderm00drer",
+  "license": "Public domain",
+  "credit": "Getty Research Institute, via Internet Archive"
+ },
+ {
+  "stem": "eames",
+  "artist": "Charles and Ray Eames",
+  "work": "ESU 421-C (Eames Storage Unit)",
+  "year": "1949–50",
+  "image": "assets/works/eames.jpg",
+  "link": "https://collections.vam.ac.uk/item/O70986/",
+  "license": "© Eames Office LLC, small thumbnail for commentary",
+  "credit": "V&A"
+ },
+ {
+  "stem": "eero-saarinen",
+  "artist": "Eero Saarinen",
+  "work": "Tulip (Pedestal) armchair, Model 150",
+  "year": "1955–56",
+  "image": "assets/works/eero-saarinen.jpg",
+  "link": "https://www.brooklynmuseum.org/opencollection/objects/1588",
+  "license": "© Eero Saarinen estate / Knoll, small thumbnail for commentary",
+  "credit": "Brooklyn Museum"
+ },
+ {
+  "stem": "eliel-saarinen",
+  "artist": "Eliel Saarinen",
+  "work": "Saarinen House, dining room",
+  "year": "1928–30",
+  "image": "assets/works/eliel-saarinen.jpg",
+  "link": "https://cranbrookartmuseum.org/artwork/eliel-saarinen-saarinen-house-dining-room/",
+  "license": "© Cranbrook Art Museum, small thumbnail for commentary",
+  "credit": "Cranbrook Art Museum"
  },
  {
   "stem": "flavin",
@@ -260,6 +320,16 @@
   "credit": "Belvedere, Vienna, via Google Arts & Culture / Wikimedia Commons"
  },
  {
+  "stem": "knoll",
+  "artist": "Florence Knoll",
+  "work": "Paste-up for Cowles Publications offices",
+  "year": "c. 1961–62",
+  "image": "assets/works/knoll.jpg",
+  "link": "https://knoll.com/story/shop/the-planning-unit",
+  "license": "© Knoll, Inc., small thumbnail for commentary",
+  "credit": "Knoll Archive"
+ },
+ {
   "stem": "le-corbusier",
   "artist": "Le Corbusier",
   "work": "Villa Savoye, Poissy",
@@ -278,6 +348,16 @@
   "link": "https://www.tate.org.uk/art/artworks/le-parc-continual-mobile-continual-light-t00678",
   "license": "© Julio Le Parc, small thumbnail for commentary",
   "credit": "Tate"
+ },
+ {
+  "stem": "leonardo",
+  "artist": "Leonardo da Vinci",
+  "work": "The muscles of the shoulder and arm (RCIN 919003)",
+  "year": "c. 1510–11",
+  "image": "assets/works/leonardo.jpg",
+  "link": "https://col.rct.uk/collection/919003/the-muscles-of-the-shoulder-and-arm-and-the-bones-of-the-neck",
+  "license": "Public domain",
+  "credit": "Royal Collection Trust, via Wikimedia Commons"
  },
  {
   "stem": "lewitt",
@@ -378,6 +458,26 @@
   "link": "https://n-e-r-v-o-u-s.com/pressKit/hyphaeLamp.html",
   "license": "© Nervous System, small thumbnail for commentary",
   "credit": "Nervous System"
+ },
+ {
+  "stem": "palladio",
+  "artist": "Andrea Palladio",
+  "work": "Villa Rotonda, I quattro libri dell'architettura, Book II",
+  "year": "1570",
+  "image": "assets/works/palladio.jpg",
+  "link": "https://archive.org/details/HArteR07T25",
+  "license": "Public domain",
+  "credit": "Internet Archive"
+ },
+ {
+  "stem": "piero",
+  "artist": "Piero della Francesca",
+  "work": "Flagellation of Christ",
+  "year": "c. 1455–60",
+  "image": "assets/works/piero.jpg",
+  "link": "https://en.wikipedia.org/wiki/Flagellation_of_Christ_(Piero_della_Francesca)",
+  "license": "Public domain",
+  "credit": "Galleria Nazionale delle Marche, via Web Gallery of Art"
  },
  {
   "stem": "popova",
