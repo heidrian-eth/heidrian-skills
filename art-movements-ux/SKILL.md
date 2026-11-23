@@ -1,19 +1,21 @@
 ---
 name: "art-movements-ux"
-description: "Use when designing any UI/UX screen, app, page or design system and the user wants non-generic, art-informed design: generate variants in the manner of 10 art/architecture movements (50 artists), then synthesize."
+description: "Use when designing any UI/UX screen, app, site or design system and the user wants non-generic, art-informed design: build one mood board from artworks chosen for the product's real design problems (55 artists, 11 movements, checked against the actual works), distil it into a locked brand book / UI kit, then generate every screen from that kit only. For explorations, draw ten random triads of artists, fuse each into one board, and let the person pick or mix. One coherent new system, not a pastiche and not a patchwork."
 ---
 
-# Art Movements UX: diverge through the masters, then synthesize
+# Art Movements UX: one mood board, one kit, every screen
 
-Left alone, a model designing UI reverts to the statistical median of its training data: Material/Apple-style rounded cards, soft shadows, centered heroes. This skill replaces that default with a studio method: **design the same screen several times, each in the strict manner of a different artist or movement, then splice together the parts the user likes.**
+Left alone, a model designing UI reverts to the statistical median of its training data: Material/Apple-style rounded cards, soft shadows, centered heroes. This skill replaces that default with a studio method in four design stages, plus guardrails and reporting: **(1) read the brief for the product's design problems, (2) assemble a mood board of artworks that solved those problems, (3) distil the board into a brand book and UI kit and lock it, (4) build every screen and component from the kit alone.**
 
-The library below distills 50 artists across 10 movements into rules you can carry out directly (layout, color, type, motion, interaction). Treat every artist entry as a *constraint set to obey*, not a mood to gesture at. Half-applying a manner produces exactly the median look this skill exists to escape.
+The library (`references/library.md`) holds 55 artists as processes, measured relations and the reasons they work. It is a body of solved problems, not a wardrobe: you take an artist's process, never their look, and you open it in Stages 2 and 3 only.
+
+Two failures are equally bad. **Pastiche:** a product that can be captioned "the Mondrian one". **Patchwork:** a product whose parts answer to different artists. Do not pick a different artist for a different screen, section or component, however well it would suit that part. Once the kit is approved the style does not change in one place because a new artist resonated there.
 
 ---
 
 ## 0. The Median Detector (purge before you begin)
 
-Nearly every one of the 50 artists rejected these patterns independently. Unless a chosen manner explicitly calls for one, none may appear in a variant:
+Most of the library's artists reject these patterns. None may appear in a kit or a screen unless a Stage 3 kit rule adopts it with a reason from the case:
 
 - Rounded cards (12–16px radius) floating on soft grey drop shadows, plus elevation z-levels
 - Centered hero: headline, subhead, two buttons, then a symmetric three-up feature row
@@ -24,59 +26,254 @@ Nearly every one of the 50 artists rejected these patterns independently. Unless
 - One `300ms ease-in-out` (or bouncy spring) on every element; fade-and-slide-up-20px entrances
 - Color used as decoration, not to carry a meaning
 
-If a draft could be mistaken for a Dribbble template, it has failed. Push harder into the chosen manner.
+If a draft could be mistaken for a Dribbble template, it has failed: go back to the board's principles, not to an artist's look.
+
+**The library's own median.** The entries share habits that become a house style if you pool them: warm cream paper (`#F4F1EA` and cousins), one vermilion accent, the same few fonts (Archivo, Jost, Space Mono, Inter, Josefin Sans), a label rotated 90°, `steps()` motion, radius 0. None of these may enter a kit by default. Each needs a reason from this case.
 
 ---
 
 ## 1. Workflow
 
-### Phase A: Skeleton (function first, held constant)
-Before any styling, write the screen's **functional skeleton**: the user's goal, every piece of content, every action, primary vs secondary actions, states (empty, loading, error, selected), and platform (mobile, desktop). Every variant must deliver the same skeleton so comparisons are fair. Only form changes between variants.
+**Before anything: is there already a kit?** If the project has a kit from this skill (a `kit.css`, a brand book page, a kit version in the conversation) or the user's own design system, do not start a new board. Go to Stage 4, or to "Changing the kit" if the request cannot be met from it. A single-screen request with no kit still runs all four stages on the **light path**, so the next screen has something to obey:
+- Stage 1: 3–4 problems, no inventory beyond the 2–3 likely next screens.
+- Stage 2: 4–6 plates; open at most 8 reference files in total (start from §P in `references/principles.md`, then the one-line index at the top of `references/library.md`, then only the entries and files you will cite).
+- Stage 3: a compact kit = a token table (colour roles with budgets, type, space, motion), the components this screen needs, 5 Do/Don't pairs, the provenance table. Specimen = this screen plus one likely next screen. Name, swap and three-medians tests only.
+- Stage 4: the screen, with citations and the token lint.
+Use the full path when the user asks for a product, a design system or several screens.
 
-### Phase B: Divergence (the variants)
-1. Pick **4–6 movements** (or use the ones the user names). Choose for maximum contrast using the axes map in §3: no two variants from the same corner. A good default spread is one ordered (Swiss / De Stijl), one void (Japanese Ma / Minimalism), one spatial-sequential (Modernist architecture), one ornamental (Secession), one kinetic (Op/Kinetic), and one loud (Postmodern).
-2. For each movement, choose a **lead artist** (and optionally one secondary from the same movement). Open the variant with a header card:
-   - `Variant B: De Stijl / Rietveld (+ van der Leck)`
-   - **The move:** one sentence (the artist's essence)
-   - **Rules applied:** the 5–8 specific rules from the entry you are following
-   - **Palette:** the exact hexes used, with a role for each
-   - **Type:** fonts, sizes, scale ratio
-   - **Motion & interaction:** what moves, how, and why
-3. Build each variant as a real rendered screen: a self-contained HTML page, or the session's design artifact type if one exists. Same content, real copy, no lorem ipsum. Commit fully: if the manner says "60% empty field", leave 60% empty.
-4. Put the variants side by side, or in tabs, in one deliverable so they can be compared.
+### The ladder (used in Stages 2 and 3)
+Every move in the library can be read at four rungs.
 
-### Phase C: Gene board (critique)
-Break every variant into labeled **genes** so the user can choose à la carte:
-- `B-layout` (e.g. slabs overlapping 12px, rules running 16px past joints)
-- `B-color` (red reserved for the one content plane, yellow only on ends)
-- `B-type`, `B-motion`, `B-interaction`, `B-texture`, `B-navigation`
+| Rung | Example (Barragán, Casa Gilardi) | Transfers? |
+|---|---|---|
+| **Surface** | magenta `#E74889` plane before a cyan wall | Only in the cases listed below |
+| **Device** | the most saturated plane is the smallest (5–10%) and stands free in front of a larger, cooler one | As a hint, rebuilt in the case's material |
+| **Principle** | saturation and area trade off; the eye goes to the small intense thing only if the big thing is calm | **Yes. This is what you carry.** |
+| **Problem** | make one place in a quiet room feel like the destination | This is how you *find* the move |
 
-Then ask the user which genes they like, or propose a combination yourself, with reasons, if they are away.
+Carry the principle. Take surface from the case: brand colours, platform type, the content's own shapes. Keep the artist's *numbers* (area shares, ratios, value steps) as calibration, because they describe perception, not style.
 
-### Phase D: Synthesis
-Combine the chosen genes into one new design. Compatibility rules:
-- **One structural system.** Pick one grid logic (Gerstner's 58-unit field, Modulor series, Crouwel's visible cells, Judd's gap = module, and so on). Genes from other variants must re-express themselves inside it.
-- **One color logic.** For example, one-accent scarcity (Bayer/Crouwel), value-only relativity (Albers), emitted light (Flavin) or ordered ring (Le Parc). You may layer a second logic only if it governs a different role, e.g. base surfaces vs state signals.
-- **One type logic.** Either a scale jump of ≥1:6 (Müller-Brockmann/Scher) or hierarchy by isolation and space (Hara/Sejima/Ruder). Never both.
-- **One motion grammar.** Mechanical steps, slow light change, scroll-bound or spring, applied consistently.
-- **One rule-break per screen.** Each manner allows a single deliberate violation (one tilted element, one off-grid module, one red). The synthesis keeps exactly one.
+**When surface may travel.** (a) The user asks for a homage or a named manner; then the whole kit is that manner, everywhere. (b) Stage 2 single-artist studies (never triad boards, which carry processes only). (c) The brand already lives there (a museum, a furniture maker). (d) A single surface detail with no signature of its own (a 4 L value step, a hairline). Never two bundled surface traits from one artist (their geometry *and* their palette) outside (a)–(c).
 
-Name the hybrid ("Barragán threshold × Crouwel grid × Flavin state light") and document its rules as a mini design system: tokens, the grid, type, motion and component rules.
+### From observation to process (how to read a work or an entry)
 
-### Phase E: Guardrails pass (always)
-- Body text contrast ≥ WCAG AA 4.5:1. Low-contrast manners (Ando, Agnes Martin, Turrell) still have to pass this.
+A measurement says what is on the surface. A kit needs what the artist did: decisions, in order,
+with reasons (the Principle rung, made executable). Convert an entry before it enters a kit.
+
+**1. Turn every value into a relation.** Ask of each observation: compared to what?
+- Colour: its role (ground, mass, counterweight, signal, light); share of the area; rank in
+  saturation; value step to each neighbour; warmer or cooler than its neighbour; form (point,
+  band, field or light).
+- Size and position: fraction of the format; ratio to the neighbour; distance from the centre
+  and from the edge.
+- Line: thickness as a fraction of the short side; how many weights exist; what a line does when
+  it meets another line or the frame.
+Once the relation is written, delete the hex, the hue name, the material and the motif.
+
+**2. Separate the invariant from the instance.** Compare the works. What holds in all of them is
+a rule. What moves between them is a parameter, and its spread is the range. What appears in one
+work is a mode or a signature. In CHANGELOG.md, every "corrected", "contradicted", "softened" or
+"not universal" marks a rule that was really one instance; the wording that survived is the
+invariant ("exactly one saturated plane" died, "the most saturated plane is the smallest" lived).
+
+**3. Break it to find the reason.** For each invariant, run five counterfactuals: centre it,
+enlarge it, equalise it, multiply it, remove it. Say what the eye would do differently, and name
+the mechanism: visual weight and leverage; figure and ground; simultaneous contrast; adaptation
+to the previous state; grouping by likeness or texture; depth from overlap, temperature or value;
+salience by oddness; fusion of fine detail into tone; scale reference. If no counterfactual
+breaks anything, the observation is surface: discard it. If you cannot name a mechanism, do not
+promote it to a step.
+
+**4. Recover the order.** Ask of each decision: what had to be fixed before this could be
+chosen? Sort by dependency, usually: format and enclosure, the largest thing, the division,
+where intensity goes, detail and texture, time. Step 1 is the decision that, if changed, forces
+every other to be redone. Write each step as an imperative with a parameter, a range, and a
+constraint tying it to an earlier step ("the smallest", "opposite the dominant", "one value only").
+
+**5. Derive what the artist never made.** Type, motion and interaction come from the process,
+not from the look. Ask: what is the repeated unit, and what texture must text have to be one?
+What changes when the viewer or the light moves? What would the artist adjust if the content
+changed? Illustrating the surface (a shimmer because the painting is gold) derives nothing.
+
+**6. Test, in this order.**
+- *Blind test.* Every step must be executable by someone who has never seen the work. Remove
+  every noun that belongs to the artist.
+- *Substitution test.* Rotate the hue, invert light and dark, swap the content. Each step must
+  still force a decision. A step that only works in the original palette is surface.
+- *Transfer test.* Apply the procedure, with numbers, to a product that shares nothing with the
+  artist's surface. If a viewer would caption the result with the artist's name, find the step
+  that carried the signature and abstract it once more.
+- *Distinctness test.* If the procedure has shrunk to "generous space and one accent", it is too
+  abstract: restore the constraint that separates it from the neighbouring artist. Two artists'
+  procedures run on one brief must give structurally different layouts.
+- *Failure test.* Name the content or format on which the procedure stops working. A procedure
+  with no failure case has not been understood.
+
+**7. Keep and discard.**
+- Keep: roles, area shares, ratios, value steps, ranks ("most saturated is smallest"), order of
+  decisions, constraints, failure cases. Numbers that are ratios describe perception and travel.
+- Discard from the procedure: hexes, hue names, materials, motifs, subject matter, font names,
+  format quirks, CSS. List the 2–3 traits that make the artist recognisable under "Signature" and
+  never carry them together.
+
+### Stage 1: Brief
+Write these before any form. They are held constant through everything that follows.
+1. **Case.** Who uses the product, how often, in what posture and place. Brand givens (colours, type, tone, existing assets) or "none"; givens are binding. Platform conventions that must hold. Accessibility needs.
+2. **Inventory.** Every screen or flow that exists or is planned, and every component they need (navigation, lists, forms, alerts, empty, loading, error, charts). If only one screen was asked for, list the two or three screens most likely to follow. The kit will be tested against the inventory, not against one screen.
+3. **Content truth.** One sentence on the shape the product's content has of its own accord ("money moving through a month", "twelve equal things", "one long text"). The kit's structure will come from this sentence.
+4. **Problems.** The **4–7 design problems that recur across the product**, each phrased as a tension, not a topic: not "hierarchy" but "one figure must win the glance without shouting, in a money app". Use the vocabulary of §P. Note which screens each appears on. Rank them and mark the **crux**. A problem that lives on one screen only is not a kit problem; it will be solved later with the kit's means.
+
+Show the problem list to the user if they are present. It is the cheapest point to steer.
+
+### Stage 2: Mood board
+One board for the whole product: **5–9 plates.**
+
+1. **Scout by problem.** For each problem pull 2–4 candidate processes from at least two movements using §P (`references/principles.md`), read the one-line index at the top of `references/library.md`, then only the candidates' entries (search for the artist's bold name), and open a reference file only for a candidate you may put on the board (full path: at most ~15 files; light path: 8). For each candidate write one line per rung: device → principle → why it worked in that work → what differs here. Drop candidates whose principle depends on something the case lacks (Hara's emptiness needs little content; Carson's noise needs no task).
+2. **Prefer** *convergence* (a principle held by artists from unrelated movements is robust and unsigned), *economy* (one principle that answers two problems), and *reach* (a principle that can show up on most of the inventory, not on one screen).
+3. **Compose the board.** Each plate is one specific work, or one measured aspect of it:
+
+   ```
+   PLATE n: <Artist, Work, year>
+   Answers: <problem from Stage 1>
+   Principle: <one sentence, no style words>
+   Take: <what enters the kit, incl. the measured figure used as calibration>
+   Leave: <the surface that stays behind>
+   Why this case: <users, content, brand, platform>
+   Layer: structure | colour | type | motion | interaction
+   ```
+
+   Add 1–3 **case plates** that are not art: the brand's givens, a sample of the real content at its worst (longest name, largest number, emptiest state), the context of use. They sit on the board as equals and win any conflict.
+4. **Make the board cohere before leaving it.**
+   - **One thesis.** One sentence that the whole board supports, naming no artist and no style. It must contain the content truth. If it would fit a different product unchanged, it is a template: go back.
+   - **One owner per layer.** Structure, colour, type, motion and interaction each get one governing principle. Other plates on that layer must fit inside it or leave the board. A second logic on a layer is allowed only for a different role: colour for surfaces vs state signals, motion for the user's actions vs the system's news.
+   - **Bundle limit.** No artist owns more than two layers, and never both structure and colour. The crux has at least two sources.
+   - **One tension, by role.** Keep at most one pair of opposed principles (§P.3) and give each pole a territory defined by the role of an element (the system's news vs the user's actions; the one key figure vs everything else). Never a territory defined by screen or section.
+   - **Cut.** A plate that answers no problem, or that only one screen could use, goes, however beautiful.
+5. **Single-artist studies (optional).** When the user asks "what would artist X do here", build 3–5 quick strict single-artist studies. When they ask for an *exploration* or *options*, use **Exploration mode** (below) instead of one representative screen, chosen from the scouted candidates plus one foil from the opposite corner of §3. Commit fully, label them *studies*, then harvest 2–3 findings and one failure from each, stated as principles with evidence on this content. Findings become plates or sharpen them. Studies are never parts of the product and their pieces are never spliced into it. If the user falls for a study, ask what it does for them and carry that; ship a manner itself only as a deliberate homage, for the whole product.
+6. **Show the board.** If you can fetch images (the Sources in each reference file list them), show the works; otherwise show the plate cards and mark any figure you did not see yourself as *text-derived*. Get the user's steer: add, drop, reweight. When several directions are wanted, offer **2–3 boards that differ in thesis or in the tension kept**, not in costume, and let the user pick one.
+
+### Exploration mode: ten fused triads (inside Stage 2)
+
+Use it when the person asks for a design exploration, for options, or nobody has a view yet and there is no kit. It replaces Stage 2's single-artist studies for that run and runs before step 6. Stage 1 comes first and is never skipped: the ranked problems, the crux and the content truth are the only yardstick for every decision below. Before drawing, also fix the **specimen constants**: the crux screen, its real content (worst cases included), the viewport, and the *case hues* (the brand's, or case-derived and marked *unconfirmed*). Fix nothing else: type, the ground's lightness and temperature, value distribution, line and density belong to each board, because a board that cannot choose them can only differ in layout. State the content truth as what the content does, not as a shape ("money comes in, goes out, and some of it is already promised", not "the month is a line"), so it does not pre-decide the structure for all ten. Ladder exception (b) does not apply here: a triad board carries processes, never a member's surface.
+
+**1. Draw.** Run `python3 scripts/triads.py` (it prints its seed; `--seed N` reproduces a draw). Log the seed and the level. `--level artists` (default) gives the sharpest fusions. `--level movements` when the person said "schools": per slot, take the artist of that school whose index line answers the highest-ranked problem that no other member answers, and log the choice. `--level mixed` gives both. `--exclude` only an artist whose *Fails when* matches the content truth in every role; log it. Never hand-pick a member, never swap one you find awkward, never run several seeds and keep the nicest draw. A new round is a new seed.
+**Re-draw one member** only when its *Fails when* matches the case in **all three roles** of 2c. A failure in one role is a casting constraint, not a reason. At most once per triad. Do it mechanically: `python3 scripts/triads.py --seed <seed> --redraw "Tnn:<member>"` (it keeps the rest of the draw and the caps, and prints the replacement). Log it: `T04: X → Y, because <Fails-when clause> = <case fact>`.
+
+**2. Fuse.** Work from the three library entries only (no reference files yet), in this order.
+a. **Profile.** Fill one row per member from its entry: *Unit* (what repeats and how the field is divided) · *Exception* (where the one difference or the intensity goes, and how much) · *Change* (what moves or responds, what holds still) · *Mechanism* (from "Why it works") · *Fails here* (its failure cases checked against this case). Write every cell in the case's nouns (row, balance, warning), not the artist's (bay, slab, mast). A step that cannot be rewritten that way is surface: drop it.
+b. **Bridge.** Read the 3×3 down its columns and across the failures. Look, in this order, for: a **lock and key** (one member's *Fails here* is another member's step; the strongest bridge, because each needs the other); a **shared mechanism** (two or three members rely on the same perceptual mechanism; it becomes the spine, and those members must then act on different layers, or they are one member twice); a **tension** (two members give opposite answers in one column). Keep at most one tension and split it by the *role* of an element (anchored or free, settled or open, the key figure or the rest, the system's news or the user's acts), never by screen, section or component. Write the bridge as one sentence.
+c. **Cast.** Three roles, one member each. **Skeleton** owns structure: the division of the field. **Charge** owns colour: where the one difference goes and its budget. **Behaviour** owns motion and interaction: what happens when the data or the hand changes something. Score each member in each role: 2 = its strongest step lives here and fits the content truth; 1 = it has a usable step here; 0 = its *Fails here* applies in this role, or it is silent. Of the six assignments take the highest total that contains no 0; break a tie by the one that solves the crux with two members. Note the runner-up. Type and line go to the member whose type requirement the content meets, or to the case. No member holds more than two layers, and none holds both structure and colour.
+d. **Run** each cast process on the content, in dependency order: the Skeleton's own process first, deciding how the field is divided (the content-shape mapping of Stage 3 is a constraint the result must satisfy, not the structure itself: a time sequence can be told by an axis, a stack of states, cells, a vessel, a promenade or a single opening), then the Charge on the crux, then the Behaviour on the state changes in the inventory (arrives, runs out, empty, error, press). Keep the entry's ratios and ranks as calibration. Take hues, type family and shapes from the case.
+e. **Resolve collisions.** List every step of a member that lies outside its own layers. If it fits inside the owner's range, it becomes a **parameter** of the owner's rule (the owner's one split is placed where the other member's ratio says). If it contradicts the owner, it is **dropped, with a one-line note**. If it is the bridge's tension, it gets its role territory. A non-owner's colour step survives only for a different role (surface values, not signals). Two members do not outvote an owner. Guardrails and case plates beat all three.
+f. **Count what is left.** Every member must keep at least one step that only it has. If one is left with none, take the runner-up casting. If no casting works, the triad does not fuse plainly: use ONE device, and name it on the card. **Scale split:** format, unit and mark get one member each, on every screen. **Time split:** one member rules the resting state, another only what happens on change. **Constraint:** the member survives as one prohibition taken from its counterfactuals. If a member still carries nothing, show the board anyway, labelled `DUO + idle: <member>`, last on the page. Do not replace the triad: an awkward draw is where the non-median idea usually sits, and a substitute you choose brings your own defaults back. The label keeps the page honest.
+g. **Thesis and name.** One sentence that contains the content truth and no artist or style word. Name the idea, not the sources.
+
+**3. Test.** Hinge, thesis and case-fit on paper before the specimen; name and patch on the specimen; difference across the ten.
+- **Hinge.** Delete each member in turn and write what the design loses, in one clause. "A flourish" or "nothing" means a duo with decoration: recast (2c) or flag (2f).
+- **Thesis.** One sentence, no names, and it would not fit another product unchanged.
+- **Case-fit.** Mark every Stage 1 problem *solved*, *untouched* or *worsened*, with the members responsible. The crux is solved and has two sources. A *worsened* is printed on the card, never hidden.
+- **Name.** Not captionable as any one member, or as one movement, within five seconds. No member carries two of its Signature traits.
+- **Patch.** Any 200px crop of the specimen shows at least two members' rules at work. A region that answers to one member is patchwork.
+- **Difference.** Line up the ten theses with their (structure idea · signal logic · tension). Two boards alike in two of the three differ only in costume: recast the later one with its runner-up casting, or with the same casting and a different structure taken from its Skeleton member's process. No structural idea (e.g. "a time axis with a today line") may carry more than two of the ten.
+- **Median.** Check each specimen against §0 (rounded cards, pill buttons, shadows, one brand-blue accent): none may appear unless the board's rules adopt it with a reason.
+
+**4. The early design.** Per triad: one TRIAD BOARD card (§5) and one specimen of the crux screen. The specimen is one static HTML file at the fixed viewport, at most 150 lines, with no script, images or icons, type chosen by the board from its own type requirement (system stacks such as `ui-serif`, `ui-monospace`, `ui-rounded`, condensed or wide system faces, or one web font if the session can load it), its own ground and value logic (neutrals of any lightness and temperature, chroma ≤ 6) plus the case hues, and at most 12 custom properties. It must show the division of the field, the key figure, at least five repeated units (with fewer, rhythm cannot be judged), the crux in its hard state, the primary action, and one caption line for what moves. It must still read at 240px wide: squint, and structure and signal placement survive. If nothing can be rendered, the smallest acceptable form is a zone list in px with value steps and the one hue. Run the Stage 5 guardrails on it. Polish nothing else.
+**In parallel.** Draw and re-draw yourself. Then brief one subagent per triad with: the Stage 1 brief verbatim; the specimen constants; its three library entries pasted in; this section and the card template; the Stage 5 guardrails; the output paths `explore/Tnn/card.md` and `explore/Tnn/specimen.html`; and a return of at most 100 words (name, thesis, cast, flags). A subagent sees no other triad, re-draws nothing and opens no reference file. Run *Difference* yourself afterwards and send back only the boards that must be recast. **Without subagents:** write all ten cards as far as 2g and run *Difference* on paper. Then build the specimens from one shared content skeleton, each from its own card, without looking at the previous one.
+
+**5. Compare and pick.** Build one page, `explore/index.html`. At the top: the problems with the crux, the seed, the level and the re-draw log. Then ten equal tiles in draw order, flagged boards last: number, name, triad, thesis, the three castings, the tension, the case-fit row, flags, and the specimen at one scale. Each tile offers three handles: `.S` structure, `.C` signal logic, `.B` behaviour. Do not rank the boards for the person; say which ones pass every test.
+The person answers with a board (`T03`), a mix by layer (`T03.S + T07.C`), or a feeling ("the calm of T05"). For a feeling, ask what it does for them and carry that as a principle. A pick by region ("T03's header and T07's list") is translated into layers before anything is built.
+A mix becomes ONE board. The board that gives `.S` is the host, and every layer not named comes from it. Run 2e to 2g and all of step 3 on the mix as if its donors were one triad: one owner per layer, the bundle limit, one tension, a new thesis. If the thesis needs "and" to hold two ideas, go back to the person with the conflict. Render one new specimen of the same crux screen and get it approved. Only then open the reference files of the surviving members, write them as PLATEs with the case plates, scout more plates only for problems still *untouched*, pass step 4 above, and go to Stage 3.
+The unpicked boards go into `explore/log.md` (seed, triads, theses, the reason if one was given) and are closed. They are never applied to a screen, a section or a component later; an idea from them that comes back follows L5. With nobody present, take the board with the best case-fit and the crux solved, mark it *assumed, unconfirmed*, and continue.
+
+Worked fusions (one plain, one hard): `references/EXPLORATION-EXAMPLE.md`.
+
+### Stage 3: Kit (brand book and UI kit)
+Distil the board into a system that names no artist. Build it as real files in one folder the user can find (default: `design/kit/` in the project, or the session's artifact if there is no project): `kit.css` (tokens and component classes), `brand-book.html` (rules with IDs, specimens, provenance) and one HTML file per screen. Every rule gets an ID so screens can cite it.
+
+1. **Thesis and 3–5 principles**, in the product's own words.
+2. **Structure.** The grid or axis logic, the module, the screen archetypes (overview, list, form or flow, detail, confirmation, empty, error) each as a fixed arrangement of zones.
+   - **From content shape to structure.** Derive the structural idea from the content truth, then let a board process shape it: a *sequence in time* (money through a month, a habit streak) → one axis or rail with past and future on either side; *peers* (twelve equal things) → a field of equal units, no hero; a *hierarchy* → nesting or terraces; a *flow* → a promenade of rooms; a *quantity against a limit* → a fixed vessel with a level; *live change* → fixed slots or anchors with everything else relaxing. Write the mapping in one line and keep it in the brand book.
+   - **Re-solve for narrow formats.** Many processes are stated for a wide field (periphery, frame edges, side-by-side panels). On a phone keep the process's invariant (the rank, the ratio, the counterweight, the sequence) and change the division: periphery becomes the top and bottom edges, side-by-side becomes a vertical sequence read by scrolling, a frame-edge counterweight goes to the edge nearest the thumb. Test the specimen at 390 px wide; if an entry's *Fails when* names narrow formats, say how the kit re-solves it.
+3. **Colour.** Tokens by *role*, each with an **area budget** per screen. Defaults from §P.2, change them only with a reason: quiet grounds ≥ 60% (≥ 75% for calm, frequent-use products); structure/ink ≤ 20%; a point signal ≤ 1%, a main accent ≤ 8%, all saturated colour ≤ 13%; at most one saturated element per screen unless a rule says otherwise. Adjacent surfaces 3–5 L apart. A signal set of **2–3 states** (e.g. attention and fault), each with a non-colour partner (shape, position, label); other states are told apart by form or position, not by more hues. **Hues come from the brand or the case, never from the plates.** With no brand, derive two candidates from the case (the domain's conventions, the context of use, what must stay calm vs. what must be noticed), state why, pick one, and mark it *case-derived, unconfirmed*.
+4. **Type.** One logic: a hard jump (two sizes, ≥1:6 on desktop, ≥1:4 on a phone; recalibrated from the poster scale of the sources) *or* hierarchy by isolation and position, never both. Write the type *requirement* first (e.g. tabular figures, a width axis, a wide weight range, one family) and then choose a family that meets it; the library-median families of §0 need a stated reason. Every size and weight is a token.
+5. **Line, shape, texture.** Line weights (two, far apart), corner rule, any texture, with reasons.
+6. **Motion grammar.** One material (mechanism, light, weight), duration and easing tokens, what may move and what never does.
+7. **Interaction grammar.** What press, focus, select, drag and disabled look like, once, for every component.
+8. **Components.** Every item in the inventory, each defined by kit tokens only, with its states.
+9. **Voice.** How the product speaks: tense, length, how numbers and dates are written, what it never says.
+10. **The exception.** The one rule-break the system allows, defined as a class of element and limited to one per screen. And the one unfamiliar interaction in the whole product, if any; everything else follows platform convention.
+11. **Do / Don't.** Six to ten pairs, the Don'ts drawn from §0, from the library median and from the sources' own surfaces ("no primaries with black rules").
+12. **Provenance appendix.** A table, kept at the back: `Kit rule | Problem | Principle | Plate(s) | Left behind`. This is the only place artists are named.
+
+**Prove it before freezing.** Render a specimen sheet: three contrasting screens from the inventory (the densest, the emptiest, one form or flow) built from the kit alone. If any of them needs a value or component the kit lacks, the kit is not finished. Then run the kit checks:
+- **Name test.** Could a design-literate viewer name one source artist or movement from the specimen within five seconds? If yes, find the bundled surface traits that cause it and abstract one further.
+- **Caption test.** Delete the provenance appendix. Every rule must still have a reason in terms of the user and the content.
+- **Swap test.** Swap the hues for another brand's and the typeface for another family. If the system survives, it is made of principles. If it collapses, it was a look.
+- **Elsewhere test.** Would this kit suit an unrelated product with the labels changed? If yes, the structure is not from the content truth.
+- **Three medians.** Mechanically: grep the kit for §0 patterns (`border-radius` 12–16px, `box-shadow`, `#FFF`/`#FFFFFF`, a single `300ms ease`, a 1.2–1.25 type scale) and for the library-median fonts and cream papers. Then by eye against each plate. It should sit near none.
+- **Reach test.** Every principle appears on at least two of the three specimen screens.
+
+Show the brand book and specimen. On approval the kit is **frozen as v1.0**. If nobody is there to approve (an autonomous run), freeze it as **v1.0 (assumed)**, list the assumptions at the top of the brand book, and continue.
+
+### Stage 4: Screens, from the kit only
+For each screen or component:
+1. Write its skeleton: goal, content, actions, states. Real copy, real numbers.
+2. Pick its archetype from the kit. Compose it from kit components. Import `kit.css`; write no raw hex, size, duration or easing in the screen.
+3. Solve the screen's local problems with the kit's means. Do not open the library or the reference files. Do not consult the mood board for a new idea.
+4. Write a short rationale that cites kit rule IDs. No artist names appear at screen level.
+5. Run the coherence checks, then the guardrails.
+
+**Lock rules.**
+- **L1. Frozen.** After approval the kit changes only through "Changing the kit" below.
+- **L2. No artists downstream.** The library, references and §P are closed in Stage 4. A screen is traced to kit rules, and through them to the kit's own plates, never to any other source.
+- **L3. No one-offs.** A value that is not a token is a bug. A component variant that exists on one screen must be a kit component that other screens could use, or it does not exist.
+- **L4. Same thing, same form.** One meaning has one form across the product (a forecast always looks like a forecast). One form has one meaning.
+- **L5. Resonance is parked.** If a new artist or idea seems perfect for one screen, write it in a parking list with the screen that prompted it. Do not apply it. It is reviewed at the next kit version, for the whole product.
+- **L6. The user can override, the model cannot.** If the user asks for a local deviation, say what it breaks, offer the kit-level alternative, and if they still want it record it in the kit as a named exception.
+
+**Changing the kit.** When a screen cannot be built from the kit:
+1. Try again with existing tokens and components. Most gaps are compositions nobody wrote down.
+2. If something is truly missing, write a change request: what is missing, which screens in the inventory will use it, the proposed rule in kit terms.
+3. Derive the answer from the **existing board** first. Add a new plate only if the board cannot answer, and only if the plate passes Stage 2's coherence rules against the plates already there.
+4. Bump the version. *Minor* (v1.1): additions that contradict nothing. *Major* (v2.0): anything that changes the thesis, a layer's owner or a token's meaning; this needs the user's approval.
+5. Apply the change to **every** screen already built, list the screens touched, and re-run the checks. A change that is right for one screen and wrong for the others is rejected.
+
+**Coherence checks (every screen).**
+- **Token lint.** Every colour, size, space, radius, duration and easing in the screen resolves to a kit token. Check it mechanically: grep the screen for raw hex and px outside `kit.css`.
+- **Budget check.** Screenshot the screen (e.g. Playwright, 390×844) and run `python3 scripts/measure_palette.py SCREENSHOT -k 6` from this skill's folder, then assign each cluster to its kit role (ground, ink, signal…) and compare: ground, ink and signal shares and counts against the kit's budgets (signal ≤ y%, one exception, one key figure).
+- **Component check.** Every element is a kit component in a documented state.
+- **Citation check.** Every decision in the rationale cites a kit rule ID. No artist name appears. No decision traces to a source outside the kit's provenance appendix.
+- **Sibling test.** Put the screen beside any other screen of the product: same hand, same structure logic, same signal meaning?
+- **Crop test.** A 200px crop from anywhere on the screen should be recognisable as this product.
+- **Fit.** The screen's own problems are solved, with the longest real name, the largest real number, zero items and an error.
+
+### Stage 5: Guardrails pass (always; on the kit specimen and on every screen)
+- Body text contrast ≥ WCAG AA 4.5:1; meaningful graphics and control boundaries ≥ 3:1. Low-contrast sources (Ando, Agnes Martin, Turrell, Sejima) still have to pass.
 - Navigation, forms, data, errors and checkout must stay plainly legible and semantic (Carson's own boundary). Expressive distortion goes only on decorative layers, with real text underneath.
-- Respect `prefers-reduced-motion`. No flashing more than 3 times a second (WCAG 2.3.1). Avoid high-contrast stripes near 3 cycles/degree with a 50% duty cycle behind content (Riley's pattern-glare zone). Never put text over vibrating fields.
-- Tap targets ≥ 44px. Rotate only decorative layers, never controls or text you need to read (van Doesburg's rule).
-- Color must never be the only signal: pair it with shape, position or a label (Stepanova's "uniforms").
+- Respect `prefers-reduced-motion`: every idle or ambient motion (sway, drift, shimmer, growth) has a static state. No flashing more than 3 times a second (WCAG 2.3.1) and no flicker sequences: light comes on with one monotone fade. Ambient change is ≥ 30s per cycle; idle motion runs only where the kit names it.
+- Vibrating fields (fine stripes, moiré, high-contrast bands near 3 cycles/degree, 50% duty cycle) are decorative only: no text and no control may sit on them; content sits on flat panels.
+- Tap targets ≥ 44px, even where a design compresses the visible row. Rotate only decorative layers, never controls or text you need to read. Any text ≥ 12px. A hidden gesture (press-and-hold, drag) always has a visible or keyboard/assistive-technology equivalent.
+- Colour must never be the only signal: pair it with shape, position or a label. A selected state is never only a value step.
+- Map tokens, not hexes, to dark mode (keep the value steps, the single signal and the area budgets), and mirror structural axes for right-to-left scripts.
+- Conventions with safety weight keep their meaning: red stays for errors and destructive acts where the platform or domain expects it; money, health and legal figures are never animated, cropped or stylised into ambiguity.
+
+### Stage 6: What to show the user, and when to stop
+With the user present, stop and ask at three points only: after the problem list (Stage 1), after the board (Stage 2; in Exploration mode, after the comparison page, for the pick), and before freezing the kit (Stage 3). Without a user, record each choice as *assumed, unconfirmed* and continue; never stall waiting.
+- **After Stage 1:** the problem list with the crux.
+- **After Stage 2:** the board (plates with Answers / Take / Leave / Why), the thesis, the tension kept. Handles: "drop plate 4", "more weight on plate 2", "swap the tension".
+- **After Stage 3:** the brand book, the specimen sheet, the provenance appendix. Handles phrased as rules: "tighten the signal budget", "allow a second key figure".
+- **After Stage 4:** each screen with its kit citations, the kit version it was built from, and the parking list if it has grown.
+
+
+**Worked example.** `references/WORKED-EXAMPLE-rail.md` runs all stages on a mobile bank (board → kit → Home → a second screen from the same kit). Its built files are in `references/worked-example/` (`kit.css`, `brand-book.html`, `home.html`, `send.html`).
 
 ---
 
-## 2. Cross-cutting lessons (the meta-principles from all 50)
+## 2. Cross-cutting principles (where the artists converge)
 
-1. **Scarcity of accent.** About 25 of the 50 restrict the saturated color to *one element per screen*, the primary action or the current state. That single constraint does more against genericness than anything else.
+1. **Scarcity of accent.** Many of the library's artists restrict the saturated color to *one element per screen*, the primary action or the current state. That single constraint does more against genericness than anything else.
 2. **Depth without shadows.** Get depth from overlapping flat planes (Rietveld, Popova), value steps (Albers, Sejima, Turrell), translucent multiply (Moholy-Nagy, Kandinsky), scale tiers, emitted glow (Flavin), parallax interference (Soto, Cruz-Diez) or pattern density (Klimt).
-3. **Grounds are never pure white.** Use warm papers like `#F4F1EA`, `#EFE9DC` or `#E9DFC7`. White is an active plane, not "nothing".
+3. **Grounds are a chosen tone, never default white.** Pick the ground's lightness, temperature and chroma from the case; adjacent surfaces 3–5 L apart read as separate without borders (§P.2). White is an active plane, not "nothing".
 4. **Show the structure.** Make the grid visible as graph paper (Crouwel), tie-hole dots (Ando), scored joints (Wright), struts (Popova) or bronze mullions (Mies). Structure can be the ornament.
 5. **Unequal is alive.** Use irregular tracks (`3.2fr 1fr .45fr 1.6fr`), asymmetric margins and off-center masses. Symmetry is allowed only as a deliberate exception (Klimt's Stoclet bookends, Tanaka's near-symmetry with one offset).
 6. **Violent or zero hierarchy.** Either jump scale hard (1:6, 8–12× numerals, 60vh glyphs) or remove size hierarchy entirely and rely on space and position. The mushy middle is the median.
@@ -87,7 +284,11 @@ Name the hybrid ("Barragán threshold × Crouwel grid × Flavin state light") an
 
 ---
 
-## 3. Axes map: choose contrasting movements
+---
+
+## 3. Axes map: choose a foil
+
+Use it in Stage 2 to pick a contrasting exploration and to check that the mood board does not sit in one corner.
 
 | Movement | Order ↔ Expression | Void ↔ Density | Flat ↔ Deep | Still ↔ Kinetic | Human/warm ↔ Machine |
 |---|---|---|---|---|---|
@@ -101,422 +302,95 @@ Name the hybrid ("Barragán threshold × Crouwel grid × Flavin state light") an
 | Minimalism / Light & Space | system | void or serial | light-depth | slow / none | machine/perceptual |
 | Op & Kinetic | system | dense field | optical depth | high, user-driven | perceptual |
 | Postmodern / New Wave | expression | dense, collision | layered Z | snappy, syncopated | human/irreverent |
+| Growth & Form | rule-generated order | packed field or one pierced mass | relief, hollow and see-through | grows once, then settles | natural-computational |
 
 ---
 
-## 4. The Library
+---
 
-Each entry gives the **move** (essence), the **rules** (do these), the **palette** (approximate hexes, with roles listed in order) and **type/motion**. The hexes are approximations from catalog research, so adjust them to taste and contrast needs.
+## P. Principle index (in `references/principles.md`)
 
-### 4.1 BAUHAUS: function, primary geometry, color as perception
-The movement: form follows role, shape and color carry meaning, and design is a teachable grammar.
-
-**Josef Albers.** *Fix everything except color, and let color do all the work.*
-- Nest 3–4 flat regions at 10/8/6/4 units, each step offset 0.5u from the bottom and 1.5u from the top so the core sits low. These rings replace cards.
-- Use a single-hue value ladder in 4 steps, with the most important element the *least* saturated. Opaque fills only: no opacity, gradients, borders or shadows.
-- Reuse one hex on two grounds so it reads as two colors.
-- Hover swaps the value order of adjacent rings, and navigation cross-fades ring colors from the center outward (stagger 120ms). Geometry stays frozen.
-- Offer a "theme as series" switch: one layout shown in many tonal variations. Add a mono footer listing the screen's hexes.
-- Palette: `#C98A1B #E0A526 #EEC14A #C9C3B3(core) #F4F1EA #2B2A26`. Type: geometric stencil display at ≥8vw, Jost body.
-
-**Herbert Bayer.** *Perception engineering: lowercase, bars, one red, a cone of vision.*
-- Set a hard vertical axis at 33.3% width and align all text to it; only one image may cross it. Use 12px black bars instead of cards.
-- Everything lowercase. Headlines weight 700–800, ≥4× body, `-0.02em`. Turn one label 90° up the gutter.
-- Exactly one red element per screen. Blue and yellow are allowed only inside data. Show small counts as Isotype pictogram rows.
-- Keep sticky header and footer to one or two glanceable items at 1.25× size. Rules draw in with `scaleX` over 200ms, then text follows. Hovering a row turns it red and mutes the rest.
-- Palette: `#F4F1EA #141414 #D7261E #1D4E9E #F2C200 #B9B3A6`. Type: Jost, lowercase.
-
-**Wassily Kandinsky.** *A field of forces in which shape, color and sound correspond.*
-- Use a strict token table: yellow triangle = alert, red square = commitment, blue circle = focus. Never mix the pairs.
-- Hang the screen off one dominant blue circle (35–50% of the width) set up and to the left, with content around it as satellites. Run one or two 1px diagonals (8–20°) from dots into empty space. Leave one quadrant silent except for a single 8–12px dot.
-- Calm content goes upper-left and urgent content lower-right. Overlaps multiply at 70–85% opacity.
-- Yellow CTAs scale outward fast. Blue focus settles inward slowly. Optionally add sound: a cello tone for confirm, a trumpet ping for alert.
-- Palette: `#EFE6D2 / #14161C(dark) #F2C230 #C8322B #1F4FA3 #1A1A1A #7A4E9C`. Type: Syne display, with one word 3–4× size rotated −6°, and Jost body.
-
-**Paul Klee.** *Take a line for a walk: a magic square of stepped tones, with polyphony.*
-- Make the background a grid of 8–12 tiles with unequal `fr` values, stepping from ochre to twilight blue (`color-mix` in oklch, 0–50%). Tiles are lighter near the content.
-- Draw the progress or breadcrumb path as one continuous 1.5px line that walks between the steps and ends in an arrow.
-- Stack independent layers (tiles, a 6–8px dot texture, hairline pictograms), each with its own spacing. Allow exactly one red-orange "sun".
-- Use arrows as meaning: a heavy black down-arrow for destructive actions, a thin feathered arrow for forward ones. The loader animates point → line → square over 1.2s.
-- Palette: `#1E1B24 #4F6D8A #B9A27C #D9C9A8 #E7B9B0 #C8452C #F4EEE2`. Type: Josefin Sans, modest sizes (≤2.5rem).
-
-**László Moholy-Nagy.** *Surfaces are light: opaque, translucent, transparent, reflective.*
-- Rotate the hero plane 22° and bleed it 15% off the right edge. Depth comes from overlapping translucent panels at 1×, 0.6× and 0.25× scale, never from shadows.
-- Build components in greys and add color only as multiply overlays (transparent yellow over violet makes near-black). Use one red circle.
-- Typophoto: run headlines straight into photos. Mark emphasis with a 6px black left bar.
-- Modals change material, from transparent to translucent to opaque, over 400ms. Use tempo tokens: hard cuts between sections, 800ms dissolves within them. The cursor acts as a spotlight. Empty states are photograms (white silhouettes on dark).
-- Palette: `#F1EEE6 #121212 #8E9093 #D9D6CF #E8B624@70% #3E4FA0@60% #C23B22`. Type: heavy grotesque.
-
-### 4.2 DE STIJL: orthogonal planes, primaries, balance through inequality
-The movement: the universal reduced to the rectangle, primary colors plus non-colors, and asymmetric equilibrium.
-
-**Piet Mondrian.** *Balance from inequality.*
-- Irregular tracks such as `grid-template-columns: 3.2fr 1fr .45fr 1.6fr`, never `repeat(n,1fr)`. Draw the rules with `gap` over a black background: 14px between regions, 6px within, plus one doubled 4+4px pair.
-- Main content is a white near-square (~45%) left of center. Navigation and metadata go in thin edge cells. Stop one rule 24–40px short of the edge.
-- One primary goes in an edge-cropped cell (<12% of area), plus two chips of the other primaries (<3%) on opposite sides. Tint each white panel 2–3% differently.
-- One 900-weight headline flush in a cell corner, slightly clipped. On select, the tracks resize over 300ms.
-- "Boogie mode" for live data: yellow lanes replace the black rules, and colored chips tick inside them. One lozenge card (rotated 45°) per screen at most.
-- Palette: `#F2EFE6 #141414 #D0281F #1D3D8F #F2CB1D #BEBDB8`.
-
-**Theo van Doesburg.** *Two grids in friction: the content upright, the color field at 45°.*
-- Behind an upright 12-column content grid sits a full-bleed field of 4–8 flat rectangles rotated 45°. Each diagonal bar is exactly one gutter wide, so both grids share a module.
-- One vermilion plane covers about 40% of the hero, off-center upper-right. Panels meet edge to edge with no borders.
-- Headlines are justified blocks that fill their column. The logo is overprinted on a faint giant monogram.
-- Background planes move along a 45° vector at 0.4× scroll speed. Hover slides a color plane in diagonally in 4 steps. Only the decorative layer ever tilts.
-- Palette: `#D62E1F #1D3F9B #F2C230 #141414 #F4F1EA #9A9A96 #3E6B4E(once)`.
-
-**Gerrit Rietveld.** *Parts slide past each other and never meet; the room reconfigures.*
-- Build the screen from 3–5 absolutely positioned slabs at different z-levels, overlapping 12px so no two share an edge. Every rule extends 16px past its container on both sides.
-- One partition toggle slides panels on one-axis tracks over 320ms, turning one open workspace into three without a route change. Animate only `translate`, no fades or scale.
-- Red marks the single main content plane, blue the input surfaces, yellow only ends (progress caps, handles, range ends). Structure is drawn as 4–6px black bars.
-- Mono labels sit at the crossing joints like bolts (`01 / SEAT`). Leave one corner open. Handles are 6×32px notches. Onboarding runs as a Z-path ribbon.
-- Palette: `#F4F2EC #B9B8B3 #151515 #C8261E #1F4E9A #F2C230`. Type: Archivo, Space Mono labels.
-
-**Bart van der Leck.** *A real scene cut into floating bars that never touch.*
-- At least 70% of the screen is warm white field. Content sits in 4–6 bars covering under 30% of the area, separated by a uniform 12px gap of white and no borders.
-- Work in horizontal density bands: dense vertical slivers on top (nav), staggered blocks in the middle, long thin rules below.
-- Each primary has one job: red for action, blue for navigation, yellow for state, black for text. Primaries are never adjacent without white between them. Tilt exactly one element per screen.
-- Icons are built from 2–4 disconnected strokes. Headlines use a stencil face with `0.08em` tracking.
-- Illustrations are figures made of bars that drift apart into abstraction when a task completes. Hover swaps the fill from blue to red.
-- Palette: `#F7F5EF #D52B1E #2456A6 #F3C316 #141414 #7C9BD6`. Type: Big Shoulders Stencil Display, Jost.
-
-**Vilmos Huszár.** *One family of rectangles makes letters, rooms and puppets alike.*
-- Build the wordmark from positioned rectangles on an 8px module (1u, 2u, 3u) rather than from a font.
-- A dense rectangle cluster fills the top 40%, over a fully justified text slab of the same width.
-- Color is its own token layer: a red plane may span two cards or wrap from the header into the sidebar. Translucent green multiply marks intersections such as filter AND selection.
-- Transitions use `steps(3)`, and every intermediate frame is a complete composition. Drag moves in whole-module increments. Radius 0, no shadows.
-- Palette: `#F4F1E8 #141414 #D7261E #1F4FA3 #F2C200 #2E8B57@65% #9A9A94`.
-
-### 4.3 CONSTRUCTIVISM & SUPREMATISM: forces, diagonals, two inks, apparatus
-The movement: design as construction and as a working device. Diagonal energy, red as action, no decoration.
-
-**Kazimir Malevich.** *The background is the subject: weightless planes in endless white.*
-- Use a warm field (`#F1ECE0`) with cards in cool white (`#FBFBF8`). The two whites alone separate them, with no borders or shadows.
-- Tilt all planes on one shared axis (about −12° to −15°). Bleed the hero off the top-right. Exactly one black plane per screen, and one red 3:1 bar as the only CTA. Ultramarine and ochre 3–6px bars run past the containers.
-- Arkhitekton dashboards: one panel at 2/3 width, with 3–5 smaller panels docked at staggered offsets.
-- Planes drift in from off-screen, heaviest first, staggered 80ms. Hover rotates 3° and raises the z-order. Empty states show a single off-center black square.
-- Palette: `#F1ECE0 #FBFBF8 #141312 #C42A1D #2A3B8F #E2B33A #8C8A84`. Type: Unbounded (rotated with the planes), Jost body kept horizontal.
-
-**El Lissitzky.** *Vectors and counterweights; the reader's hand completes the construction.*
-- The main bar runs at −30° off two edges, and content rides along it. The CTA is a red wedge (`clip-path` triangle) aimed at its target.
-- Navigation is a fore-edge thumb index: stepped tabs on the right with geometric glyphs (■ ● ▲ ▬). Each destination opens with a full-screen two-color title spread.
-- Two inks plus paper. Red only for action and state. Headings jump scale violently (12vw next to 1.2rem), rotating 90° when cramped. 8px black brackets group content.
-- Route changes cut along the diagonal with a hard stop. Depth is shown only as axonometric blocks. One slowly rotating 3D primitive serves as the idle state.
-- Palette: `#EFE9DC #141414 #D7261E #8C8A84 #C9C3B6 #B8BCC0`. Type: heavy grotesque caps.
-
-**Alexander Rodchenko.** *Every element is a device that hinges, rotates and changes state.*
-- Tilt the hero 12–18° and crop the photo from an extreme low angle. The key word comes out of the image as condensed caps inside a red megaphone wedge.
-- Nav labels are stacked vertically and rotated 90° in a 48px black bar on the left. Zones are labeled with stencilled capitals instead of icons.
-- Cards hinge open in place (`transform-origin:left`) to 2–3× width instead of opening modals. Stats sit on a three-faced prism that turns 120°.
-- Page transitions are a 35° red wipe (220ms, linear-in, hard stop). Yellow or blue appear only as one full-bleed state per flow. Black marks the single "opponent" element (the destructive action).
-- Palette: `#D7261E #141414 #EEE8DA #8E9196 #F3C318 #1D4C9E`.
-
-**Varvara Stepanova.** *One small unit, two dyes, and repetition makes the variety.*
-- Every background is one 24px SVG tile of at most 3 primitives, half-drop repeated. Each screen uses the ground plus two inks, checked in CI.
-- Modules overlap 12px with a 2px black rule. Seams, hinges and grid lines are visible. One 35° red bar carries the CTA.
-- Users and series wear "uniforms" (an emblem, a stripe and a color), never color alone. Hover inverts the tile: ground becomes ink and ink becomes ground.
-- Vertical rhythm alternates 64px pattern bands with 160px plain bands. Hinge transforms use `steps()` and run under 200ms.
-- Palette: `#E6D8BA #15130F #C62A1F #7A1E2C #6B5F3B #F5F2EA`. Type: Rubik Mono One labels rotated 90°.
-
-**Lyubov Popova.** *Structure under load: slanted planes, force lines, a visible scaffold.*
-- The main plane sits at −14° and bleeds off two edges. 3–5 overlapping planes are ordered by z-index only, and the front plane gets a 3px light edge.
-- 1–2px black force lines in an SVG overlay cross card boundaries and meet at an off-grid node. The grid is drawn as visible struts, with one diagonal brace.
-- Three inks at most. Headlines are split horizontally, black on top and red on the bottom (hard gradient stop at 50%).
-- Controls look like visible mechanisms: a toggle is a wheel turning 90°, progress a spinning segmented disc. A feature list shows one motif in 4–6 permutations.
-- Palette: `#EDE6D6 #C8321F #1B1A17 #8C8A84 #D99A93 #B88A55`.
-
-### 4.4 SWISS / INTERNATIONAL TYPOGRAPHIC STYLE: the grid, objectivity, type as structure
-The movement: modular grids, flush-left grotesques and meaning through position and interval. The section ends with its two rebels.
-
-**Josef Müller-Brockmann.** *A measured field with one free, musical gesture.*
-- A 6×8 grid whose `row-gap` equals the body line-height, with every card sized in whole fields. All text hangs from an axis at column 2.
-- Two type sizes at ≥1:6 (e.g. 14 and 96px), lowercase headlines, `-0.03em` tracking, everything flush-left.
-- A ghost word at 30vw in grey sits behind the real title (the *der Film* move). One rule-generated SVG (arcs at radius r·2ⁿ, or squares rotated in 15° steps) bleeds off the top-right.
-- Offset exactly one block by half a field. Entrances stagger 80/160/320ms along grid axes. The outgoing headline lingers as grey for 300ms.
-- Palette: `#F2F0EA #111111 #E2231A #1F5FA8 #8C8C8C #0A0A0A`. Type: Inter or another grotesk.
-
-**Armin Hofmann.** *Two opposing bodies: a hard sign against a soft image.*
-- A huge cropped glyph or a perfect dot at 60vh, offset against a coarse halftone photo (`grayscale(1) contrast(1.8)` plus a dot mask).
-- Pure value contrast: ink on paper with two greys, and at most one spot red under 3% of the area.
-- A fixed "programme slot" (a bordered rectangle at top-right) for live data, so the layout never reflows. The hero spans 4.5 of 6 columns and bleeds.
-- Selection is a solid 8–12px dot above the cap height. Loaders are 12 bars stepping from 1px to 8px in a travelling wave. Empty states are a lattice with the missing cells knocked out.
-- Palette: `#F3F1EA #0B0B0B #4A4A4A #9A9893 #D9D6CE #C8201A`. Type: condensed grotesque, leading 0.9.
-
-**Emil Ruder.** *White space is the material; one family varied by its axes.*
-- 60% empty paper. The headline block is pinned to the lower-left third, with body text 1.5 columns to its right. No section repeats a module footprint (4/2, 2/4, 3/3 offset).
-- One variable family for everything. Change width, weight and size, e.g. H1 at `wdth 75 wght 700` and labels at `wdth 112 wght 400 11px`. Metadata is set light and tight so it reads as a grey plane.
-- Comparisons use parallel columns of honest, unequal length. 1px grey rules end at the column edges.
-- Hover changes `wdth` from 85 to 100 and widens the gap 4px, with no translation. Selection is a step in grey value, not a pill.
-- Palette: `#F4F2EC #141414 #6E6E6A #BDBBB4 #E3241B #2B2B29`. Type: Archivo (width axis).
-
-**Karl Gerstner.** *Design the programme, not the layout.*
-- `grid-template-columns: repeat(58,1fr)` holds 2-, 3-, 4-, 5- and 6-column divisions at once. A 3-column article sits beside a 4-column data rail, aligned only at shared lines.
-- Components are morphological boxes: parameter rows (size, weight, color step, density, orientation), with each variant one selection per row. Never hand-tune a one-off.
-- The palette is 5 equal OKLCH steps between two poles. Meaning comes from step index (1 = surface, 5 = action).
-- The hero is purely typographic. A visible permutation control reflows the columns or steps the color, so the system shows itself. Add a "specimen" view of all variants.
-- Palette: `#1B1430 #4A2F7A #9C7BD4 #F26A1B #F7A35C #F4F1EA #111111`.
-
-**Wim Crouwel.** *Show the grid as graph paper and build everything cell by cell.*
-- A permanent hairline grid of 40px squares at 10–15% opacity. Every element snaps to whole cells (lint for it). Columns cluster 3-1-3.
-- All UI text in one grotesque at one size (e.g. 15/20). Hierarchy comes from position and weight only. The display headline is a lowercase modular face 6–8 cells tall, cropped at the edge.
-- One red element per screen. Numbers use a dot-matrix face. Freeze constants across a series of pages.
-- Headings build stroke by stroke with `steps(n)`. Hover fills a whole cell with solid ink, like a pixel switching on.
-- Palette: `#F3F1EA #A9BCC4 #111111 #E3241B #FF3D8B #2BD96B`.
-
-**Wolfgang Weingart (Swiss Punk).** *Keep the Swiss grid and push every rule too far from inside.*
-- A visible 12-column grid with exactly one module shifted half a column so it overlaps its neighbor. Section intros step like stairs (`indent: calc(3ch*n)`).
-- Track one word to 1em or more at body size, so the spacing alone makes it a headline. Labels reverse out of black bars that overshoot unevenly (2ch left, 9ch right).
-- Cyan and magenta planes multiply behind the hero. Coarse halftone replaces gradients. Margins are deliberately unequal (6% and 11%).
-- Reveals use `steps()`, each line one beat later. Press offsets the layer 2px like a misregistration. Loaders repeat one word with widening tracking.
-- Palette: `#F2EFE8 #111111 #8A8A85 #00A0D6 #E4007C #FFE100`. Type: Archivo, two weights.
-
-### 4.5 MODERNIST ARCHITECTURE: the body moving through space
-The movement: proportion from the body, free planes, sequence, light and material.
-
-**Le Corbusier.** *A measured promenade, with color that advances or recedes.*
-- All spacing and type come from Modulor red (6/10/16/26/42/68) and blue (12/20/32/52/84) series stored as tokens. Ban every other value.
-- A 4-column structural grid with panels that float free of it. One panel is curved on one side only. Main content floats above a dark umber base band with a 32–52px gap.
-- Navigation is a promenade: one continuous scroll that switches back left, right, left, with ramp-angled reveals. A full-width 1:7 ribbon window frames the imagery.
-- Each plane gets one flat Polychromie color: blue and grey recede, a single vermilion plane advances. A "thick wall" sidebar is pierced with unequal tinted openings. Hover adds light, not size. A 4–6px light gap makes the header float.
-- Palette: `#FFF1CE #B5B5AF #395A8E #A33A29 #F2B573 #C6D4BD #333230`. Type: stencil caps for stage labels.
-
-**Mies van der Rohe.** *Free planes on a faint grid, with luxury spent on one surface.*
-- A faint bronze column grid (1px at 8%), with content hung *between* the lines. At most 3 free-standing panels of different widths (e.g. 5, 3 and 7 columns), offset so the gaps become paths. Never closed boxes.
-- Exactly one golden-onyx surface per screen. The rest is travertine, white enamel lines or grey-green glass (blur 12px at 30%).
-- The top 40vh is an empty plaza: one wordmark and one action. The dense core sits at 45/55, never 50/50. Bronze mullion rules run every 64px in tables.
-- Components get 3 states only (closed, half, open). Navigate by sliding planes sideways. Radius 0, 1px hairlines.
-- Palette: `#E9E2D3 #F7F7F4 #C9A25E #2F4A3E #5B4632 #7E8A86 #1C1C1A`. Type: precise grotesk.
-
-**Frank Lloyd Wright.** *Compression, then release; everything grown from one unit.*
-- A 2:1 unit (16×8px) for everything, shown as faint scored joints. Key flows start with a dark 56px entry strip, then release into an ochre band ≥60vh.
-- Navigation sits off-axis (left or bottom-left). Content anchors to a dark "hearth" column about 1/5 of the width, and panels cantilever 10–15% past the container.
-- Horizontal 2px oak rules, no vertical dividers. 90% earth tones and one Cherokee-red mark. Ornament is a leaded-glass SVG with green and gold squares in threes.
-- Panels slide in sideways 24–40px, never scaling from the center. Galleries are one descending ramp with a sticky spine. Hover thickens the top border and dims the surroundings.
-- Palette: `#E9E1CC #C7A66B #B07E55 #5E4630 #9C3B26 #6F8A4D #C9A23A`. Type: Josefin Sans tracked caps, Alegreya body.
-
-**Alvar Aalto.** *Design for the real posture; a strict grid with one free curve.*
-- A strict 12-column grid broken once per screen by a single wave-edged panel where the main task lives.
-- Posture first: primary actions in the bottom 40% on mobile. The header is darker green-grey than the canvas, so the eye settles downward. Light falls from above as a soft radial gradient, never glare.
-- One yellow line marks the user's path (progress or active step) and appears nowhere else. Hierarchy is terraced: nested levels indent 8–12px with a 2% tone shift.
-- Every control shares the same 6px bent corner. Add faint birch grain deeper in, and a tactile 1px inset on press. Vary gutters ±15% so the grid reads as a forest. Motion settles with overdamping.
-- Palette: `#F3EEE3 #D9C3A0 #5E7F74 #E8B92F #3E9A9C #D9692B #24221F`. Type: Source Sans 3, a 1.2 scale with emphasis by weight.
-
-**Luis Barragán.** *A walled courtyard: one saturated wall, thresholds, silence.*
-- 60–75% of the screen is one flat field. Content sits in a single off-center rectangular "portal" near the 1:3 line.
-- Flows start compressed (28ch, dim, small type), then open into full-bleed space. A full-height color plane acts as a threshold, revealing the next section through a vertical slot that widens on scroll.
-- One saturated plane per view, edge to edge (pink, yellow or violet), never as pills or chips. Yellow spills onto its neighbor as a faint wash, like light through glass. A freestanding offset plane overlaps the hero by 15%.
-- Headings are tiny wide-tracked caps (12–14px, 0.25em) inside huge fields. Transitions are slow (700–900ms). No sticky chrome. Hover recolors a whole plane.
-- Palette: `#E7417A #F2B705 #7A5BA6 #2F5FB3 #C46A2B #EFE8DC #3B3632`. Type: Archivo Expanded.
-
-### 4.6 JAPANESE MA & WABI-SABI: the interval, emptiness, light
-The movement: *ma* (the meaningful gap), emptiness as invitation, indirect approach, one material.
-
-**Hokusai.** *Invert scale: the huge near form, and the real subject tiny inside its gap.*
-- A foreground shape takes 60–70% of the hero, with the CTA or key number small in its negative space. Show the key metric through a `clip-path: circle()` hole.
-- The horizon sits at 72%: one flat graded field above, content packed below. A "36 views" component shows one data object in several framings.
-- Blue on blue: translucent Prussian blues multiplied over washi, with no black and no shadows. 1.5px outlines with flat fills. One benigara-red accent. One scalloped wave divider.
-- Pull to refresh curls into a wave, holds at the crest, then breaks. Empty states are grids of tiny gesture sketches.
-- Palette: `#E9DFC7 #003153 #1E2B3A #9DB8C8 #A8432E #E6C7AB`. Type: Shippori Mincho headings.
-
-**Tadao Ando.** *A dark concrete box, one exact cut of light, an indirect path.*
-- A 1:2 tatami module drawn as faint tie-hole dots. Split the key view into three equal bands with the middle one empty and lit, so the user must cross it.
-- Concrete greys plus deep shadow. One slot of light (a vertical or cruciform `clip-path`) marks the single primary action. The only hue appears inside a masked window. One element sits 15° off-axis.
-- Small tracked grey-on-grey text, with one hero word at weight 200 in the void. Concrete noise at 3–4%.
-- Reveals take 0.9–1.4s, with light sweeping from one edge. The gradient follows the time of day. No CTA on arrival: a quiet threshold comes first. Hover darkens the surroundings.
-- Palette: `#8E8D88 #C9C7C1 #1C1C1B #F4F1E8 #6B5A45 #3E6A7A`.
-
-**Kenya Hara.** *Emptiness as a vessel the user fills.*
-- A horizon layout: two warm-white fields at 55/45 split by a hairline, one ≤24px element on the line, nothing else above the fold. The brand sits at 11px in the bottom-left corner.
-- Name containers by what they are ("Notes"), not by prescribed use. Empty states are a blank canvas with one hairline and one quiet prompt.
-- One weight (400). Hierarchy comes from isolation (48px+ of space), never from boldness, and size jumps stay ≤1.5×. Ban #FFF: layer 2–3 whites a few percent apart. One burgundy point per screen.
-- Paper grain at 2–3%, and a 1px inset on press. Fades take 800ms after a 200ms empty pause. Text measure 32–38ch, top margin ≥20vh. Make one ordinary control slightly unfamiliar (exformation).
-- Palette: `#F5F2EB #E9E4D8 #EEF1F2 #3A3733 #8C877E #7F0019`. Type: Zen Kaku Gothic New, with Noto Serif JP for one heading.
-
-**Ikko Tanaka.** *A tangram of flat planes on a grid; edges only where colors meet.*
-- Hero and empty-state emblems are built from 5–9 CSS primitives (circles, quarter circles, rectangles) on an 8-unit grid, with no outlines.
-- One flat field per zone, with hard color changes and no dividers. The image takes the top 70%. Title, meta and CTA sit in a compact bottom band at 12–14px.
-- One vermilion "lips" accent per screen, under 5% of the area. A high-contrast Mincho at 48–72px against a 12px sans caption. Near-symmetry with one element offset by half a unit.
-- Planes snap in with `clip-path: inset()` at a 70ms stagger, never with fades or blur. Hover recolors a plane.
-- Palette: `#C9C2B4 #F3E9D8 #141414 #D8262E #EFA7A4 #7F0019 #2F5D8A`.
-
-**Kazuyo Sejima / SANAA.** *A field, not a hierarchy: equal rooms in one thin outline.*
-- One softly rounded container holds 6–12 rooms of different proportions but equal weight. Rows are offset 8–16px on y. No hero and no single primary CTA: offer 3–4 peer entry points.
-- Near-white value steps (2–3%) plus 1px hairlines, never shadows. Color comes only from content seen through translucent panels.
-- Headings ≤1.25× body at weight 300–400. Structure as thin as it can be (1px borders, 2px progress). Toolbars float without a slab.
-- 500ms opacity/blur dissolves. Hover raises transparency, not elevation. Tabs become one continuous pannable canvas. One reflective "canopy" gradient.
-- Palette: `#FBFBFA #F1F2F1 #E3E6E5 #B9BEBF #8A8D8C #2B2D2E #9FB8A6(≤3%)`. Type: Inter 300.
-
-### 4.7 ART NOUVEAU & VIENNA SECESSION: ornament as system, the total work of art
-The movement: Gesamtkunstwerk (design everything to the spoon), with ornament concentrated by rule rather than sprinkled.
-
-**Alphonse Mucha.** *A vertical shrine: halo, frame, lettering cast as one piece.*
-- A tall format (about 1:2.9 for splash screens). An ornamental title band takes ~15%, with lettering stretched to fill the width exactly via `clamp()` and tracking. The subject sits before a 1.2× gold-rimmed halo disc at the 33% mark.
-- Rigid zigzag or tile borders around fluid content (never both curvy). One whiplash vine grows out of the logo. Ornament gathers at the focus, and the outer 30% stays flat.
-- Variable-width sepia contours instead of shadows. Muted pastels on tan paper, with gold only for frames and selection.
-- Ship it as a Documents Décoratifs kit (frame, halo, border, lettering, flora, 4 seasonal palettes). Hover draws a gold contour over 700ms.
-- Palette: `#E9DCC3 #B8A4C9 #E3A48A #9FB7C9 #8A8C5A #C49A3A #3E3330`.
-
-**Gustav Klimt.** *92% flat metallic ornament, 8% tender human detail.*
-- A 1:1 hero, 90% flat ornamental field, with one photographic "face" zone (~8%) above center that is never overlaid or animated.
-- Two pattern tokens: rectangles (black/ivory) for structure, circles and ovals for personal content. Never both on one element.
-- Edges come from changes in pattern density, never borders or shadows. Gold is a field, not a button: ink-on-gold CTAs and one coral accent.
-- Motion is only light: a cursor- or tilt-tracked shimmer over the gold (overlay blend), with cells glinting one by one. Onboarding is a frieze strip alternating dense and sparse panels.
-- Palette: `#C9A13B #7A5A22 #1E1A16 #C8C6BE #EAD1C0 #3E6B4A #B5432F`. Type: tall inscriptional caps.
-
-**Antoni Gaudí.** *Forces find the form; light-shifting broken color over honest structure.*
-- Dividers are inverted catenaries (`y = a·cosh(x/a)`). One integer token (6/8/10/12) drives each component's height, radius, color and size. Nesting halves the padding and grows the radius until the deepest chips become pills.
-- Hero surfaces use trencadís: a Voronoi mosaic of 40–120 shards in 3–4 neighboring hues with 2px grout, seeded per user.
-- Color is saturated low near the thumb and bleaches to prismatic white at the top. Blue in the morning, red-orange in the evening, following the local clock.
-- Lists have serpentine edges with bays holding actions. Media frames use tapered, bone-like mullions. Motion is gravity springs, and dismissed sheets fall along a catenary.
-- Palette: `#E9DFCB #2F6FA8 #4F9A86 #D99A2B #C2452D #7B5B8C #FDFBF5`.
-
-**Josef Hoffmann.** *The square as the whole system; edges carry the volume.*
-- `--q: 8px`, and every dimension is a multiple of it. Cards get a double rule (1px outer plus a 2px outline inset 6px) in place of shadows. Radius 0, except one deliberate round object per screen.
-- Checker bands (8×8 conic-gradient) appear only along the top of the app bar and the footer. Gilt marks only the border of the single focused element.
-- Progress and loading show as a perforated lattice whose squares turn black in sequence. Section titles are justified caps in square plaques.
-- `steps(4)` mechanical motion. One "tower" element at 1.5× row height. Theme everything as a set, down to the scrollbar, favicon and email.
-- Palette: `#F7F5EF #111111 #9C7A3C #2F5D8C #C9A66B #1F3B2D`. Type: Josefin Sans caps.
-
-**Charles Rennie Mackintosh.** *A tall frame first, then one small flower inside.*
-- Portrait-only cards and panels (1:4 columns). Content is grouped by "high-back" posts: 2px vertical rules 1.5× taller than their content, ending in a 3×3 grid of 4px squares.
-- One register per screen: dark oak with a single lit focal card, or white enamel. Never mixed. Pink and purple stay under 5% of pixels, and silver handles secondary emphasis.
-- One stylized square rose, varied slightly at each use. Ornament only at nodes (active tab, CTA, title). A 24px silver frieze replaces the nav bar.
-- Crossfade between rooms (dark ↔ white) over 500ms. In dark lists, only the hovered row warms. Headings are condensed caps with offset crossbars.
-- Palette: `#F3F0E8 #1C1615 #8B7F70 #B8B8B4 #D79FAD #5B3966 #7C9677`.
-
-### 4.8 MINIMALISM / LIGHT & SPACE: the serial, the specific, perception itself
-The movement: no composition, only order, interval, material and light. Perception is the medium.
-
-**Donald Judd.** *One thing after another: the gap is the module.*
-- The gutter equals the module (64px rows get 64px gaps). Rows of blocks step by Fibonacci widths (1,1,2,3,5,8 × 16px), with gaps shrinking inversely.
-- Every card has the same outer size and differs only by internal splits (50/50, a diagonal hairline, a recessed slot). Dashboards are one row of equal units with no hero.
-- One accent applied to a whole face only, never to links or icons. Edges stay raw grey metal. Type sizes come from the progression (13/21/34) and stop there.
-- Linear 90ms stagger. Hover moves light across the surface without lifting. The item count adapts to the viewport but the module never does.
-- Palette: `#F1EEE7 #BFC3C4 #8E9596 #C9A26B #C8261C #4A2C5E #1C1C1B`.
-
-**Agnes Martin.** *A trembling hand-ruled grid floating on pale washes.*
-- A centered square panel (72vmin) with contents inset 5%. Rows are 1:6 rectangles, never squares, sized from the container width.
-- Rules are 0.5–1px graphite at 65% with a 0.3px `feTurbulence` wobble, and they stop short of every edge. Sections are translucent washes (alpha 0.25–0.4) of equal lightness over gesso with 2–3% grain.
-- Jost 300 at 16px, 0.04em, line-height 1.8, with no bold anywhere. Labels in lowercase mono sit on the ruled lines.
-- Only opacity fades, ≥1s, row by row. Hover deepens the wash by one step. Distance works as zoom: collapsed bands expand to reveal the ruled detail. One gold hairline action per screen.
-- Palette: `#F5F2EB #E9DAD3 #D3DFDC #F2EBC6 #D9CCB6 #9A9893 #C2AB78`.
-
-**Dan Flavin.** *Color is a source, not a fill: light thrown onto edges and corners.*
-- A flat charcoal ground with no cards. Structure is 3–4px glowing bars on edges and inner corners, in four lengths only (25/50/75/100%).
-- Accents glow outward (`box-shadow: 0 0 24px 6px` in their own hue at 35%), tinting neighboring surfaces. Where two glows meet they blend with `screen` to pale white. One emitted hue per app zone.
-- An inner-corner L of two bars plus a radial gradient makes the panel brightest at the fold. One 45° bar marks the single most important element.
-- Elements flicker on (opacity 0 → .8 → .2 → 1 over 120ms), then bloom. Paywalls are see-through barriers of vertical light bars. Toggles have a pink face and a green face. Headings are lowercase with parenthetical dedications.
-- Palette: `#1A1B1E #F2F7FF #FFF1D6 #5BFF7A #FF6FB5 #FFD23F #6B3CFF`. Type: Barlow Condensed.
-
-**James Turrell.** *One field of light, one knife-edge aperture, slow perception.*
-- One flat field covers ≥75% of the viewport. All content sits in one borderless aperture defined only by a 4–8% lightness step. No borders or shadows (focus rings excepted). The canvas edges fade into the field with a radial mask.
-- Hero and empty states are 3–5 nested elliptical rings, each ~3% lighter.
-- The frame color drifts over 60s (dusk pink → lilac → twilight grey) while content stays fixed. Errors and successes tint the whole field for 2s instead of showing badges.
-- Hover is +6% luminance over 400ms. Drill-down grows the aperture from 20% to 100% over 900ms while the field dims. On entry, the bare field shows for 1.2s before content resolves (dark adaptation). Never bold.
-- Palette: `#F2EEF3 #8C8A97 #3B4FB8 #E9A3B9 #9B7FD1 #F2A541 #14131C`. Type: Jost 200, Manrope 300.
-
-**Sol LeWitt.** *The screen is an executed instruction; enumerate every valid variant.*
-- Write the layout as a rule ("3×4 cells, one variant each, sorted by X") and print it in small mono on the screen.
-- Show every valid combination in a matrix instead of a curated top 3, sorted along one labeled axis. The base module is deliberately dull: a hairline square, no radius. Keep a 1:8.5 frame-to-void ratio.
-- Color by index (`nth-child(4n+…)` → red, yellow, blue, grey). Overlapping states multiply as washes. Every instance gets a catalogue code ("4/12").
-- Generated art and avatars are seeded by user ID. An "instructions" toggle reveals each visualization's rule. Bold mode is full-bleed flat primary bands. Linear sequential reveals.
-- Palette: `#F4F2EC #2B2B2B #D2322D #F2C230 #1F4FA3 #8C8C88 #E8742A`. Type: IBM Plex Mono.
-
-### 4.9 OP & KINETIC ART: the eye and the moving viewer complete the work
-The movement: color and movement happen in perception and in the user's own motion. Apply the guardrails strictly here.
-
-**Bridget Riley.** *Hold everything constant except one variable, changed at a designed tempo.*
-- Lists compress geometrically toward the selected item (row heights 64 → 32px, then reopening). The densest point sits 62–67% across, never at center.
-- Saturation ramps from grey at the edges to full vermilion and turquoise in one band under 15% of the screen. Test every color beside its real neighbor.
-- Archivo `font-stretch` runs 125% → 70% across the nav, with the active item most compressed. Separators are sine waves whose amplitude rises toward content.
-- Curved stagger timing. Loaders are slow ≥2s waves through 1px lines. Scroll shifts the phase of a stripe field. Required: avoid pattern glare, honor reduced motion, keep text on flat panels, offer a "calm surface" toggle.
-- Palette: `#F3F0E8 #151413 #8E8D89 #E4472C #23ADA8 #C9B3D6 #E9C46A`.
-
-**Victor Vasarely.** *A plastic-unit alphabet: square ground plus inset form plus numbered color.*
-- One square token `--u`, with every element 1u, 2u or 4u. Components are `ground + form + color index` permutations (`<Unit form="disc" ground="blue-3" figure="yellow-1">`).
-- A Vega radial lens: the main KPI sits at the bulge peak at 2×, and the surrounding tiles shrink with distance. List rows step along a ramp (blue-1 → blue-7).
-- States invert figure and ground. Empty states are 4px Zebra stripes, with shapes made only by a 90° stripe turn. Exactly one inverted unit marks the CTA.
-- A "Folklore" mode lets users rearrange their grid, saved as a shareable code. Interactions send scale waves through neighboring cells.
-- Palette: `#0E0F1A #2433A6 #6A2C91 #E0402A #F4C21B #15936A #F3F1EA`. Type: tracked Jost caps, Space Mono codes.
-
-**Carlos Cruz-Diez.** *Color is an event between bands, a function of the viewer's position.*
-- Full-bleed `repeating-linear-gradient` bands at a 4px pitch, with content on the field and never in cards. Interleave 2px red and 2px green so yellow appears optically. Real yellow is reserved for the one critical action.
-- Two band layers parallax at different scroll speeds (1.0× / 0.85×). Pointer x maps to `--phase`, offsetting the bands by up to half a pitch.
-- Color animates only through `animation-timeline: scroll()`, never on a timer. Each route floods with one light-primary tint, with 20–30vh blend thresholds.
-- Stem-heavy condensed headlines are clipped to the stripes. One circle intrudes per screen. A progress strip along the bottom advances its band sequence.
-- Palette: `#E1252B #14A04A #1E4FB8 #0D0D0F #F3F1EC #D8246F #F4C21F`. Type: Big Shoulders Display at 10–14vw.
-
-**Jesús Rafael Soto.** *Form from the density of identical strokes; solid from afar, strands up close.*
-- A ground of 1px black lines at a 4px pitch, with sparse foreground bars moving 2–6px with the cursor to make moiré.
-- Hero shapes are a grid of 2px bars, colored inside an ellipse and 15% grey outside, with no outline. Alternate rows are offset half a column.
-- 90% achromatic. One saturated yellow for the "virtual volume" (the current selection). Inactive items are 30–40% translucent strands.
-- Hover parts the bars with a damped spring, like a curtain of tubes around a hand. Semantic zoom: a dataset reads as one mass, then splits into strands as you zoom. Depth comes from stripes crossing at 2–5°.
-- Palette: `#F5F3EE #111111 #F2C200 #1F4FA8 #D8DDE0 #C8102E`. Type: tracked monolinear caps.
-
-**Julio Le Parc.** *A running system of a closed set of parts that the user plays, breaks and rebuilds.*
-- A near-black chrome frames a small lit window (15–25% of the viewport) holding a 12×12 grid of identical tiles. All content is tile states.
-- Colors come from a closed ring of 14 pure, equal-lightness hues, always shown as ordered runs of ≥3, never alone and never tinted. States move position along the ring.
-- Number everything as series ("Variation 07/14"). A permute control shows its rule ("shift +3"). Dismantle/reassemble buttons make breaking things safe.
-- Idle tiles sway on random phases (static under reduced motion). A cursor light throws reflected squares. Onboarding is a playful itinerary of physical actions.
-- Palette: `#0B0B0D #F4F4F0` plus a ring: `#E5222B → #FFB000 → #19A34A → #1F5BD8 → #C2188B`. Type: Archivo Expanded, Space Mono.
-
-### 4.10 POSTMODERN & NEW WAVE: irony, collision, layered depth, type as voice
-The movement: against "good taste" functionalism. Personality, density and noise as message. Keep functional UI legible.
-
-**Ettore Sottsass (Memphis).** *An object with a personality: a figure standing on a grid.*
-- The lower 60% is a 6-column block grid with every card a different flat hue and no white cards. Above it, one 30° slanted "arm" juts 1.5 columns past the container. Section dividers slant 30° in alternating directions.
-- A tiled black squiggle (Bacterio) works as a plinth under cards and footers, never behind text. One red primary action, and one deliberate clash (pink on red).
-- Headings in Rubik Mono One at 3–4× on color blocks. Labels in Space Mono uppercase like typewriter keys. Icons are built from 2–3 primitives with 2px black seams.
-- Overshoot springs on mount, hover tilts 2–3°, and a toy-like "spool cap" knob rotates on press.
-- Palette: `#E2231A #FFD100 #1F4FB4 #F5A3C7 #8ED8C8 #F4F1E8 #111111`.
-
-**April Greiman.** *A deep video composite with the tool's artifacts left visible.*
-- Build from ≥4 planes, each with its own `translateZ` and parallax speed (`perspective:1200px`). The hero strip rotates −11° across two layers while body text stays at 0°.
-- A violet → magenta → orange gradient field, never flat white. One huge image pixelated 6–10× (`image-rendering: pixelated`) beside razor-sharp vectors.
-- Hard-offset shadows (`6px 6px 0 cyan, -3px -3px 0 red`). One DayGlo-orange focal action. Bitmap 10px timecode metadata at the layer edges, plus ghost dot-grid fragments.
-- Images load from pixel blocks to sharp as a designed sequence. Hover splits elements into cyan and red copies for 150ms. Horizontal timelines enter at different depths.
-- Palette: `#1B1035 #E0457B #FF6A13 #00A6D6 #E3242B #D4F542 #F4F1EA`.
-
-**David Carson.** *Legibility is not communication; the page as painting (expressive surfaces only).*
-- The headline sits across the image, covered 15–30%. One column rotates 3° and breaks its column by 1.5× into the gutter. Display leading 0.78, with mixed sizes inside one headline.
-- Grayscale high-contrast photos with one spot color multiplied on top at a 4px misregistration. Photocopy noise and torn edges. Micro-captions cluster in one corner while the opposite corner stays empty.
-- Hard-cut `steps(3)` transitions with jitter. Hover tears the letterspacing open or briefly swaps in dingbats.
-- **Use** it only for heroes, editorial pages, splash screens, 404s and share cards. **Never** for nav, forms, checkout, settings, errors, tables or long body text. At most one illegible element per screen, decorative or with a legible duplicate.
-- Palette: `#E8E3D6 #151311 #8D8A84 #C4471C #00A0BE #D6E02A`.
-
-**Paula Scher.** *Type as a loud crowd held by one blunt structure.*
-- Mix weights inside one line (300 and 900). Headlines bleed off the edge and crop mid-letter, never shrinking to fit. At most three sizes, with the largest ≥6× body.
-- A strict orthogonal grid with one band rotated −12°. Thick 6–10px black rules, some diagonal, replace cards. One accent hue per section, and everything else ink on paper.
-- Directories, sitemaps and footers become dense typographic maps: justified all-caps walls with size set by popularity. Headlines wrap around cutout photos (`shape-outside`).
-- Syncopated `steps(3)` entrances with irregular delays. Hover pushes variable weight and width. The logo reduces to a two-second gesture.
-- Palette: `#111111 #F4F1EA #E2231A #FFD200 #0057B8 #FF3C78`. Type: Anton or another condensed wood-type face.
+§P lives in `references/principles.md`: **P.1** the UI problems mapped to the artist processes that solve them (scout here in Stage 2), **P.2** calibration ranges pooled from the measured works (set Stage 3 budgets from it), **P.3** tensions worth keeping (pick at most one per board, split by role). Open it in Stages 1–3. A session that starts at Stage 4 from an existing kit does not need it.
 
 ---
 
-## 5. Fast recipes
+## 4. The Library (opened in Stages 2 and 3 only)
 
-- **"Give me options" (default):** run Phases A–C with 5 variants: one Swiss (Crouwel or Gerstner), one Ma (Hara or Ando), one Modernist (Barragán or Wright), one Secession (Klimt or Hoffmann), and one Kinetic or Postmodern (Le Parc or Scher).
-- **Calm productivity tool:** Ruder, Sejima, Agnes Martin, Aalto, Mies.
-- **Data dashboard:** Gerstner, Judd, LeWitt, Vasarely (lens), Mondrian (Boogie mode for live data).
-- **Brand or marketing landing page:** Scher, Lissitzky, Barragán, Klimt, Greiman.
-- **Onboarding or flow:** Wright (compression and release), Ando (threshold), Le Corbusier (promenade), Lissitzky (thumb index).
-- **Playful consumer app:** Sottsass, Le Parc, Kandinsky, Huszár.
-- **Wild card:** ask for two artists from opposite corners of the axes map and force a synthesis ("Agnes Martin × Rodchenko").
+The 55 artist entries live in `references/library.md`, outside this file, so that Stage 4 can really be built without them. Each entry is a **process** (ordered steps with parameters that run with any palette, content or medium), the reasons it works, colour stated as relations, a type requirement, when it fails, and its **signature** (the surface traits never to carry together). The full study for each artist is `references/<movement>/<artist>.md`: key works examined (and which were visually checked), process and relations observed in the works, composition, colour, form and type, motion, UI translations for studies, what the artist would reject, and sources. A reference file's colour table is a *reference sample for strict studies and homage only*.
 
-## 6. Variant card template
+Movement folders: `01-bauhaus`, `02-de-stijl`, `03-constructivism`, `04-swiss`, `05-modernist-arch`, `06-japanese-ma`, `07-art-nouveau-secession`, `08-minimalism`, `09-op-kinetic`, `10-postmodern-newwave`, `11-growth-form`. File stems are the common short surname, lowercase, hyphenated, without diacritics (`mies`, `barragan`, `gaudi`, `huszar`, `muller-brockmann`, `van-der-leck`, `agnes-martin`, `le-corbusier`, `le-parc`, `cruz-diez`, `frei-otto`, `nervous-system`). Weingart's entry sits in Swiss; his file is in `10-postmodern-newwave/`.
+
+---
+
+## 5. Templates (board, kit, screen, study)
 
 ```
-VARIANT X: <Movement> / <Lead artist> (+ <secondary>)
-The move: <one sentence>
-Rules applied: 1… 2… 3… 4… 5…
-The one rule-break: <what and where>
-Palette: <hex: role, …>
-Type: <families, sizes, ratio>
-Motion: <grammar + durations>
-Interaction: <hover/focus/select behaviour>
-Genes offered: X-layout · X-color · X-type · X-motion · X-interaction · X-texture
-Guardrail notes: <contrast, legibility, motion-safety checks>
+BOARD: <name describing the idea, no artist names>          for: <product>
+Content truth: <one sentence>
+Thesis: <one sentence, no artist, no style>
+Tension kept: <pole A for role X ↔ pole B for role Y>
+Plates: 1 … 2 … (PLATE format from Stage 2) + case plates
+Layer owners: structure <plate> · colour <plate> · type <plate> · motion <plate> · interaction <plate>
+
+KIT <name> v<major.minor>
+Principles: K1 … K5
+Structure S1… · Colour C1… (role, token, budget) · Type T1… · Line/shape F1… · Motion M1… · Interaction I1…
+Components: <name: tokens, states>
+Voice V1… · Exception X1 · Do/Don't
+Provenance: rule | problem | principle | plate(s) | left behind
+Checks: name · caption · swap · elsewhere · three medians · reach
+
+SCREEN <name>   built from KIT v<…>
+Archetype: <…>   Components: <…>
+Decisions: <decision → kit rule IDs>
+Coherence: token lint · budgets · components · citations · sibling · crop · fit
+Guardrails: <contrast, motion, targets>
+
+TRIAD BOARD Tnn: <name of the idea, no artist>          seed <N> · level <…> · for: <product>
+Triad: <A> × <B> × <C>        Re-draw: none | <X → Y, Fails-when clause = case fact>
+Profile (case nouns)    Unit | Exception | Change | Mechanism | Fails here
+  A: … | … | … | … | …
+  B: … | … | … | … | …
+  C: … | … | … | … | …
+Bridge: <lock and key | shared mechanism | tension>: <one sentence>
+Tension kept: <pole for role X ↔ pole for role Y> | none
+Cast: Skeleton <member: steps kept> · Charge <member: steps kept> · Behaviour <member: steps kept>
+      scores <a+b+c> · runner-up <casting, total>
+Layer owners: structure · colour (surfaces / signals) · type · line · motion · interaction   (a member, or "case")
+Collisions: <step> → parameter of <owner's rule> | dropped: <why> | role territory        (one line each)
+Device (only if forced): scale split | time split | constraint | DUO + idle: <member>
+Thesis: <one sentence, the content truth inside, no artist, no style word>
+Specimen: <file> · <viewport> · zones with numbers · budgets (ground %, ink %, signal %)
+Tests: hinge A / B / C <what is lost> · thesis · case-fit P1…Pn (solved | untouched | worsened, members)
+       · name · patch · difference vs <nearest board>
+Handles: .S <one line> · .C <one line> · .B <one line>
+Left behind: <the steps and signature traits not carried>
+
+STUDY (Stage 2 single-artist study only): <Artist>, strict
+Findings: 1 <principle + evidence on this content> 2 … 3 …   Failure: <what the manner cost here>
 ```
 
-## 7. Provenance note
-These rules were distilled from museum, foundation and scholarly texts about each artist's works, plus general knowledge. They were not taken from direct image analysis. Hex values are approximations, and a few proportions are commonly cited analyses rather than measured facts. When images of the works are available (user uploads, browser access), look at them and correct an entry before relying on it heavily.
+## 6. Provenance note
+
+**How the entries were made.** Each study was first written from museum, foundation and scholarly texts (`references/BRIEF.md` is the research brief). In November 2026 the key works were then obtained and looked at: measured where a proportion was claimed, and their colour roles and area shares sampled (k-means in CIELAB on the painted or built area, frames and walls cropped out). Rules the images contradicted were corrected and missed moves added (`CHANGELOG.md`). Finally every entry was converted **from observation to process** (§1): what transfers is the procedure and the reasons it works, not the artist's colours or forms. Growth & Form (movement 11) was written from texts and images together.
+
+**Sources used.** Art Institute of Chicago, Cleveland Museum of Art, V&A, Met (object API), Tate, Stedelijk, Cooper Hewitt open data, Centre Pompidou, Kröller-Müller, Kunstmuseum Den Haag, Centraal Museum, RKD, Neue Galerie, Belvedere, MAK, Guggenheim, LACMA, Russian Museum, Pushkin Museum, Europeana, the Internet Archive and Wellcome scans of public-domain books, Arts Council Collection, Buffalo AKG, and official foundation, estate, practice and publisher sites. In the second retry pass, secondary reproductions found by web search were also allowed and are labelled as such (39 of the counted works). Wikimedia Commons refused this machine almost throughout and supplied only a few images. No image is stored in this skill.
+
+**Works visually checked** (282 named key works; substitutes checked in place of unobtainable works are noted in the reference files and not counted):
+- **Bauhaus.** Albers (4): Homage to the Square: Light Passage, 1956 (AIC) · Homage to the Square: Yellow Signal, 1962 (AIC) · Homage to the Square: Promise, 1967 (AIC) · Homage to the Square: New Light, 1967 (AIC). Bayer (5): universal alphabet, 1925 · Thuringian emergency banknotes, 1 and 2 million mark, 1923 (V&A) · Breuer Metallmöbel catalogue, 1927 (V&A) · 50 Jahre Bauhaus poster, 1968 (AIC) · World Geo-Graphic Atlas, 1953. Kandinsky (4): Composition VII, 1913 · Composition VIII, 1923 · Yellow-Red-Blue, 1925 · Several Circles, 1926. Klee (9): Twittering Machine, 1922 (MoMA) · Static-Dynamic Gradation, 1923 (Met) · Castle and Sun, 1928 · Ad Parnassum, 1932 (Kunstmuseum Bern) · Sunset, 1930 (AIC) · Mosaic-Like, 1932 (AIC) · Tightrope Walker, 1923 (CMA) · Architecture, 1921 (AIC) · Carnival in the Snow, 1923 (CMA). Moholy-Nagy (3): Light Play: Black White Gray, 1930 · Composition A.XX, 1924 · The Mavericks II (Die Eigenbrötler II), 1927 (AIC).
+- **De Stijl.** Huszár (4): De Stijl masthead/cover, 1917 · Bruynzeel boys' bedroom, Voorburg, 1918–c.1920 · Mechanical Dancing Figure, 1920 · Miss Blanche Virginia cigarettes, 1926–28. Mondrian (5): Tableau I, 1921 · Composition C (No. III) with Red, Yellow and Blue, 1935 · Composition with Yellow, Blue and Red, 1937–42 · Broadway Boogie Woogie, 1942–43 · Victory Boogie Woogie, 1942–44. Rietveld (4): Red Blue Chair, 1918 · Rietveld Schröder House, Utrecht, 1924 · Schröder House façade · Zig-Zag Chair, 1934. van der Leck (5): Batavier Line poster, 1915–16 · Composition 1917 No. 4 (Leaving the Factory) · The "Leaving the Factory" series, 1916–17 · Metz & Co. identity, from 1930 · H.C. Andersen, Het Vlas, 1941. van Doesburg (7): De Stijl magazine · Counter-Composition V, 1924 · Contra-compositie VII, 1924 · Counter-Composition VI, 1925 · Café Aubette ciné-dancing, Strasbourg, 1926–28 · Simultaneous Counter-Composition, 1929–30 · Colour scheme for apartments in Drachten, 1921.
+- **Constructivism & Suprematism.** Lissitzky (5): Beat the Whites with the Red Wedge, 1919 · Prouns, 1919–1923 · About Two Squares, 1922 · Proun Room, Great Berlin Art Exhibition, 1923 · For the Voice (Dlia golosa), 1923. Malevich (4): Suprematist Composition: Airplane Flying, 1915 · Dynamic Suprematism (Supremus No. 57), 1915–16 · Red Square, 1915 · Suprematist Composition: White on White, 1918. Popova (4): Spatial-Force Construction, 1921 · The Magnanimous Cuckold, 1922 · Textile designs for the First State Textile Printing Works (formerly Zindel), 1923–24 · Muzykal'naia nov' (Musical New Land) no. 10 cover, 1924. Rodchenko (3): Lengiz "Books in All Branches of Knowledge" poster, 1924 · Workers' Club, Paris 1925 · Lef no. 4 cover, 1924. Stepanova (4): Set for The Death of Tarelkin (Meyerhold), 1922 · Chevron flannel, Tsindel factory, 1924 (V&A) · SA (Sovremennaia arkhitektura) no. 2 cover, 1926 · Oktiabr' book catalog cover, 1927.
+- **Swiss.** Crouwel (4): Vormgevers poster, Stedelijk Museum, 1968 · New Alphabet, 1967 · Stedelijk catalogue series, 1964–84 · Stedelijk identity and posters, 1963–85. Gerstner (3): Designing Programmes · Morphological box of the typogram (in Designing Programmes) · Holzäpfel Büromöbel poster. Hofmann (6): Graphic Design Manual: Principles and Practice, 1965 · Giselle, Basler Freilichtspiele, 1959 · Stadt Theater Basel 1965, the "feets" poster · Added: Robert Jacobsen / Serge Poliakoff, Kunsthalle Basel, 1958; Stadttheater Basel 1962 and 1963/64; Schweiz kleines Land grosse Landschaft, c. 1965 · Wilhelm Tell, 1963 · Dot/line studies. Müller-Brockmann (5): Beethoven, Tonhalle Zürich · musica viva series · der Film, Kunstgewerbemuseum Zürich · Schützt das Kind! · Grid Systems in Graphic Design. Ruder (5): Typographie · "The Typography of Order", Graphis 85 · TM covers · Added: posters reproduced by Lars Müller Publishers · Added: Typographische Monatsblätter covers and inserts, bound volume.
+- **Modernist architecture.** Aalto (6): Viipuri Library, 1927–35 · Paimio Sanatorium, 1929–33 · Paimio armchair, 1931–32 · Stool 60, L-leg patented 1933 · Savoy Vase, 1936 · Villa Mairea, 1938–39. Barragán (5): Casa Luis Barragán, Mexico City · Capuchin Convent Chapel, Tlalpan · Cuadra San Cristóbal, with Andrés Casillas · Casa Gilardi · Torres de Satélite, with Mathias Goeritz. Le Corbusier (5): Villa Savoye, Poissy · Le Modulor · Notre-Dame du Haut, Ronchamp · Pilgrims' house, Ronchamp · Polychromie Architecturale. Mies (5): Barcelona Pavilion, 1929 · Golden onyx wall, Barcelona Pavilion · Farnsworth House, 1951 · Seagram Building and plaza, 1958 · Seagram bronze I-beams. Wright (5): Darwin D. Martin House "Tree of Life" window, 1904 · Robie House, Chicago, 1908–10 · Fallingwater, 1935–37 · Guggenheim Museum, 1943–59 · Coonley Playhouse triptych window, 1912.
+- **Japanese Ma.** Ando (5): Row House in Sumiyoshi (Azuma House), 1976 · Row House in Sumiyoshi: the building · Church of the Light, Ibaraki, 1989 · Chichu Art Museum, Naoshima, 2004 · Modern Art Museum of Fort Worth, 2002. Hara (8): MUJI "Horizon," 2003 · MUJI "Tea House," 2005 · RE-DESIGN, 2000 · HAPTIC, Takeo Paper Show 2004 · Designing Design, 2007 · White, 2009/2010 (Lars Müller) · Ex-formation (Lars Müller) · Nagano 1998 Olympic ceremony programmes. Hokusai (7): Under the Wave off Kanagawa (The Great Wave), c. 1830–32 · Thirty-six Views of Mount Fuji, c. 1830–32 · Fine Wind, Clear Morning ("Red Fuji") · Thunderstorm Beneath the Summit (Shower Below the Summit) · Fujimigahara in Owari Province · Hokusai Manga, 1814 onward (15 vols.) · Ryakuga hayaoshie, 1812–14. Sejima/SANAA (5): 21st Century Museum of Contemporary Art, Kanazawa · Glass Pavilion, Toledo Museum of Art · Serpentine Pavilion, London · Rolex Learning Center, EPFL Lausanne · New Museum, New York. Tanaka (6): Nihon Buyo poster · The 8th Sankei Kanze Noh · MUJI identity · Seibu target pattern · Kimono, Textilmuseum Max Berk · Hanae Mori poster.
+- **Art Nouveau & Secession.** Gaudí (4): Park Güell · Casa Batlló facade · Sagrada Família nave columns · Sagrada Família stained glass (with Joan Vila-Grau). Hoffmann (8): Hohe Warte houses, 1899–1902 · Lattice vases and baskets, c. 1906 · Purkersdorf Sanatorium, 1904–05 · Sitzmaschine armchair, 1905 · Palais Stoclet, Brussels, 1905–11 · Cabaret Fledermaus, 1907 · Rundes Modell cutlery, c. 1906 · Tall-case clock, c. 1906, added. Klimt (6): Adele Bloch-Bauer I, 1903–07 (Neue Galerie, 140 × 140 cm) · The Kiss, 1908–09 (Belvedere, 180 × 180 cm) · Beethoven Frieze, 1902 (Secession, about 2.15 × 34.14 m) · Stoclet Frieze, 1905–11 (Palais Stoclet, with the Wiener Werkstätte) · Judith I, 1901 (Belvedere), added · Square landscapes from 1899 on (e.g. Schloss Kammer on the Attersee). Mackintosh (5): Argyle Street Tea Rooms high-back chair, 1897 · Glasgow School of Art, 1897–99 / 1907–09 · Willow Tea Rooms, Salon de Luxe, 1903 · Hill House, 1902–04 · White-painted table, 1902, added. Mucha (6): Gismonda (Sarah Bernhardt), 1894–95 · Job (cigarette papers), 1896 · The Seasons, 1896 · Rêverie, 1897–98 · The Arts / The Precious Stones · Documents Décoratifs, 1902.
+- **Minimalism / Light & Space.** Agnes Martin (7): Friendship, 1963 · Untitled #4 / Untitled #12, 1977 · With My Back to the World, 1997 · Morning, 1965 · Untitled, 1961 · Untitled #8, 1990 · Untitled #5, 1994; Faraway Love, 1999; Happy Holiday, 1999. Flavin (4): "monument" 1 for V. Tatlin, 1964 · untitled (Marfa project), 1996–2000 · untitled, 1969 (AIC) · untitled, Santa Maria Annunciata in Chiesa Rossa, Milan, 1996–97. Judd (8): Untitled (stack), 1968 (AIC) · Untitled (stack), 1980 (Tate) · Untitled (progression), 1967 (Indianapolis) · Untitled, 1973 (Tate) · 100 untitled works in mill aluminum, 1982–86 (Chinati, Marfa) · Untitled, 1972 (Tate) · Untitled, 1968 (AIC) · Untitled, 1976 (AIC). LeWitt (4): Wall Drawing #63, 1971 (AIC) · Incomplete Open Cubes, 1974 · Wall Drawing #574, 1988 (AIC) · Six Geometric Figures (+ Two), 1980–1 (Tate). Turrell (5): Rayna, 1979 (AIC, installation photo, B&W) · Skyspaces, e.g. The Color Inside · Breathing Light, a Ganzfeld · Aten Reign · Roden Crater.
+- **Op & Kinetic.** Cruz-Diez (5): Physichromie 113, 1963/1976 · Physichromie No. 123, 1964 · Induction Chromatique n° 54. Bleu + Noir = Jaune, 1973 · Chromosaturation, 1965/1968 · Ambientación de Color Aditivo, Maiquetía airport, 1974–78. Le Parc (6): Continuel-Lumière Mobile, 1960 onward · Une journée dans la rue (GRAV), 19 April 1966 · Miroir en vibration and 3 jeux avec balles de ping-pong, 1965 · La Longue Marche, 1974 · Séquences progressives, 1959; Instabilité, 1959; Instabilité visuelle, 1959–70; Double progression, 1959–91 · Untitled, 1969. Riley (6): Movement in Squares, 1961 · Fall, 1963 · Hesitate, 1964 · Cataract 3, 1967 · Late Morning, 1967–68 / Rise I, 1968 · Deny II, 1967. Soto (6): Light Trap, 1965 (Tate) · Volume suspendu, 1968 (Pompidou) · Horizontal Movement, 1963 · Cardinal, 1965 · Colour volumes, Centre Pompidou (added in the retry pass, substitutes for the colour Penetrables) · Twelve Blacks and Four Silvers, 1966. Vasarely (4): Zebra · Unités plastiques · Supernovae, 1959–61 · Capella, 1964.
+- **Postmodern & New Wave.** Carson (3): Beach Culture · Ray Gun · nucollage.001. Greiman (6): CalArts poster (with Jayme Odgers), 1978 · Douglas W. Schmidt poster, 1980 · Your Turn, My Turn, 1983 · Design Quarterly #133, "Does It Make Sense?", 1986 · AIGA Communication Graphics poster, 1993 · Hand Holding a Bowl of Rice, Wilshire/Vermont, 2007. Scher (5): The Public Theater identity, 1994– · "Bring in 'da Noise, Bring in 'da Funk" poster, 1995 · Public Theater redraw, 2008 · Painted maps, 1998–2010s · Lucent Technologies Center for Arts Education (NJPAC), c. 2000. Sottsass (3): Valentine portable typewriter · Carlton room divider · Casablanca sideboard. Weingart (5): Typografische Monatsblätter covers, 1972–73 · Nine Collages series, 1974–75 · Kunsthalle Basel Kunstkredit 76/77, 1977 · Kunstkredit color posters, 1980–83 · Typographic Process posters NR.4 and NR.5, 1974 (added).
+- **Growth & Form.** Blossfeldt (5): Urformen der Kunst, Plate 1: Equisetum hiemale, young shoot ×25 · Plate 6: Equisetum hiemale ×8, and E. arvense fruiting cone ×12 · Plate 30: Saxifraga aizoon leaf rosette ×8 · Plate 54: Adiantum pedatum, young rolled fronds ×8 and ×12 · Plate 113: Asclepias speciosa umbel ×3. Frei Otto (6): German Pavilion, Expo 67, Montreal · Roofs of the Olympic Park, Munich · Multihalle, Mannheim · Institute for Lightweight Structures (IL), Stuttgart-Vaihingen · Soap-film form-finding models · IL 18, minimal surfaces between three rigid rings. Haeckel (5): Kunstformen der Natur, Tafel 1, Phaeodaria (Circogonia), 1899 · Tafel 4, Diatomea (Triceratium), 1899 · Tafel 8, Discomedusae (Desmonema), 1899 · Tafel 18, Discomedusae (Linantha), 1899 · Tafel 71, Stephoidea (Tympanidium), 1899–1904. Hepworth (5): Pelagos, 1946 · Oval Sculpture (No. 2), 1943, cast 1958 · Sphere with Inner Form, 1963 · Single Form (September), 1961 · Single Form (Eikon), 1937–8, cast 1963. Nervous System (5): Hyphae lamps · Floraform · Floraform, uniform-growth control · Kinematics · Generative jigsaw puzzles.
+
+**Not checked.** 98 named works could not be obtained after two retry passes (mostly museum sites that refuse scripted access, works with no reliably captioned reproduction, or Commons-only images). The reference files mark the rules that depended on them *unverified*, and no process step rests on an unverified claim. Thinnest coverage: Moholy-Nagy (3), Rodchenko (3), Gerstner (3), Carson (3), Sottsass (3).
+
+**Limits.** Colours of buildings and objects come from photographs and carry lighting casts; some works were seen only as book, publisher or secondary reproductions, whose colours are approximate; aged paper and faded inks were sampled as they are now. Conclusions rest on 2–9 named works per artist, not on whole careers; steps resting on a single work are listed in the rollout notes and flagged in the reference files where it matters.
+
+**How to use the measurements.** Measured figures are calibration for perception (§P.2) and become kit budgets. Reference-file hex tables are for strict studies and homage only; a kit takes processes, roles and area shares, never an artist's hexes.

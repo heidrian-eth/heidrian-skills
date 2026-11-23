@@ -1,0 +1,552 @@
+[
+ {
+  "stem": "aalto",
+  "artist": "Alvar Aalto",
+  "work": "Paimio Sanatorium",
+  "year": "1929–33",
+  "image": "assets/works/aalto.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Paimio_Sanatorium.jpg",
+  "license": "CC BY 2.0",
+  "credit": "Leon Liao, Wikimedia Commons"
+ },
+ {
+  "stem": "agnes-martin",
+  "artist": "Agnes Martin",
+  "work": "Morning",
+  "year": "1965",
+  "image": "assets/works/agnes-martin.jpg",
+  "link": "https://www.tate.org.uk/art/artworks/martin-morning-t01866",
+  "license": "© Estate of Agnes Martin, small thumbnail for commentary",
+  "credit": "Tate"
+ },
+ {
+  "stem": "albers",
+  "artist": "Josef Albers",
+  "work": "Studies for Homage to the Square (installation view, Tate Modern)",
+  "year": "1950s–1960s",
+  "image": "assets/works/albers.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Josef_Albers%27_Studies_for_Homage_to_the_Square.jpg",
+  "license": "© The Josef and Anni Albers Foundation / ARS, small thumbnail for commentary (photo CC BY 2.0)",
+  "credit": "Photo: Selena N. B. H., via Wikimedia Commons"
+ },
+ {
+  "stem": "ando",
+  "artist": "Tadao Ando",
+  "work": "Church of the Light, Ibaraki",
+  "year": "1989",
+  "image": "assets/works/ando.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Ibaraki_Kasugaoka_Church_light_cross.jpg",
+  "license": "CC BY-SA 3.0",
+  "credit": "Bergmann, Wikimedia Commons"
+ },
+ {
+  "stem": "barragan",
+  "artist": "Luis Barragán",
+  "work": "Casa Gilardi, Mexico City (street facade)",
+  "year": "1975–77",
+  "image": "assets/works/barragan.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Casa_Gilardi_de_Luis_Barrag%C3%A1n,_2024.jpg",
+  "license": "CC BY-SA 4.0",
+  "credit": "TSolange, Wikimedia Commons"
+ },
+ {
+  "stem": "bayer",
+  "artist": "Herbert Bayer",
+  "work": "universal alphabet (proof)",
+  "year": "1925",
+  "image": "assets/works/bayer.jpg",
+  "link": "https://collections.vam.ac.uk/item/O1348589",
+  "license": "© Herbert Bayer estate / VG Bild-Kunst, small thumbnail for commentary",
+  "credit": "Victoria and Albert Museum, London"
+ },
+ {
+  "stem": "blossfeldt",
+  "artist": "Karl Blossfeldt",
+  "work": "Urformen der Kunst, Plate 54: Adiantum pedatum",
+  "year": "1928",
+  "image": "assets/works/blossfeldt.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Karl_Blossfeldt_Adiantum_pedatum_1928.jpg",
+  "license": "Public domain",
+  "credit": "Karl Blossfeldt, via Wikimedia Commons"
+ },
+ {
+  "stem": "carson",
+  "artist": "David Carson",
+  "work": "National Theatre 50th anniversary (poster)",
+  "year": "2013",
+  "image": "assets/works/carson.jpg",
+  "link": "https://collections.vam.ac.uk/item/O1364133/",
+  "license": "© David Carson, small thumbnail for commentary",
+  "credit": "V&A"
+ },
+ {
+  "stem": "crouwel",
+  "artist": "Wim Crouwel",
+  "work": "New Alphabet",
+  "year": "1967",
+  "image": "assets/works/crouwel.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:NewAlphabetSpec2.png",
+  "license": "© Wim Crouwel estate, small thumbnail for commentary",
+  "credit": "Wikimedia Commons"
+ },
+ {
+  "stem": "cruz-diez",
+  "artist": "Carlos Cruz-Diez",
+  "work": "Physichromie No. 113",
+  "year": "1963, reconstructed 1976",
+  "image": "assets/works/cruz-diez.jpg",
+  "link": "https://www.tate.org.uk/art/artworks/cruz-diez-physichromie-no-113-t02094",
+  "license": "© Carlos Cruz-Diez estate, small thumbnail for commentary",
+  "credit": "Tate"
+ },
+ {
+  "stem": "flavin",
+  "artist": "Dan Flavin",
+  "work": "untitled (Marfa project)",
+  "year": "1996–2000",
+  "image": "assets/works/flavin.jpg",
+  "link": "https://chinati.org/collection/dan-flavin/",
+  "license": "© Stephen Flavin, small thumbnail for commentary",
+  "credit": "Chinati Foundation"
+ },
+ {
+  "stem": "frei-otto",
+  "artist": "Frei Otto",
+  "work": "Roofs of the Olympic Park, Munich (with Behnisch & Partner)",
+  "year": "1968-72",
+  "image": "assets/works/frei-otto.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Olympic_Roof_Munich,_July_2018_-02.jpg",
+  "license": "CC BY-SA 4.0",
+  "credit": "Martin Falbisoner, Wikimedia Commons"
+ },
+ {
+  "stem": "gaudi",
+  "artist": "Antoni Gaudí",
+  "work": "Casa Batlló facade",
+  "year": "1904–06",
+  "image": "assets/works/gaudi.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Casa_Batll%C3%B3_01.jpg",
+  "license": "CC BY-SA 3.0",
+  "credit": "Bernard Gagnon, Wikimedia Commons"
+ },
+ {
+  "stem": "gerstner",
+  "artist": "Karl Gerstner",
+  "work": "kalte Kunst? (book cover)",
+  "year": "1957",
+  "image": "assets/works/gerstner.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Karl_Gerstner_Kalte_Kunst_1957.jpg",
+  "license": "© Karl Gerstner estate, small thumbnail for commentary",
+  "credit": "Wikimedia Commons"
+ },
+ {
+  "stem": "greiman",
+  "artist": "April Greiman",
+  "work": "Design Quarterly #133, \"Does It Make Sense?\"",
+  "year": "1986",
+  "image": "assets/works/greiman.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:DQ133.jpg",
+  "license": "CC BY-SA 4.0 (photo)",
+  "credit": "Wikimedia Commons"
+ },
+ {
+  "stem": "haeckel",
+  "artist": "Ernst Haeckel",
+  "work": "Kunstformen der Natur, Tafel 4: Diatomea",
+  "year": "1899",
+  "image": "assets/works/haeckel.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Haeckel_Diatomea.jpg",
+  "license": "Public domain",
+  "credit": "Ernst Haeckel, via Wikimedia Commons"
+ },
+ {
+  "stem": "hara",
+  "artist": "Kenya Hara",
+  "work": "White (book, Lars Müller)",
+  "year": "2009",
+  "image": "assets/works/hara.jpg",
+  "link": "https://a-g-i.org/user/kenyahara/",
+  "license": "© Kenya Hara, small thumbnail for commentary",
+  "credit": "AGI"
+ },
+ {
+  "stem": "hepworth",
+  "artist": "Barbara Hepworth",
+  "work": "Pelagos",
+  "year": "1946",
+  "image": "assets/works/hepworth.jpg",
+  "link": "https://www.tate.org.uk/art/artworks/hepworth-pelagos-t00699",
+  "license": "© Bowness, small thumbnail for commentary",
+  "credit": "Tate"
+ },
+ {
+  "stem": "hoffmann",
+  "artist": "Josef Hoffmann",
+  "work": "Palais Stoclet, Brussels",
+  "year": "1905–11",
+  "image": "assets/works/hoffmann.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Palais_Stoclet,_vue_ensemble.JPG",
+  "license": "CC BY-SA 3.0",
+  "credit": "Busoni, Wikimedia Commons"
+ },
+ {
+  "stem": "hofmann",
+  "artist": "Armin Hofmann",
+  "work": "Henry Moore and Oskar Schlemmer exhibition (poster)",
+  "year": "1955",
+  "image": "assets/works/hofmann.jpg",
+  "link": "https://collections.vam.ac.uk/item/O121807/",
+  "license": "© Armin Hofmann estate, small thumbnail for commentary",
+  "credit": "V&A"
+ },
+ {
+  "stem": "hokusai",
+  "artist": "Katsushika Hokusai",
+  "work": "Under the Wave off Kanagawa (The Great Wave)",
+  "year": "c. 1830–32",
+  "image": "assets/works/hokusai.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg",
+  "license": "Public domain",
+  "credit": "Metropolitan Museum of Art, via Wikimedia Commons"
+ },
+ {
+  "stem": "huszar",
+  "artist": "Vilmos Huszár",
+  "work": "Vignet voor De Stijl (De Stijl masthead design)",
+  "year": "1917",
+  "image": "assets/works/huszar.jpg",
+  "link": "https://www.centraalmuseum.nl/en/collection/27425-vignet-voor-de-stijl-vilmos-huszar",
+  "license": "© Vilmos Huszár estate, small thumbnail for commentary",
+  "credit": "Centraal Museum, Utrecht"
+ },
+ {
+  "stem": "judd",
+  "artist": "Donald Judd",
+  "work": "Untitled (stack)",
+  "year": "1980",
+  "image": "assets/works/judd.jpg",
+  "link": "https://www.tate.org.uk/art/artworks/judd-untitled-t03087",
+  "license": "© Judd Foundation, small thumbnail for commentary",
+  "credit": "Tate"
+ },
+ {
+  "stem": "kandinsky",
+  "artist": "Wassily Kandinsky",
+  "work": "Composition VIII",
+  "year": "1923",
+  "image": "assets/works/kandinsky.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:37.262_ph_web-1.jpg",
+  "license": "Public domain",
+  "credit": "Solomon R. Guggenheim Museum, via Wikimedia Commons"
+ },
+ {
+  "stem": "klee",
+  "artist": "Paul Klee",
+  "work": "Ad Parnassum",
+  "year": "1932",
+  "image": "assets/works/klee.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Ad_Parnassum,_Paul_Klee_(1932,_274).jpg",
+  "license": "Public domain",
+  "credit": "Kunstmuseum Bern, via Wikimedia Commons"
+ },
+ {
+  "stem": "klimt",
+  "artist": "Gustav Klimt",
+  "work": "The Kiss",
+  "year": "1908–09",
+  "image": "assets/works/klimt.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+  "license": "Public domain",
+  "credit": "Belvedere, Vienna, via Google Arts & Culture / Wikimedia Commons"
+ },
+ {
+  "stem": "le-corbusier",
+  "artist": "Le Corbusier",
+  "work": "Villa Savoye, Poissy",
+  "year": "1928–31",
+  "image": "assets/works/le-corbusier.jpg",
+  "link": "https://en.wikipedia.org/wiki/File:VillaSavoye.jpg",
+  "license": "CC BY-SA 3.0 (photo)",
+  "credit": "Wikipedia"
+ },
+ {
+  "stem": "le-parc",
+  "artist": "Julio Le Parc",
+  "work": "Continual Mobile, Continual Light",
+  "year": "1963",
+  "image": "assets/works/le-parc.jpg",
+  "link": "https://www.tate.org.uk/art/artworks/le-parc-continual-mobile-continual-light-t00678",
+  "license": "© Julio Le Parc, small thumbnail for commentary",
+  "credit": "Tate"
+ },
+ {
+  "stem": "lewitt",
+  "artist": "Sol LeWitt",
+  "work": "Six Geometric Figures (+ Two) (Wall Drawings)",
+  "year": "1980–81",
+  "image": "assets/works/lewitt.jpg",
+  "link": "https://www.tate.org.uk/art/artworks/lewitt-six-geometric-figures-two-wall-drawings-t03100",
+  "license": "© Estate of Sol LeWitt, small thumbnail for commentary",
+  "credit": "Tate"
+ },
+ {
+  "stem": "lissitzky",
+  "artist": "El Lissitzky",
+  "work": "Beat the Whites with the Red Wedge",
+  "year": "1919",
+  "image": "assets/works/lissitzky.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Beat_the_Whites_with_the_Red_Wedge.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons"
+ },
+ {
+  "stem": "mackintosh",
+  "artist": "Charles Rennie Mackintosh",
+  "work": "Glasgow School of Art, north front",
+  "year": "1897–99 / 1907–09",
+  "image": "assets/works/mackintosh.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Wfm_glasgow_school_of_art.jpg",
+  "license": "CC BY-SA 3.0",
+  "credit": "John a s, Wikimedia Commons"
+ },
+ {
+  "stem": "malevich",
+  "artist": "Kazimir Malevich",
+  "work": "Suprematist Composition: Airplane Flying",
+  "year": "1915",
+  "image": "assets/works/malevich.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Suprematist_Composition_-_Airplane_Flying_(Malevich,_1915).jpg",
+  "license": "Public domain",
+  "credit": "Museum of Modern Art, via Wikimedia Commons"
+ },
+ {
+  "stem": "mies",
+  "artist": "Ludwig Mies van der Rohe",
+  "work": "Barcelona Pavilion (1986 reconstruction)",
+  "year": "1929",
+  "image": "assets/works/mies.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:The_Barcelona_Pavilion,_Barcelona,_2010.jpg",
+  "license": "CC BY 3.0",
+  "credit": "Ashley Pomeroy, Wikimedia Commons"
+ },
+ {
+  "stem": "moholy-nagy",
+  "artist": "László Moholy-Nagy",
+  "work": "Composition A.XX",
+  "year": "1924",
+  "image": "assets/works/moholy-nagy.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Laszlo_moholy-nagy,_composizione_A.XX,_1924.JPG",
+  "license": "Public domain (artwork); photo CC BY 3.0",
+  "credit": "Photo: Sailko, via Wikimedia Commons (Centre Pompidou)"
+ },
+ {
+  "stem": "mondrian",
+  "artist": "Piet Mondrian",
+  "work": "Composition C (No. III) with Red, Yellow and Blue",
+  "year": "1935",
+  "image": "assets/works/mondrian.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Composition_C_(No.III)_with_Red,_Yellow_and_Blue_-_Mondrian_(1935).jpg",
+  "license": "CC BY-SA 4.0",
+  "credit": "Photo: Egrabczewski, via Wikimedia Commons (Tate)"
+ },
+ {
+  "stem": "mucha",
+  "artist": "Alphonse Mucha",
+  "work": "Gismonda (Sarah Bernhardt)",
+  "year": "1894–95",
+  "image": "assets/works/mucha.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Alphonse_Mucha_-_Poster_for_Victorien_Sardou%27s_Gismonda_starring_Sarah_Bernhardt.jpg",
+  "license": "Public domain",
+  "credit": "Alphonse Mucha; restoration by Adam Cuerden, Wikimedia Commons"
+ },
+ {
+  "stem": "muller-brockmann",
+  "artist": "Josef Müller-Brockmann",
+  "work": "Beethoven, Tonhalle Zürich (poster)",
+  "year": "1955",
+  "image": "assets/works/muller-brockmann.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Josef_M%C3%BCller-Brockmann._beethoven_poster(1955).jpg",
+  "license": "© Josef Müller-Brockmann estate, small thumbnail for commentary",
+  "credit": "Wikimedia Commons"
+ },
+ {
+  "stem": "nervous-system",
+  "artist": "Nervous System",
+  "work": "Hyphae series",
+  "year": "2011",
+  "image": "assets/works/nervous-system.jpg",
+  "link": "https://n-e-r-v-o-u-s.com/pressKit/hyphaeLamp.html",
+  "license": "© Nervous System, small thumbnail for commentary",
+  "credit": "Nervous System"
+ },
+ {
+  "stem": "popova",
+  "artist": "Lyubov Popova",
+  "work": "Painterly Architectonic",
+  "year": "1917",
+  "image": "assets/works/popova.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:NY_Moma_popova_architectonic.JPG",
+  "license": "Public domain",
+  "credit": "Museum of Modern Art, via Wikimedia Commons"
+ },
+ {
+  "stem": "rietveld",
+  "artist": "Gerrit Rietveld",
+  "work": "Red Blue Chair",
+  "year": "1918 (painted c. 1923)",
+  "image": "assets/works/rietveld.jpg",
+  "link": "https://collections.vam.ac.uk/item/O142927",
+  "license": "© Gerrit Rietveld estate / Pictoright, small thumbnail for commentary",
+  "credit": "Victoria and Albert Museum, London"
+ },
+ {
+  "stem": "riley",
+  "artist": "Bridget Riley",
+  "work": "Movement in Squares",
+  "year": "1961",
+  "image": "assets/works/riley.jpg",
+  "link": "https://artscouncilcollection.org.uk/artwork/movement-squares",
+  "license": "© Bridget Riley, small thumbnail for commentary",
+  "credit": "Arts Council Collection, Southbank Centre"
+ },
+ {
+  "stem": "rodchenko",
+  "artist": "Alexander Rodchenko",
+  "work": "Lengiz: Books in All Branches of Knowledge (poster)",
+  "year": "1924",
+  "image": "assets/works/rodchenko.jpg",
+  "link": "https://en.wikipedia.org/wiki/File:1924_Poster_by_Alexander_Rodchenko,_showing_Lilya_Brik_saying_in_Russian_Books_(Please)_in_all_branches_of_knowledge.jpg",
+  "license": "© A. Rodchenko estate, small thumbnail for commentary",
+  "credit": "English Wikipedia file page"
+ },
+ {
+  "stem": "ruder",
+  "artist": "Emil Ruder",
+  "work": "Typographische Monatsblätter No. 10 (cover)",
+  "year": "1961",
+  "image": "assets/works/ruder.jpg",
+  "link": "https://fontsinuse.com/uses/18507/typographische-monatsblaetter-1961-no-10",
+  "license": "© Emil Ruder estate, small thumbnail for commentary",
+  "credit": "Fonts In Use"
+ },
+ {
+  "stem": "scher",
+  "artist": "Paula Scher",
+  "work": "National Theatre 50th anniversary (poster)",
+  "year": "2013",
+  "image": "assets/works/scher.jpg",
+  "link": "https://collections.vam.ac.uk/item/O1364138/",
+  "license": "© Paula Scher, small thumbnail for commentary",
+  "credit": "V&A"
+ },
+ {
+  "stem": "sejima",
+  "artist": "Kazuyo Sejima (SANAA)",
+  "work": "21st Century Museum of Contemporary Art, Kanazawa",
+  "year": "2004",
+  "image": "assets/works/sejima.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Curved_glass_facade_of_the_21st_Century_Museum_of_Contemporary_Art,_Kanazawa,_September_2024.jpg",
+  "license": "CC BY-SA 4.0",
+  "credit": "NevinThompson, Wikimedia Commons"
+ },
+ {
+  "stem": "soto",
+  "artist": "Jesús Rafael Soto",
+  "work": "Cardinal",
+  "year": "1965",
+  "image": "assets/works/soto.jpg",
+  "link": "https://www.tate.org.uk/art/artworks/soto-cardinal-t00793",
+  "license": "© Estate of Jesús Rafael Soto, small thumbnail for commentary",
+  "credit": "Tate"
+ },
+ {
+  "stem": "sottsass",
+  "artist": "Ettore Sottsass",
+  "work": "Carlton room divider (Memphis)",
+  "year": "1981",
+  "image": "assets/works/sottsass.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Ettore_sottsass_per_memphis_srl.,_libreria_carlton,_milano_1981.jpg",
+  "license": "CC BY 3.0 (photo)",
+  "credit": "Wikimedia Commons"
+ },
+ {
+  "stem": "stepanova",
+  "artist": "Varvara Stepanova",
+  "work": "Chevron flannel, Tsindel factory",
+  "year": "1924",
+  "image": "assets/works/stepanova.jpg",
+  "link": "https://collections.vam.ac.uk/item/O1371413",
+  "license": "© Varvara Stepanova estate, small thumbnail for commentary",
+  "credit": "Victoria and Albert Museum, London"
+ },
+ {
+  "stem": "tanaka",
+  "artist": "Ikko Tanaka",
+  "work": "Nihon Buyo (poster)",
+  "year": "1981",
+  "image": "assets/works/tanaka.jpg",
+  "link": "https://collections.vam.ac.uk/item/O1161237/nihon-buyo-poster-tanaka-ikko/",
+  "license": "© Ikko Tanaka estate, small thumbnail for commentary",
+  "credit": "V&A"
+ },
+ {
+  "stem": "turrell",
+  "artist": "James Turrell",
+  "work": "The Color Inside (Skyspace)",
+  "year": "2013",
+  "image": "assets/works/turrell.jpg",
+  "link": "https://landmarks.utexas.edu/artwork/color-inside",
+  "license": "© James Turrell, small thumbnail for commentary",
+  "credit": "Landmarks, The University of Texas at Austin; photo Paul Bardagjy"
+ },
+ {
+  "stem": "van-der-leck",
+  "artist": "Bart van der Leck",
+  "work": "Composition 1917 No. 4 (Leaving the Factory)",
+  "year": "1917",
+  "image": "assets/works/van-der-leck.jpg",
+  "link": "https://www.krollermuller.nl/en/collection/bart-van-der-leck-composition-1917-no-4-leaving-the-factory-km-100-312",
+  "license": "© Bart van der Leck estate / Pictoright, small thumbnail for commentary",
+  "credit": "Kröller-Müller Museum, Otterlo"
+ },
+ {
+  "stem": "van-doesburg",
+  "artist": "Theo van Doesburg",
+  "work": "Simultaneous Counter-Composition",
+  "year": "1929–30",
+  "image": "assets/works/van-doesburg.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Simultaneous_Counter-Composition_1929-30_Theo_van_Doesburg.jpg",
+  "license": "Public domain",
+  "credit": "Museum of Modern Art, via Wikimedia Commons"
+ },
+ {
+  "stem": "vasarely",
+  "artist": "Victor Vasarely",
+  "work": "Vega-Nor",
+  "year": "1969",
+  "image": "assets/works/vasarely.jpg",
+  "link": "https://buffaloakg.org/artworks/k196929-vega-nor",
+  "license": "© Estate of Victor Vasarely, small thumbnail for commentary",
+  "credit": "Buffalo AKG Art Museum"
+ },
+ {
+  "stem": "weingart",
+  "artist": "Wolfgang Weingart",
+  "work": "Kunsthalle Basel, Kunstkredit 76/77 (poster)",
+  "year": "1977",
+  "image": "assets/works/weingart.jpg",
+  "link": "https://collections.vam.ac.uk/item/O1155283/",
+  "license": "© Wolfgang Weingart estate, small thumbnail for commentary",
+  "credit": "V&A"
+ },
+ {
+  "stem": "wright",
+  "artist": "Frank Lloyd Wright",
+  "work": "Tree of Life window, Darwin D. Martin House (Princeton University Art Museum)",
+  "year": "1904",
+  "image": "assets/works/wright.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Tree_of_Life_window_for_the_Darwin_D._Martin_House,_by_Frank_Lloyd_Wright,_American,_1904,_glass,_brass_-_Princeton_University_Art_Museum_-_DSC06964.jpg",
+  "license": "Public domain",
+  "credit": "Daderot, Wikimedia Commons"
+ }
+]

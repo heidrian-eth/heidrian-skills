@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rail: Home</title>
+<!--
+VARIANT F: "Rail" (new method: brief -> mood board -> locked kit -> screens). Built from kit.css v1.1 only.
+Rationale (kit rule citations, no artists at screen level):
+ Head: account line + "Available" + one key figure 56px, decimals 300 (K2, T2, T3). Press and hold the figure to cover it (I3).
+ Ahead: the month's remaining 8 days on the rail; at the present pace groceries run out Tue 24, so the last 6 days are the
+        one 4px signal segment with a ring at the run-out point and a faint cast (K4, C3, X1, V1). Fades in last (M2).
+ Edge: ground step, no rule (S4, K3). Settled: records in 52px rows, markers on the rail (filled = in, hollow = out,
+        size by amount band), day numbers in the label column (S2, F3, C5). No coloured amounts.
+ Base: ink, Send | Receive (K5); NAV under it (v1.1).
+Token lint: no raw colour, size, duration or easing below; only kit classes and data variables (--left, --short, --i).
+-->
+<link rel="stylesheet" href="kit.css">
+</head>
+<body>
+<main class="screen draw">
+  <div class="rail"></div>
+
+  <section class="zone head" aria-label="Balance">
+    <p class="w6">Good evening, Lucía</p>
+    <p class="ink2">Sun 22 Nov · Everyday ·· 4821</p>
+    <p style="margin-top:var(--s5)">Available</p>
+    <p class="figure" id="fig" aria-label="Available balance €2,481.36" title="Press and hold to hide">€2,481<span class="dec">.36</span></p>
+    <p class="ink2">+ €1,920.00 salary in · 20 Nov</p>
+  </section>
+
+  <section class="zone ahead news" role="status" aria-label="Budget warning" style="--left:8;--short:6">
+    <div class="cast"></div><div class="seg"></div><div class="ringmark"></div>
+    <span class="lab top">30</span><span class="lab bot">22<br>today</span>
+    <div class="txt">
+      <p class="w6">Groceries runs out Tue 24</p>
+      <p class="ink2">€372 of €400 used · 93% · 8 days left</p>
+      <p><a href="#">Adjust budget</a></p>
+    </div>
+  </section>
+
+  <section class="zone settled" aria-label="Recent transactions">
+    <div class="hdr appear" style="--i:1"><span class="w6">Recent</span><a href="#">See all</a></div>
+    <div class="row appear" style="--i:2"><span class="lab">22</span><span class="mk out m"></span><div>Mercado Central<br><span class="ink2">Groceries</span></div><span class="amt">−€46.20</span></div>
+    <div class="row appear" style="--i:3"><span class="mk out m"></span><div>Metro card top-up<br><span class="ink2">Transport</span></div><span class="amt">−€20.00</span></div>
+    <div class="row daygap appear" style="--i:4"><span class="lab">20</span><span class="mk in l"></span><div>Salary<br><span class="ink2">Acme S.L.</span></div><span class="amt in">+€1,920.00</span></div>
+    <div class="row daygap appear" style="--i:5"><span class="lab">19</span><span class="mk out s"></span><div>Café Lume<br><span class="ink2">Eating out</span></div><span class="amt">−€4.80</span></div>
+    <div class="row daygap appear" style="--i:6"><span class="lab">18</span><span class="mk in m"></span><div>Ana García<br><span class="ink2">Transfer in</span></div><span class="amt in">+€35.00</span></div>
+  </section>
+</main>
+
+<footer class="base">
+  <div class="cells"><button>Send</button><button>Receive</button></div>
+  <nav class="nav" aria-label="Main"><a href="#" aria-current="page">Home</a><a href="#">Cards</a><a href="send.html">Payments</a><a href="#">Profile</a></nav>
+</footer>
+<script>
+// I3: press and hold the key figure to cover it with an ink bar of the same footprint (no reflow)
+const f=document.getElementById('fig'); let t;
+f.addEventListener('pointerdown',()=>{t=setTimeout(()=>f.classList.toggle('covered'),450)});
+['pointerup','pointerleave'].forEach(e=>f.addEventListener(e,()=>clearTimeout(t)));
+</script>
+</body>
+</html>

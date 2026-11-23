@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rail: Send money</title>
+<!--
+Second screen from the same kit (no library, no mood board consulted): Send money.
+ Head: "Send" + the amount being sent as the one key figure; the balance drops to a 14px line (K2, T2).
+ Fields: To / From / Note as rows hung on the rail; a filled marker beside each completed field (F3).
+ Ahead (same component as Home, L4): what this payment does to the month. Clear state here; the watch state would use
+        the same signal segment and ring as Home (K4, C3).
+ Settled: earlier payments with this person (K3). Base: one cell "Send €120.00" (K5). No success colour (C5, V3).
+ Parking list (L5): "progress ticks on the rail for multi-step flows" -> review at v1.2, for every flow at once.
+-->
+<link rel="stylesheet" href="kit.css">
+</head>
+<body>
+<main class="screen draw">
+  <div class="rail"></div>
+
+  <section class="zone head" aria-label="Amount">
+    <p class="w6">Send</p>
+    <p class="figure" aria-label="Amount €120.00">€120<span class="dec">.00</span></p>
+    <p class="ink2">of €2,481.36 available · Everyday ·· 4821</p>
+  </section>
+
+  <section class="zone" aria-label="Details">
+    <div class="field appear" style="--i:1"><span class="lab">To</span><span class="mk in m"></span><span>Ana García</span><a href="#" class="ink2">Change</a></div>
+    <div class="field appear" style="--i:2"><span class="lab">From</span><span class="mk in m"></span><span>Everyday ·· 4821</span></div>
+    <div class="field appear" style="--i:3"><span class="lab">Note</span><span class="mk out m"></span><span class="ink2">Add a note</span></div>
+  </section>
+
+  <section class="zone ahead news" role="status" aria-label="Effect on this month">
+    <span class="lab top">30</span><span class="lab bot">22<br>today</span>
+    <div class="txt">
+      <p class="w6">After this: €2,361.36</p>
+      <p class="ink2">Groceries still runs out Tue 24 · rent €950.00 on Mon 30 is covered</p>
+    </div>
+  </section>
+
+  <section class="zone settled" aria-label="Earlier with Ana García">
+    <div class="hdr appear" style="--i:4"><span class="w6">Earlier with Ana García</span></div>
+    <div class="row appear" style="--i:5"><span class="lab">18</span><span class="mk in m"></span><div>Transfer in<br><span class="ink2">18 Nov</span></div><span class="amt in">+€35.00</span></div>
+    <div class="row daygap appear" style="--i:6"><span class="lab">02</span><span class="mk out m"></span><div>Concert tickets<br><span class="ink2">2 Nov</span></div><span class="amt">−€58.00</span></div>
+  </section>
+</main>
+
+<footer class="base">
+  <div class="cells one"><button>Send €120.00</button></div>
+  <nav class="nav" aria-label="Main"><a href="home.html">Home</a><a href="#">Cards</a><a href="#" aria-current="page">Payments</a><a href="#">Profile</a></nav>
+</footer>
+</body>
+</html>

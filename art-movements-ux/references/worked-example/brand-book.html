@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rail Brand Book</title>
+<link rel="stylesheet" href="kit.css">
+<style>
+  /* documentation layout only (not a product screen): wider body, same tokens */
+  body{max-width:1080px;padding:40px 24px 80px;background:var(--ground-open)}
+  h1{font-size:var(--t-figure);line-height:1;font-weight:600;letter-spacing:-.01em}
+  h2{font-size:var(--t-text);font-weight:600;margin:48px 0 12px;padding-top:12px;box-shadow:inset 0 var(--w1) 0 var(--ink)}
+  p,li{max-width:72ch}
+  .lede{color:var(--ink-2);margin-top:12px}
+  table{border-collapse:collapse;width:100%;margin-top:8px}
+  th,td{text-align:left;vertical-align:top;padding:8px 12px 8px 0;box-shadow:inset 0 -1px 0 rgba(16,32,28,.15)}
+  th{font-weight:600}
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px 28px}
+  .sw{display:flex;gap:12px;align-items:center;margin:6px 0}
+  .sw i{width:44px;height:44px;flex:none;box-shadow:inset 0 0 0 1px rgba(16,32,28,.2)}
+  .phones{display:flex;gap:24px;flex-wrap:wrap;margin-top:12px}
+  .phones iframe{width:390px;height:844px;border:0;box-shadow:0 0 0 1px rgba(16,32,28,.2);transform:scale(.7);transform-origin:0 0;margin:0 -117px -253px 0}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:13px}
+  .tag{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--ink-2)}
+</style>
+</head>
+<body>
+<p class="tag">Kit v1.1 · built with the art-movements-ux method: brief → mood board → kit → screens</p>
+<h1>Rail</h1>
+<p class="lede">The month is one rail. What is still open sits above today, what is settled sits below, and the one thing that needs you appears on the rail ahead of you.</p>
+
+<h2>1 · Brief</h2>
+<p><b>Case.</b> Adults checking several times a day, one-handed, often in public, for 5–10 seconds. No brand assets given: one green-black brand ink assumed. Platform navigation untouched. AA contrast, tabular figures, no ambiguous figures.</p>
+<p><b>Content truth.</b> Money moves through a month: a past you cannot change, a now, and a short future you can still affect.</p>
+<p><b>Product-wide problems</b> (crux first): 1 urgent without alarm · 2 one figure wins the glance · 3 trust: exact and still · 4 dense records stay scannable, in vs out without red/green · 5 position in time · 6 actions under the thumb.</p>
+
+<h2>2 · Mood board (consulted once, for the whole product)</h2>
+<table>
+<tr><th>#</th><th>Plate (visually checked work)</th><th>Answers</th><th>Principle taken</th><th>Left behind</th><th>Layer</th></tr>
+<tr><td>1</td><td>Aalto, Paimio Sanatorium: yellow path on floor strips and stair treads</td><td>1, 5, 6</td><td>Put the signal on the route the person is already on</td><td>yellow, curve, wood</td><td>structure</td></tr>
+<tr><td>2</td><td>Müller-Brockmann, <i>der Film</i>; musica viva posters</td><td>2, 4</td><td>Two sizes far apart (info ≈1/13 of the headline); everything hangs from one axis, labels flush-right against it</td><td>28% axis position, lowercase, overlap</td><td>type</td></tr>
+<tr><td>3</td><td>Klee, <i>Sunset</i> 1930 (the sun: 0.7% of the surface)</td><td>1</td><td>Scarcity makes the signal: one small mark in a quiet field</td><td>red disc, dot lattice</td><td>colour: signals</td></tr>
+<tr><td>4</td><td>Barragán, Casa Gilardi corridor (yellow as light)</td><td>1, 5</td><td>A signal is calmer as light that spills than as paint; news arrives slowly</td><td>every hue, walls, slots</td><td>motion: system news</td></tr>
+<tr><td>5</td><td>Sejima/SANAA, 21st Century Museum, Kanazawa (whites ≈5 L apart)</td><td>3, 4</td><td>Surfaces part by small value steps, not borders or shadows</td><td>circle, glass</td><td>colour: surfaces; interaction</td></tr>
+<tr><td>6</td><td>Judd, stacks (gap = module, measured)</td><td>3, 4</td><td>The module never changes, only the count</td><td>boxes, metal, lacquer</td><td>structure (module); motion: user</td></tr>
+<tr><td>7</td><td>Le Corbusier, Villa Savoye (dark green recessed ground floor under the white volume)</td><td>3, 6</td><td>The darkest plane sits lowest and carries the load</td><td>green, pilotis, Modulor</td><td>structure: base</td></tr>
+<tr><td>C1</td><td>Case: content at its worst (long payees, +€12,480.00, 2 vs 140 rows)</td><td>all</td><td colspan="3">tabular figures; truncate payees, never amounts; fixed slots</td></tr>
+<tr><td>C2</td><td>Case: public use, 5 seconds, one thumb</td><td>2, 6</td><td colspan="3">the figure can be covered; nothing important in the top corners</td></tr>
+</table>
+<p style="margin-top:12px"><b>One owner per layer.</b> Structure: 1 (with 6, 7 inside it) · colour: 5 surfaces, 3 signals · type: 2 · motion: 6 user, 4 system · interaction: 5. <b>Tension kept, by role:</b> a hard jump for the one key figure ↔ one flat size for everything else. <b>Scouted and cut:</b> Hokusai scale inversion, Turrell whole-field tint, Mondrian Boogie lanes, Crouwel figure-in-colour-field, seeded generative art.</p>
+
+<h2>3 · Principles</h2>
+<p><b>K1</b> One rail per screen; everything hangs from it. <b>K2</b> One key figure per screen. <b>K3</b> Open above, settled below. <b>K4</b> One signal, and only for the future. <b>K5</b> The base carries the actions.</p>
+
+<h2>4 · Colour (roles and area budgets per screen)</h2>
+<div class="cols">
+  <div><div class="sw"><i style="background:var(--ground-open)"></i><div><b>C1 ground-open</b> <code>#E9ECEA</code><br>open things; with settled ≥ 75%</div></div>
+       <div class="sw"><i style="background:var(--ground-settled)"></i><div><b>C1 ground-settled</b> <code>#DFE3E0</code><br>≈ 4 L below open; the edge is this step</div></div></div>
+  <div><div class="sw"><i style="background:var(--ink)"></i><div><b>C2 ink</b> <code>#10201C</code><br>text, rail, markers, base; ink planes ≤ 20%</div></div>
+       <div class="sw"><i style="background:var(--ink-2)"></i><div><b>C2 ink-2</b> <code>#4E5B56</code><br>secondary text (≈ 6:1)</div></div></div>
+  <div><div class="sw"><i style="background:var(--signal)"></i><div><b>C3 signal</b> <code>#B06A00</code><br>one element per screen, ≤ 1% of area, never text</div></div>
+       <div class="sw"><i style="background:var(--signal-cast)"></i><div><b>C3 signal-cast</b> <code>#EFE7D6</code><br>its spill, inside the Ahead slot only</div></div></div>
+  <div><div class="sw"><i style="background:var(--fault)"></i><div><b>C4 fault</b> <code>#B3261E</code><br>failures and fraud only; never in Ahead</div></div>
+       <p class="ink2"><b>C5</b> No other hue. No success green: done things move below the edge.</p></div>
+</div>
+
+<h2>5 · Type, line, shape</h2>
+<p><b>T1</b> One variable grotesque (Instrument Sans), tabular figures. <b>T2</b> Two sizes: 14/20 and 56/56; controls 16/20. <b>T3</b> Otherwise weight (300, 400, 600) and position against the rail.</p>
+<p style="font-size:var(--t-figure);line-height:var(--t-figure);font-weight:600;margin:12px 0">€2,481<span style="font-weight:300">.36</span></p>
+<p><b>F1</b> Two line weights: 1px and 4px. <b>F2</b> No cards, boxes, shadows or rounded corners. Focus: 2px ink ring, 2px offset. <b>F3</b> Markers on the rail: filled = in or done, hollow = out or pending; 5 / 8 / 13px by amount band (a kit choice).</p>
+
+<h2>6 · Motion and interaction</h2>
+<p><b>M1</b> The user's actions are ink: the rail draws (360ms linear), rows appear as it passes (80ms stagger), press is a 120ms value step. <b>M2</b> The system's news is light: the signal fades in over 800ms, last. <b>M3</b> Nothing translates, scales, bounces or counts up. <b>I1</b> Press = one value step. <b>I2</b> A row is one target ≥ 52px. <b>I3</b> The one unfamiliar control: press and hold the key figure to cover it.</p>
+
+<h2>7 · Structure and components</h2>
+<p><b>S1</b> Rail: a 1px ink line at x = 64, the only vertical. Label column x 16–52 flush right; everything else hangs at x = 80; amounts flush right. <b>S2</b> Row 52 · Ahead slot 120 · base 56 · nav 48 · spacing 4/8/12/16/28. <b>S3</b> Every screen: Head → Fields → Ahead → Edge → Settled → Base (zones may be absent, order never changes). <b>S4</b> The edge is a ground step.</p>
+<p>Components: Rail · Marker · Key figure · Row · Field · Ahead slot (clear / watch / over; never collapses) · Edge · Base bar · Nav (v1.1) · Notice (fault) · Empty · Loading.</p>
+<div class="phones">
+  <iframe src="home.html" title="Rail Home"></iframe>
+  <iframe src="send.html" title="Rail Send money"></iframe>
+</div>
+
+<h2>8 · Voice</h2>
+<p><b>V1</b> Forecasts are dated and quantified, future tense: "runs out Tue 24". <b>V2</b> Records are past tense and bare. <b>V3</b> No exclamation marks, no "Warning", no praise. Amounts always carry currency and two decimals.</p>
+
+<h2>9 · Exception, Do / Don't</h2>
+<p><b>X1</b> The signal segment is the only thick, coloured, slow thing in a hairline, achromatic, quick system. One per screen.</p>
+<p><b>Do</b> hang every text from x = 80 · keep the Ahead slot when it has nothing to say. <b>Don't</b> add a card, shadow, merchant logo or avatar ring · use a third type size · colour an amount · use the signal for promotion · use primaries with black rules, cream paper or a rotated label · animate a figure.</p>
+
+<h2>10 · Lock rules and versions</h2>
+<p><b>L1</b> Frozen after approval. <b>L2</b> No artists downstream: screens cite kit rules only. <b>L3</b> No one-offs: a raw value in a screen is a bug (checked by grep: none in Home or Send). <b>L4</b> Same meaning, same form. <b>L5</b> Resonance is parked, never applied locally. <b>L6</b> The user can override; the model cannot.</p>
+<table>
+<tr><th>Version</th><th>Change</th><th>Screens touched</th></tr>
+<tr><td>v1.0</td><td>Initial kit, proven on Home, Send and an empty Budgets specimen</td><td>—</td></tr>
+<tr><td>v1.1 (minor)</td><td>Added <b>Nav</b> under the base cells: the inventory needs Home / Cards / Payments / Profile and v1.0 had no navigation component</td><td>Home, Send</td></tr>
+</table>
+<p><b>Parking list.</b> "Progress ticks on the rail for multi-step flows (add payee)": raised on Send; to be answered at v1.2 from plate 1, for every flow at once.</p>
+
+<h2>11 · Provenance appendix (the only place sources are named)</h2>
+<table>
+<tr><th>Rule</th><th>Problem</th><th>Principle</th><th>Plate</th></tr>
+<tr><td>K1, S1, S3</td><td>1, 5</td><td>The route carries position and signal</td><td>1 (2 for the hang line)</td></tr>
+<tr><td>K2, T2</td><td>2</td><td>Two sizes, one axis, nothing between</td><td>2</td></tr>
+<tr><td>K3, S4, C1</td><td>3, 5</td><td>A value step is an edge and can carry meaning</td><td>5</td></tr>
+<tr><td>K4, C3, X1</td><td>1</td><td>Scarcity makes the signal; point signal ≤ 1%</td><td>3</td></tr>
+<tr><td>C3 cast, M2, Ahead</td><td>1, 5</td><td>Strong small dose + faint large one; news arrives slowly</td><td>4</td></tr>
+<tr><td>S2, F3, M1</td><td>3, 4</td><td>Fixed module, variable count</td><td>6</td></tr>
+<tr><td>K5, Base</td><td>3, 6</td><td>Darkest plane lowest; actions at the thumb</td><td>7, 1</td></tr>
+<tr><td>I1</td><td>3</td><td>Change the value, not the elevation</td><td>5</td></tr>
+</table>
+</body>
+</html>
