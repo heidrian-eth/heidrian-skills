@@ -119,7 +119,7 @@ Each image is one work the study examines. Each name links to the full study: ke
 
 ### 04 · Swiss / International Typographic Style
 
-*Modular grids, flush-left grotesques, meaning through position and interval. Ends with its rebel, Weingart.*
+*Modular grids, flush-left grotesques, meaning through position and interval.*
 
 | Work | Artist | Process |
 |:---:|---|---|
@@ -128,7 +128,6 @@ Each image is one work the study examines. Each name links to the full study: ke
 | <img src="assets/works/ruder.jpg" width="150" alt="Typographische Monatsblätter No. 10 (cover)"> | **[Emil Ruder](references/04-swiss/ruder.md)**<br><sub>*Typographische Monatsblätter No. 10 (cover)*, 1961</sub> | Compose the unprinted area first, as the largest shape on the page; make every dark thing a grey texture of one family; and produce variety by stepping one variable at a time. |
 | <img src="assets/works/gerstner.jpg" width="150" alt="kalte Kunst? (book cover)"> | **[Karl Gerstner](references/04-swiss/gerstner.md)**<br><sub>*kalte Kunst? (book cover)*, 1957</sub> | Do not compose: list the parameters of the problem, give each a short ordered row of values, and treat every design as one selection, so the set of selections is the work. |
 | <img src="assets/works/crouwel.jpg" width="150" alt="New Alphabet"> | **[Wim Crouwel](references/04-swiss/crouwel.md)**<br><sub>*New Alphabet*, 1967</sub> | Declare one square cell and build everything from whole cells, the big word included; freeze the constants of the series, so the only free choices left are one whole-region colour and what the cells spell. |
-| <img src="assets/works/weingart.jpg" width="150" alt="Kunsthalle Basel, Kunstkredit 76/77 (poster)"> | **[Wolfgang Weingart](references/10-postmodern-newwave/weingart.md)**<br><sub>*Kunsthalle Basel, Kunstkredit 76/77 (poster)*, 1977</sub> | Keep the inherited structure in plain sight and overdrive one of its variables at a time (spacing, step, frame weight, layer) until text starts to read as image, while a plainly set copy stays within reach. |
 
 ### 05 · Modernist Architecture
 
@@ -196,6 +195,7 @@ Each image is one work the study examines. Each name links to the full study: ke
 
 | Work | Artist | Process |
 |:---:|---|---|
+| <img src="assets/works/weingart.jpg" width="150" alt="Kunsthalle Basel, Kunstkredit 76/77 (poster)"> | **[Wolfgang Weingart](references/10-postmodern-newwave/weingart.md)**<br><sub>*Kunsthalle Basel, Kunstkredit 76/77 (poster)*, 1977</sub> | Keep the inherited structure in plain sight and overdrive one of its variables at a time (spacing, step, frame weight, layer) until text starts to read as image, while a plainly set copy stays within reach. |
 | <img src="assets/works/sottsass.jpg" width="150" alt="Carlton room divider (Memphis)"> | **[Ettore Sottsass (Memphis)](references/10-postmodern-newwave/sottsass.md)**<br><sub>*Carlton room divider (Memphis)*, 1981</sub> | Build the thing as a standing figure: separately treated parts joined in the open, mirrored about one axis, and balanced on a base narrower than its reach. |
 | <img src="assets/works/greiman.jpg" width="150" alt="Design Quarterly #133, &quot;Does It Make Sense?&quot;"> | **[April Greiman](references/10-postmodern-newwave/greiman.md)**<br><sub>*Design Quarterly #133, "Does It Make Sense?"*, 1986</sub> | Compose in depth, not on the sheet: stack planes that each keep the grain of the tool that made them, tilt the planes, and keep the words level. |
 | <img src="assets/works/carson.jpg" width="150" alt="National Theatre 50th anniversary (poster)"> | **[David Carson](references/10-postmodern-newwave/carson.md)**<br><sub>*National Theatre 50th anniversary (poster)*, 2013</sub> | On a surface meant to be looked at before it is read, let one display element carry the feeling of the piece as an image, against a quiet ground and square small text (expressive surfaces only). |
