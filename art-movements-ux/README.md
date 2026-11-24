@@ -14,9 +14,10 @@
   <img src="assets/works/haeckel.jpg" height="96" alt="Kunstformen der Natur, Tafel 4: Diatomea">
   <img src="assets/works/eames.jpg" height="96" alt="ESU 421-C (Eames Storage Unit)">
   <img src="assets/works/leonardo.jpg" height="96" alt="The muscles of the shoulder and arm">
+  <img src="assets/works/cage.jpg" height="96" alt="Fontana Mix (score materials superimposed)">
 </p>
 
-**Sixty-five artists, thirteen movements, one design system that looks like none of them.**
+**Seventy artists, fourteen movements, one design system that looks like none of them.**
 
 Ask a model for a UI and you get the statistical median: rounded cards on soft shadows, a centered hero, Inter at three weights, one brand blue. This skill replaces that default with a studio method. It reads your product's real design problems, pulls the artworks that already solved them, and distils those solutions into a locked brand book and UI kit. Every screen is then built from that kit, and only from it.
 
@@ -79,7 +80,7 @@ A mobile bank, end to end: board **"Rail"** → kit → Home → Send money, wit
 
 Read [`references/WORKED-EXAMPLE-rail.md`](references/WORKED-EXAMPLE-rail.md), open the built files in [`references/worked-example/`](references/worked-example/), and see two triad fusions (one plain, one hard) in [`references/EXPLORATION-EXAMPLE.md`](references/EXPLORATION-EXAMPLE.md).
 
-## The library: 13 movements, 65 artists
+## The library: 14 movements, 70 artists
 
 Each image is one work the study examines. Each name links to the full study: key works examined (and which were visually checked), process and measured relations, composition, colour, type, motion, UI translations, what the artist would reject, and sources. One-line summaries live in [`references/library.md`](references/library.md); the problem-to-process index is [`references/principles.md`](references/principles.md).
 
@@ -239,6 +240,18 @@ Each image is one work the study examines. Each name links to the full study: ke
 | <img src="assets/works/durer.jpg" width="150" alt="Constructed capitals K and L, Underweysung der Messung"> | **[Albrecht Dürer](references/13-renaissance/durer.md)**<br><sub>*Constructed capitals K and L, Underweysung der Messung*, 1525</sub> | Declare one square module and take every stroke, gap and size from it; print the rule beside its result at the same height and line weight, one rule feeding a row of outcomes that differ only in where their inner divisions fall; name every division level with its line; sign and date each view in its open corner. |
 | <img src="assets/works/palladio.jpg" width="150" alt="Villa Rotonda, I quattro libri dell'architettura, Book II"> | **[Andrea Palladio](references/13-renaissance/palladio.md)**<br><sub>*Villa Rotonda, I quattro libri dell'architettura, Book II*, 1570</sub> | Draw every size from one short list of whole-number ratios and derive the rest as means; show one object as two views stacked on one axis at one scale and width; write each measure inside the thing it measures; spend tone on openings only. |
 
+### 14 · Process Music
+
+*Rules left to run: one change at a time, held long enough to learn, over cycles of unequal length, with emptiness given a stated share.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/reich.jpg" width="150" alt="Pendulum Music (handwritten text score)"> | **[Steve Reich](references/14-process-music/reich.md)**<br><sub>*Pendulum Music (handwritten text score)*, 1968</sub> | Set one short cell on a grid of 8 or 12 equal slots and lay an identical copy beside it; state one rule in a sentence and change one slot per step, holding each state long enough to learn; lock emphasis and value set, show more by filling gaps, never by size or speed; draw every state as an equal module and end where the rule began. |
+| <img src="assets/works/glass.jpg" width="150" alt="Einstein on the Beach, Knee Play 3 (manuscript fragment)"> | **[Philip Glass](references/14-process-music/glass.md)**<br><sub>*Einstein on the Beach, Knee Play 3 (manuscript fragment)*, 1975–76</sub> | Fix one pitch and a small stock of units; repeat a short figure until it is known, then change only its length, one named rule at a time, adding whole units at one end while size, weight and tint stay level; bring in a new layer only while the length is still; join blocks by a cut; write every count beside its stage as a sum. |
+| <img src="assets/works/part.jpg" width="150" alt="Für Alina (autograph, first page)"> | **[Arvo Pärt](references/14-process-music/part.md)**<br><sub>*Für Alina (autograph, first page)*, 1976</sub> | Fix one home value and end every sequence on it; give each free value a companion limited to three fixed values, set by one rule; grow sequences by one unit in mirrored pairs; mark each return with one unchanging sign across an empty band; size every gap from its group; break the rule once, late; end by removing layers and leaving the last unit out. |
+| <img src="assets/works/eno.jpg" width="150" alt="Music for Airports (back-cover graphic scores)"> | **[Brian Eno](references/14-process-music/eno.md)**<br><sub>*Music for Airports (back-cover graphic scores)*, 1978</sub> | Set a few plain parts on cycles of near, unequal length over an exactly held frame, counted in visits or rows and not on a clock; leave at least two thirds of each cycle empty; let each event return weaker by equal steps until gone; change state only by opening, shutting or filtering a layer; print the rules and tune them, never a result. |
+| <img src="assets/works/cage.jpg" width="150" alt="Fontana Mix (score materials superimposed)"> | **[John Cage](references/14-process-music/cage.md)**<br><sub>*Fontana Mix (score materials superimposed)*, 1958</sub> | Fix the frame before the content and divide it by one short series used at two scales; fill its cells by a seeded draw from a closed chart in which empty is an entry with a stated share; change the chart, never a cell; run one second layer on an unrelated interval; write starts and ends as overlapping ranges; print one scale line; join sections by cuts. |
+
 ## What's inside
 
 ```
@@ -246,9 +259,9 @@ art-movements-ux/
 ├── SKILL.md                   the method: stages, lock rules, guardrails, templates
 ├── CHANGELOG.md               every correction made after checking the real works
 ├── references/
-│   ├── library.md             65 artist processes (opened in Stages 2–3 only)
+│   ├── library.md             70 artist processes (opened in Stages 2–3 only)
 │   ├── principles.md          UI problems → processes, calibration ranges, tensions
-│   ├── 01-bauhaus/ … 13-renaissance/   one full study per artist
+│   ├── 01-bauhaus/ … 14-process-music/   one full study per artist
 │   ├── WORKED-EXAMPLE-rail.md
 │   ├── EXPLORATION-EXAMPLE.md
 │   ├── worked-example/        kit.css, brand-book.html, home.html, send.html
@@ -262,14 +275,14 @@ art-movements-ux/
 
 ## Provenance
 
-Entries were written from museum, foundation and scholarly sources, then checked against open-access images of the key works where they could be obtained. Hex values are measured samples, kept only for strict studies and homage; a kit takes its hues from your brand or your case. Where a work could not be obtained, the entry says so.
+Entries were written from museum, foundation and scholarly sources, then checked against open-access images of the key works where they could be obtained. Hex values are measured samples, kept only for strict studies and homage; a kit takes its hues from your brand or your case. Music studies were measured from recordings (pulse, cycle length, density, silence) and read from scores and spectrograms; nobody listened to them, and each study says so. Where a work could not be obtained, the entry says so.
 
 ## Image credits
 
 Thumbnails illustrate the commentary on each artist's method. Copyrighted works are shown small, credited to their rights holders.
 
 <details>
-<summary>All 65 works, sources and licenses</summary>
+<summary>All 70 works, sources and licenses</summary>
 
 | Artist | Work | License | Source |
 |---|---|---|---|
@@ -338,5 +351,10 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Leon Battista Alberti | [Palazzo Rucellai, Florence, c. 1446–51](https://commons.wikimedia.org/wiki/File:Palazzo_Rucellai_2018.jpg) | Public domain (work); photo via Wikimedia Commons | Wikimedia Commons |
 | Albrecht Dürer | [Constructed capitals K and L, Underweysung der Messung, 1525](https://archive.org/details/vnderweysungderm00drer) | Public domain | Getty Research Institute, via Internet Archive |
 | Andrea Palladio | [Villa Rotonda, I quattro libri dell'architettura, Book II, 1570](https://archive.org/details/HArteR07T25) | Public domain | Internet Archive |
+| Steve Reich | [Pendulum Music (handwritten text score), 1968](https://exhibits.library.utoronto.ca/items/show/29575) | © Steve Reich / Universal Edition, small thumbnail for commentary | University of Toronto Libraries, online exhibits |
+| Philip Glass | [Einstein on the Beach, Knee Play 3 (manuscript fragment), 1975–76](https://miskatonic.org/2012/07/08/knee-play-3) | © Philip Glass / Dunvagen Music Publishers, small thumbnail for commentary (photograph by William Denton, site text CC BY 4.0) | Miskatonic University Press (William Denton), photographed from Einstein on the Beach, ed. Vicky Alliata, 1976 |
+| Arvo Pärt | [Für Alina (autograph, first page), 1976](https://www.arvopart.ee/en/arvo-part/work/477/) | © Arvo Pärt / Universal Edition; scan © Arvo Pärt Centre, small thumbnail for commentary | Arvo Pärt Centre (arvopart.ee) |
+| Brian Eno | [Music for Airports (back-cover graphic scores), 1978](https://musicbrainz.org/release/38f225c8-135a-4434-a410-5049ee285c70) | © Brian Eno / E.G. Records, small thumbnail for commentary | Cover Art Archive / MusicBrainz (Japanese Polydor LP MPF 1229 scan) |
+| John Cage | [Fontana Mix (score materials superimposed), 1958](https://indeterminacy.ac.uk/?p=2636) | © Henmar Press / C. F. Peters (John Cage), small thumbnail for commentary | The Future of Indeterminacy, indeterminacy.ac.uk |
 
 </details>

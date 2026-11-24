@@ -8,12 +8,12 @@ Out of the box, a model designs, writes and plans toward the middle of its train
 
 ### [art-movements-ux](art-movements-ux/)
 
-> **65 artists. 13 movements. One design system that looks like none of them.**
+> **70 artists. 14 movements. One design system that looks like none of them.**
 
-Ask for a UI and you get rounded cards, soft shadows and one brand blue. This skill sends the agent to Leonardo, Albers, Barragán, the Eameses, Riley, Hara and sixty others, not to copy their look, but to borrow *how they solved problems* your product actually has. It builds a mood board, distils it into a locked brand book and UI kit, and generates every screen from that kit alone.
+Ask for a UI and you get rounded cards, soft shadows and one brand blue. This skill sends the agent to Leonardo, Albers, Barragán, the Eameses, Riley, Hara and more than sixty others, not to copy their look, but to borrow *how they solved problems* your product actually has. It builds a mood board, distils it into a locked brand book and UI kit, and generates every screen from that kit alone.
 
 - **Processes, not pastiche.** Every artist is an ordered, parameterised process with the reason it works and when it fails.
-- **Checked against the real works.** Key works were colour-sampled from open-access collections and the entries corrected to match.
+- **Checked against the real works.** Key works were colour-sampled, and music measured from recordings and scores, with the entries corrected to match.
 - **Exploration mode.** Ten random triads of artists, fused into ten boards, rendered side by side. Pick one or mix by layer.
 - **Built-in guardrails.** WCAG contrast, reduced motion, tap targets, and a detector for the generic look.
 

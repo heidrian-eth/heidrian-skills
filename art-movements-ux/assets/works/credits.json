@@ -648,5 +648,55 @@
   "link": "https://commons.wikimedia.org/wiki/File:Tree_of_Life_window_for_the_Darwin_D._Martin_House,_by_Frank_Lloyd_Wright,_American,_1904,_glass,_brass_-_Princeton_University_Art_Museum_-_DSC06964.jpg",
   "license": "Public domain",
   "credit": "Daderot, Wikimedia Commons"
+ },
+ {
+  "stem": "reich",
+  "artist": "Steve Reich",
+  "work": "Pendulum Music (handwritten text score)",
+  "year": "1968",
+  "image": "assets/works/reich.jpg",
+  "link": "https://exhibits.library.utoronto.ca/items/show/29575",
+  "license": "© Steve Reich / Universal Edition, small thumbnail for commentary",
+  "credit": "University of Toronto Libraries, online exhibits"
+ },
+ {
+  "stem": "glass",
+  "artist": "Philip Glass",
+  "work": "Einstein on the Beach, Knee Play 3 (manuscript fragment)",
+  "year": "1975–76",
+  "image": "assets/works/glass.jpg",
+  "link": "https://miskatonic.org/2012/07/08/knee-play-3",
+  "license": "© Philip Glass / Dunvagen Music Publishers, small thumbnail for commentary (photograph by William Denton, site text CC BY 4.0)",
+  "credit": "Miskatonic University Press (William Denton), photographed from Einstein on the Beach, ed. Vicky Alliata, 1976"
+ },
+ {
+  "stem": "part",
+  "artist": "Arvo Pärt",
+  "work": "Für Alina (autograph, first page)",
+  "year": "1976",
+  "image": "assets/works/part.jpg",
+  "link": "https://www.arvopart.ee/en/arvo-part/work/477/",
+  "license": "© Arvo Pärt / Universal Edition; scan © Arvo Pärt Centre, small thumbnail for commentary",
+  "credit": "Arvo Pärt Centre (arvopart.ee)"
+ },
+ {
+  "stem": "eno",
+  "artist": "Brian Eno",
+  "work": "Music for Airports (back-cover graphic scores)",
+  "year": "1978",
+  "image": "assets/works/eno.jpg",
+  "link": "https://musicbrainz.org/release/38f225c8-135a-4434-a410-5049ee285c70",
+  "license": "© Brian Eno / E.G. Records, small thumbnail for commentary",
+  "credit": "Cover Art Archive / MusicBrainz (Japanese Polydor LP MPF 1229 scan)"
+ },
+ {
+  "stem": "cage",
+  "artist": "John Cage",
+  "work": "Fontana Mix (score materials superimposed)",
+  "year": "1958",
+  "image": "assets/works/cage.jpg",
+  "link": "https://indeterminacy.ac.uk/?p=2636",
+  "license": "© Henmar Press / C. F. Peters (John Cage), small thumbnail for commentary",
+  "credit": "The Future of Indeterminacy, indeterminacy.ac.uk"
  }
 ]
