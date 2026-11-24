@@ -15,6 +15,7 @@ Constraints (so random stays useful):
     corners of the axes map (order/expression, void/density, still/kinetic);
   * no artist appears in more than 2 triads (schools: at most 4 when drawing schools); no two triads share two members;
   * every movement appears at least once across the draw when n >= 4.
+Time-based companions (references/time/) are never in the draw; they are chosen by fit, for dynamic content only.
 The script prints each member's one-line process from references/library.md, so fusion can start.
 Do not hand-pick replacements: re-draw a member only when its "Fails when" matches the case (see SKILL.md).
 """
@@ -30,7 +31,6 @@ AXES = {
     "JAPANESE MA & WABI-SABI": (0.1, 0, 0.1), "ART NOUVEAU & VIENNA SECESSION": (0.4, 1, 0.3),
     "MINIMALISM / LIGHT & SPACE": (0, 0.2, 0.1), "OP & KINETIC ART": (0.3, 1, 1),
     "POSTMODERN & NEW WAVE": (1, 1, 0.8), "GROWTH & FORM": (0.4, 0.7, 0.6),
-    "PROCESS MUSIC": (0.1, 0.5, 0.6),
     "RENAISSANCE": (0.0, 0.5, 0.1),
     "CRANBROOK & ORGANIC MODERNISM": (0.2, 0.4, 0.3),
 }

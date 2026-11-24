@@ -19,7 +19,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Make one carrier the whole form and reduce everything else to one-weight infill at one even interval, hung from it; with no second bearing system, a continuous form at 3% of the view still organises it. *Eero Saarinen*
 - Aim every construction line at the subject and back it with the only large area of the extreme value, twice the width of its neighbours; isolate it by a gap, with peers in threes on each side. *Leonardo*
 - Stack every singular element in one channel whose edges agree through all registers within 0.5% of the width, and give it the only large opening (0.18–0.40 of the width); the bays beside it differ from it by 1.5–2.5× and hold one repeated module. *Alberti*
-- Hold one rule everywhere and break it exactly once, 60–87% of the way through, by one value outside the allowed set; follow it with the longest gap in the view (about 1.4 times the next longest) and a small sign, with no change of size or colour. *Pärt*
 
 **Many equal things, no hero**
 - Same envelope, different interior. *Judd*
@@ -30,7 +29,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - One uncoloured frame of equal cells, each filled as its own decision from 4–6 infill types named by job (open, veiled, closed, textured); strong colour only as single cells that never touch, the most saturated the smallest (1–2%). *Eames*
 - Repeat one kit with every position fixed and change only one plane's hue and one featured item; inside a field of 10–40 identical units, exactly one differs. *Knoll*
 - Hold the key part of every peer in one band about 5% of the height and vary only the interiors; exactly one item drops out of the band (12–15% lower), and it is the one that differs in kind. *Piero*
-- Fix the frame first and fill its cells by a seeded draw from a closed chart (at most 8 × 8) in which empty is an entry with a stated share (5–45%); bound the draw by counts (about 5 marks per 12–15 units, no gap over 4) and change the chart, never a cell. *Cage*
 
 **Urgent without alarm**
 - Scarcity: one small saturated mark in an otherwise achromatic field. *Klee, Malevich, Mondrian*
@@ -52,7 +50,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Cut the whole only by halves (1, 1/2, 1/4) and publish the text and table of numbers from which the view can be redrawn; an unbuilt cell stays in place, visibly empty. *Alberti*
 - Print the construction beside its result at the same height and in the same line weight, one rule feeding up to three outcomes (1 : 3), and stamp every view with a small maker-and-date mark in its open corner. *Dürer*
 - Take every proportion from one closed list of whole-number ratios (1:1, 4:3, 3:2, 5:3, 2:1) and derive each dependent size as the arithmetic or geometric mean of its two neighbours. *Palladio*
-- Give every free value a companion that may take only three fixed values, picked by one rule (nearest below, nearest above, or alternating) and never shown alone, so whatever the content does one of three known values stands beside it. *Pärt*
 
 **Density: much data, still legible**
 - Several column systems on one field, meeting only at shared lines. *Gerstner*
@@ -78,8 +75,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - A promenade or ramp: the path itself is the layout. *Le Corbusier, Wright*
 - Keep the item constant and grow the interval geometrically (×1.5–3 per step) from the newest end; crop the old end at the frame and keep the head whole. *Blossfeldt*
 - Hold one centre and change scale by a constant ratio; an outline a tenth of the view's side marks what the next step fills, and the scale is stated twice, in words and as a figure, in the side bands. *Eames*
-- Draw every state as its own equal module, three to a row, each holding two identical lines set 1 : 7 as close as the rows, one fixed and one displaced one slot per module; the last module returns to the first state and its short row (0.35) is the end. *Reich*
-- End every stage on one home column and set one unchanging mark there, parted from the content by an empty band 0.6–1 of its width; stages grow by one unit in equal mirrored pairs (1, 1, 2, 2, 3, 3), so the widening distance between identical marks is the progress. *Pärt*
 
 **Arriving and crossing between contexts**
 - Compress, then release. *Wright, Barragán*
@@ -88,14 +83,12 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Change the material (transparent → opaque) instead of moving the object. *Moholy-Nagy*
 - Give each destination its own title spread or register. *Lissitzky, Mackintosh*
 - Lead along one axis through 4–5 equal quiet stages to a compact goal (about 1/7 of the view's width) that is visible from the first step, open in the middle and closed by a solid bay each side; the even run makes the richer end count. *Eliel Saarinen*
-- Join blocks by a cut: each block is flat at one of two levels (variation inside under a tenth) and the next starts whole at a boundary, with no ramp or blend; an empty interval of about 1% of the block may mark the join and appears nowhere else. *Glass*
 
 **Empty state, invitation**
 - Emptiness as a vessel; name the container by what it is. *Hara*
 - Show the absence in the structure: a lattice with cells knocked out. *Hofmann*
 - A silhouette of what will be here. *Moholy-Nagy (photogram)*
 - One small off-centre mark in a large field. *Malevich, Hokusai (sketch in a frame)*
-- Keep the frame, its divisions and its one scale line, and put nothing in: an empty cell has the same edges and the same size rule as a full one, so a blank reads as a member of the set and not as a fault. *Cage*
 
 **Feedback on hover, press, select**
 - Change the medium, not the elevation: value order, added light, width axis, transparency. *Albers, Le Corbusier, Judd, Ruder, Riley, Sejima*
@@ -125,7 +118,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Split one unit between two planes either side of a hairline lattice, about 3% of the width apart, tiers offset by half a unit, with the ground showing through gaps as wide as the unit. *Bertoia*
 - Recession as intervals shrinking by one ratio (each 0.5–0.7 of the last) toward one point, over a ruled scaffold left visible under freely drawn content. *Leonardo*
 - Two flat layers told apart by regularity: a drawn grid in the second value over a bed that keeps its own irregular rhythm, neither snapped to the other. *Alberti*
-- Run a second layer on an interval that is no multiple of the first, one unchanging mark at 2–4% of the first layer's rate, meeting it only at the frame's outer edges and told apart by line pattern; layers that never step together separate without tint. *Cage*
 
 **Delight and play that stay adult**
 - A closed set of parts the user may break and rebuild safely. *Le Parc, Vasarely*
@@ -142,7 +134,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - An emblem + stripe + colour "uniform". *Stepanova*
 - Ornament only at nodes. *Mackintosh, Mucha, Hoffmann*
 - Pass one plain figure down through every scale, unchanged within a level and altered by one operation between levels, so page, component and detail read as kin without a logo. *Eliel Saarinen*
-- Fix 5–7 plain parts and a seed, run them in unruled lanes on unequal cycles so no two views match while every part is known, repeat the whole block only after 8 or more turns of the longest cycle, and print the rule as a one-line key beside the result. *Eno*
 
 **Live and changing data**
 - Lanes in which chips tick. *Mondrian (Boogie)*
@@ -150,9 +141,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Change bound to the user's own movement (scroll, pointer), not to a timer. *Cruz-Diez, Soto*
 - A travelling wave through a constant structure. *Hofmann, Riley*
 - Fix 3–7 anchors and relax everything else as one net; on any change re-solve and move every node a little (critically damped, no overshoot). *Frei Otto*
-- Change one slot per step and hold each state at least 12 cell-lengths (holds 80% of the time, transitions 20% or a cut); show rising load by filling empty slots (8 → 12 of 12, or an on-share of 21% → 100% at a fixed period), never by size, contrast or speed. *Reich*
-- Hold updates and apply them on a fixed tick as whole units added or removed at one end, in one step of 100ms or less with no highlight; size, weight and tint stay level, and a second kind of change (a new layer or series) enters only while the count is still, on a plateau about twice a normal step. *Glass*
-- Let each arrival leave a trace that loses one equal value step per refresh and is gone after 10–14; admit the next when the last is two thirds gone so density stays level, hold arrivals to a hidden slot of 2–6s, fade them in over 600–1200ms and out 2–4 times slower, and keep the cut for a change of state. *Eno*
 
 **Comparing and choosing**
 - Parallel columns of honest, unequal length. *Ruder*
@@ -162,7 +150,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Show the two states as two zones of one field either side of a single off-centre divider (0.30–0.42 of the width) that holds nothing, both standing on one datum by the same point, so a 2.2× difference in scale reads as rank or distance and not as a different kind. *Piero*
 - Identical frames (2 × 3, 4 × 3) in which only the inner division lines move; change the whole set through one shared transform, never interval by interval. *Dürer*
 - Stack two views of one object on one axis at one scale with the same left and right edges, so a feature in one sits directly under itself in the other; mirror the slots and let the halves differ only by role. *Palladio*
-- Stack variants of one figure of 4–8 units on one pitch so identical units share a column and each differs from the last only in length, by one named rule (+1, +k, doubling); additions sit at one end, each variant gets the same room, and its count is written beside it as a sum ("5+3+3"). *Glass*
 
 **Destructive or irreversible acts**
 - One "opponent" marked by black, not by more red. *Rodchenko*
@@ -182,8 +169,6 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Ambient change slower than noticing. *Turrell*
 - Focus by dimming the surroundings. *Ando, Wright*
 - Settle area shares on a flat board of every surface first; keep about 70% of the main surface uncovered, storage on one full-length edge element, and split a 1.5–5% accent into 2–3 small pieces around the open centre. *Knoll*
-- Lock emphasis and value set for the whole session and layer two clocks about 66 : 1 apart: a fixed unit and a slow swell on one secondary attribute, two per section, that moves the whole by a third of what it moves its own band. *Reich*
-- Put recurring items on cycles that are near and unequal (within 2 : 1, none a multiple of another), counted in visits or days and not on a clock, each filling a third of its cycle at most; the frame stays exact, the rests stay empty (about a fifth of the span), totals hold level per screen, and nothing new is marked. *Eno*
 
 ### P.2 Calibration: what the measurements agree on
 

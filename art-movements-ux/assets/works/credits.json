@@ -698,5 +698,55 @@
   "link": "https://indeterminacy.ac.uk/?p=2636",
   "license": "© Henmar Press / C. F. Peters (John Cage), small thumbnail for commentary",
   "credit": "The Future of Indeterminacy, indeterminacy.ac.uk"
+ },
+ {
+  "stem": "fischinger",
+  "artist": "Oskar Fischinger",
+  "work": "An American March (graphic notated score)",
+  "year": "c. 1939–41",
+  "image": "assets/works/fischinger.jpg",
+  "link": "https://www.centerforvisualmusic.org/Fischinger/OFProcess.htm",
+  "license": "© Center for Visual Music, small thumbnail for commentary",
+  "credit": "Center for Visual Music (gift of Fischinger Trust)"
+ },
+ {
+  "stem": "mclaren",
+  "artist": "Norman McLaren",
+  "work": "Synchromy (film frame)",
+  "year": "1971",
+  "image": "assets/works/mclaren.jpg",
+  "link": "https://www.youtube.com/watch?v=_UA40sL06sU",
+  "license": "© National Film Board of Canada, small thumbnail for commentary",
+  "credit": "National Film Board of Canada (NFB YouTube channel)"
+ },
+ {
+  "stem": "lye",
+  "artist": "Len Lye",
+  "work": "A Colour Box (film frame)",
+  "year": "1935",
+  "image": "assets/works/lye.jpg",
+  "link": "https://www.youtube.com/watch?v=fOEqTwwkB3Y",
+  "license": "© Len Lye Foundation / rights holder, small thumbnail for commentary",
+  "credit": "YouTube transfer by optimisticwombatninja08"
+ },
+ {
+  "stem": "bute",
+  "artist": "Mary Ellen Bute",
+  "work": "Synchromy No. 4: Escape (film frame)",
+  "year": "1937–38",
+  "image": "assets/works/bute.jpg",
+  "link": "https://www.youtube.com/watch?v=hwIMQcDldu0",
+  "license": "© Estate of Mary Ellen Bute / Center for Visual Music, small thumbnail for commentary",
+  "credit": "YouTube, Visual Music // Música Visual (Unseen Cinema transfer, courtesy Anthology Film Archives)"
+ },
+ {
+  "stem": "whitney",
+  "artist": "John Whitney",
+  "work": "Arabesque (film frame)",
+  "year": "1975",
+  "image": "assets/works/whitney.jpg",
+  "link": "https://www.youtube.com/watch?v=cxkbScwt77g",
+  "license": "© Whitney Editions / the estate of John Whitney, small thumbnail for commentary",
+  "credit": "YouTube, Gorkab (LaserDisc transfer)"
  }
 ]

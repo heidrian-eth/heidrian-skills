@@ -14,10 +14,9 @@
   <img src="assets/works/haeckel.jpg" height="96" alt="Kunstformen der Natur, Tafel 4: Diatomea">
   <img src="assets/works/eames.jpg" height="96" alt="ESU 421-C (Eames Storage Unit)">
   <img src="assets/works/leonardo.jpg" height="96" alt="The muscles of the shoulder and arm">
-  <img src="assets/works/cage.jpg" height="96" alt="Fontana Mix (score materials superimposed)">
 </p>
 
-**Seventy artists, fourteen movements, one design system that looks like none of them.**
+**Sixty-five artists, thirteen movements, one design system that looks like none of them.** Plus ten composers and filmmakers for anything that moves.
 
 Ask a model for a UI and you get the statistical median: rounded cards on soft shadows, a centered hero, Inter at three weights, one brand blue. This skill replaces that default with a studio method. It reads your product's real design problems, pulls the artworks that already solved them, and distils those solutions into a locked brand book and UI kit. Every screen is then built from that kit, and only from it.
 
@@ -49,6 +48,10 @@ A single-screen request runs a **light path** through the same stages, so the ne
 
 When nobody knows the direction yet, the skill draws **ten random triads** of artists (`scripts/triads.py`, seeded and reproducible), fuses each into one board with a cast of three roles (Skeleton owns structure, Charge owns colour, Behaviour owns motion), renders a specimen of your crux screen per triad, and lays all ten side by side. You pick one, or mix by layer (`T03.S + T07.C`). No hand-picking of artists, no re-rolling for a prettier draw: the awkward combinations are where the non-median ideas live.
 
+### Dynamic content: time-based companions
+
+Asked for a video, an animation or a presentation, the skill makes the still design first, then pairs it with one composer or filmmaker chosen by fit (two at most: one for the long form, one for the single event). The companion owns timing only, and the work starts from a written score and storyboard. Every frame must hold when frozen, work without sound, and survive reduced motion.
+
 ## Use it
 
 Install the folder as a skill:
@@ -62,6 +65,8 @@ Then ask for design work and say you want it art-informed, or name the method:
 > Design the home screen of a budgeting app. Use art-movements-ux.
 
 > Run an art-movements-ux exploration for our onboarding flow.
+
+> Turn this quarterly deck into an animated presentation, with a time-based companion.
 
 > What would Barragán do with this checkout? Single-artist study, then back to our kit.
 
@@ -80,7 +85,7 @@ A mobile bank, end to end: board **"Rail"** → kit → Home → Send money, wit
 
 Read [`references/WORKED-EXAMPLE-rail.md`](references/WORKED-EXAMPLE-rail.md), open the built files in [`references/worked-example/`](references/worked-example/), and see two triad fusions (one plain, one hard) in [`references/EXPLORATION-EXAMPLE.md`](references/EXPLORATION-EXAMPLE.md).
 
-## The library: 14 movements, 70 artists
+## The library: 13 movements, 65 artists
 
 Each image is one work the study examines. Each name links to the full study: key works examined (and which were visually checked), process and measured relations, composition, colour, type, motion, UI translations, what the artist would reject, and sources. One-line summaries live in [`references/library.md`](references/library.md); the problem-to-process index is [`references/principles.md`](references/principles.md).
 
@@ -240,17 +245,33 @@ Each image is one work the study examines. Each name links to the full study: ke
 | <img src="assets/works/durer.jpg" width="150" alt="Constructed capitals K and L, Underweysung der Messung"> | **[Albrecht Dürer](references/13-renaissance/durer.md)**<br><sub>*Constructed capitals K and L, Underweysung der Messung*, 1525</sub> | Declare one square module and take every stroke, gap and size from it; print the rule beside its result at the same height and line weight, one rule feeding a row of outcomes that differ only in where their inner divisions fall; name every division level with its line; sign and date each view in its open corner. |
 | <img src="assets/works/palladio.jpg" width="150" alt="Villa Rotonda, I quattro libri dell'architettura, Book II"> | **[Andrea Palladio](references/13-renaissance/palladio.md)**<br><sub>*Villa Rotonda, I quattro libri dell'architettura, Book II*, 1570</sub> | Draw every size from one short list of whole-number ratios and derive the rest as means; show one object as two views stacked on one axis at one scale and width; write each measure inside the thing it measures; spend tone on openings only. |
 
-### 14 · Process Music
+## Time-based companions: 2 schools, 10 artists
+
+For anything that unfolds in time: a video, an animation, a presentation, kinetic type, a data story. Composers and filmmakers are kept apart from the movements: they are never shuffled into the triads and never own layout, colour or type. One is chosen by fit and paired with a design made from the movements, where it rules timing only. Summaries: [`references/time/library.md`](references/time/library.md).
+
+### Process Music
 
 *Rules left to run: one change at a time, held long enough to learn, over cycles of unequal length, with emptiness given a stated share.*
 
 | Work | Artist | Process |
 |:---:|---|---|
-| <img src="assets/works/reich.jpg" width="150" alt="Pendulum Music (handwritten text score)"> | **[Steve Reich](references/14-process-music/reich.md)**<br><sub>*Pendulum Music (handwritten text score)*, 1968</sub> | Set one short cell on a grid of 8 or 12 equal slots and lay an identical copy beside it; state one rule in a sentence and change one slot per step, holding each state long enough to learn; lock emphasis and value set, show more by filling gaps, never by size or speed; draw every state as an equal module and end where the rule began. |
-| <img src="assets/works/glass.jpg" width="150" alt="Einstein on the Beach, Knee Play 3 (manuscript fragment)"> | **[Philip Glass](references/14-process-music/glass.md)**<br><sub>*Einstein on the Beach, Knee Play 3 (manuscript fragment)*, 1975–76</sub> | Fix one pitch and a small stock of units; repeat a short figure until it is known, then change only its length, one named rule at a time, adding whole units at one end while size, weight and tint stay level; bring in a new layer only while the length is still; join blocks by a cut; write every count beside its stage as a sum. |
-| <img src="assets/works/part.jpg" width="150" alt="Für Alina (autograph, first page)"> | **[Arvo Pärt](references/14-process-music/part.md)**<br><sub>*Für Alina (autograph, first page)*, 1976</sub> | Fix one home value and end every sequence on it; give each free value a companion limited to three fixed values, set by one rule; grow sequences by one unit in mirrored pairs; mark each return with one unchanging sign across an empty band; size every gap from its group; break the rule once, late; end by removing layers and leaving the last unit out. |
-| <img src="assets/works/eno.jpg" width="150" alt="Music for Airports (back-cover graphic scores)"> | **[Brian Eno](references/14-process-music/eno.md)**<br><sub>*Music for Airports (back-cover graphic scores)*, 1978</sub> | Set a few plain parts on cycles of near, unequal length over an exactly held frame, counted in visits or rows and not on a clock; leave at least two thirds of each cycle empty; let each event return weaker by equal steps until gone; change state only by opening, shutting or filtering a layer; print the rules and tune them, never a result. |
-| <img src="assets/works/cage.jpg" width="150" alt="Fontana Mix (score materials superimposed)"> | **[John Cage](references/14-process-music/cage.md)**<br><sub>*Fontana Mix (score materials superimposed)*, 1958</sub> | Fix the frame before the content and divide it by one short series used at two scales; fill its cells by a seeded draw from a closed chart in which empty is an entry with a stated share; change the chart, never a cell; run one second layer on an unrelated interval; write starts and ends as overlapping ranges; print one scale line; join sections by cuts. |
+| <img src="assets/works/reich.jpg" width="150" alt="Pendulum Music (handwritten text score)"> | **[Steve Reich](references/time/process-music/reich.md)**<br><sub>*Pendulum Music (handwritten text score)*, 1968</sub> | Set one short cell on a grid of 8 or 12 equal slots and lay an identical copy beside it; state one rule in a sentence and change one slot per step, holding each state long enough to learn; lock emphasis and value set, show more by filling gaps, never by size or speed; draw every state as an equal module and end where the rule began. |
+| <img src="assets/works/glass.jpg" width="150" alt="Einstein on the Beach, Knee Play 3 (manuscript fragment)"> | **[Philip Glass](references/time/process-music/glass.md)**<br><sub>*Einstein on the Beach, Knee Play 3 (manuscript fragment)*, 1975–76</sub> | Fix one pitch and a small stock of units; repeat a short figure until it is known, then change only its length, one named rule at a time, adding whole units at one end while size, weight and tint stay level; bring in a new layer only while the length is still; join blocks by a cut; write every count beside its stage as a sum. |
+| <img src="assets/works/part.jpg" width="150" alt="Für Alina (autograph, first page)"> | **[Arvo Pärt](references/time/process-music/part.md)**<br><sub>*Für Alina (autograph, first page)*, 1976</sub> | Fix one home value and end every sequence on it; give each free value a companion limited to three fixed values, set by one rule; grow sequences by one unit in mirrored pairs; mark each return with one unchanging sign across an empty band; size every gap from its group; break the rule once, late; end by removing layers and leaving the last unit out. |
+| <img src="assets/works/eno.jpg" width="150" alt="Music for Airports (back-cover graphic scores)"> | **[Brian Eno](references/time/process-music/eno.md)**<br><sub>*Music for Airports (back-cover graphic scores)*, 1978</sub> | Set a few plain parts on cycles of near, unequal length over an exactly held frame, counted in visits or rows and not on a clock; leave at least two thirds of each cycle empty; let each event return weaker by equal steps until gone; change state only by opening, shutting or filtering a layer; print the rules and tune them, never a result. |
+| <img src="assets/works/cage.jpg" width="150" alt="Fontana Mix (score materials superimposed)"> | **[John Cage](references/time/process-music/cage.md)**<br><sub>*Fontana Mix (score materials superimposed)*, 1958</sub> | Fix the frame before the content and divide it by one short series used at two scales; fill its cells by a seeded draw from a closed chart in which empty is an entry with a stated share; change the chart, never a cell; run one second layer on an unrelated interval; write starts and ends as overlapping ranges; print one scale line; join sections by cuts. |
+
+### Visual Music
+
+*Events before drawing: each lands whole, decays on one law and leaves a residue or a blank; unison and stillness are spent where they count.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/fischinger.jpg" width="150" alt="An American March (graphic notated score)"> | **[Oskar Fischinger](references/time/visual-music/fischinger.md)**<br><sub>*An American March (graphic notated score)*, c. 1939–41</sub> | Rule the time before the form: give every event a start and a length on one ruler of 40ms units. Open each figure from a hairline at its own place within one to five units and let it decay many times longer on one fixed law; overlap the next, keep a thin residue of each, spend the residue in one unison per section, then hold a short blank. |
+| <img src="assets/works/mclaren.jpg" width="150" alt="Synchromy (film frame)"> | **[Norman McLaren](references/time/visual-music/mclaren.md)**<br><sub>*Synchromy (film frame)*, 1971</sub> | Fix one mark and one operation, and count the events in time units before drawing. Land each mark whole on its event, let it lose half at once and leave its place empty; map one slow series strictly and mark half of the rest; travel at constant speed and accelerate only into a break; grow by one slow rule, then return to one. |
+| <img src="assets/works/lye.jpg" width="150" alt="A Colour Box (film frame)"> | **[Len Lye](references/time/visual-music/lye.md)**<br><sub>*A Colour Box (film frame)*, 1935</sub> | Cut the run into short phrases at the joins the process already has. Hold one figure and one ground through each phrase and swap one of them in a single step. Redraw a working thing in place, move a travelling one at constant speed, show every pause as bare ground for under a second, and stop nearly all motion while words are read. |
+| <img src="assets/works/bute.jpg" width="150" alt="Synchromy No. 4: Escape (film frame)"> | **[Mary Ellen Bute](references/time/visual-music/bute.md)**<br><sub>*Synchromy No. 4: Escape (film frame)*, 1937–38</sub> | List the events before drawing; give each kind one plain mark at a fixed seat on a carrier that stays still; let a mark either stay to be counted or flash to acknowledge, never both; time to the frame only the sparse, sharp events and carry the rest by slow light; raise emphasis by peak or rate, and close on one figure held still. |
+| <img src="assets/works/whitney.jpg" width="150" alt="Arabesque (film frame)"> | **[John Whitney](references/time/visual-music/whitney.md)**<br><sub>*Arabesque (film frame)*, 1975</sub> | Give every member of a set one rule of motion and a whole-number rate of its own on one shared period. Choose the simple fractions at which the rates agree, slow and dwell there, and let the set drift between. Loop exactly, enter copies a fixed step apart, start each new figure in the gap of the last, and show only the resolved states when motion is off. |
 
 ## What's inside
 
@@ -259,9 +280,10 @@ art-movements-ux/
 ├── SKILL.md                   the method: stages, lock rules, guardrails, templates
 ├── CHANGELOG.md               every correction made after checking the real works
 ├── references/
-│   ├── library.md             70 artist processes (opened in Stages 2–3 only)
+│   ├── library.md             65 artist processes (opened in Stages 2–3 only)
 │   ├── principles.md          UI problems → processes, calibration ranges, tensions
-│   ├── 01-bauhaus/ … 14-process-music/   one full study per artist
+│   ├── 01-bauhaus/ … 13-renaissance/   one full study per artist
+│   ├── time/                  time-based companions: own library.md, process-music/, visual-music/
 │   ├── WORKED-EXAMPLE-rail.md
 │   ├── EXPLORATION-EXAMPLE.md
 │   ├── worked-example/        kit.css, brand-book.html, home.html, send.html
@@ -275,14 +297,14 @@ art-movements-ux/
 
 ## Provenance
 
-Entries were written from museum, foundation and scholarly sources, then checked against open-access images of the key works where they could be obtained. Hex values are measured samples, kept only for strict studies and homage; a kit takes its hues from your brand or your case. Music studies were measured from recordings (pulse, cycle length, density, silence) and read from scores and spectrograms; nobody listened to them, and each study says so. Where a work could not be obtained, the entry says so.
+Entries were written from museum, foundation and scholarly sources, then checked against open-access images of the key works where they could be obtained. Hex values are measured samples, kept only for strict studies and homage; a kit takes its hues from your brand or your case. Music studies were measured from recordings and read from scores and spectrograms; nobody listened to them. Film studies were measured from transfers and read frame by frame. Where a work could not be obtained, the entry says so.
 
 ## Image credits
 
 Thumbnails illustrate the commentary on each artist's method. Copyrighted works are shown small, credited to their rights holders.
 
 <details>
-<summary>All 70 works, sources and licenses</summary>
+<summary>All 75 works, sources and licenses</summary>
 
 | Artist | Work | License | Source |
 |---|---|---|---|
@@ -356,5 +378,10 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Arvo Pärt | [Für Alina (autograph, first page), 1976](https://www.arvopart.ee/en/arvo-part/work/477/) | © Arvo Pärt / Universal Edition; scan © Arvo Pärt Centre, small thumbnail for commentary | Arvo Pärt Centre (arvopart.ee) |
 | Brian Eno | [Music for Airports (back-cover graphic scores), 1978](https://musicbrainz.org/release/38f225c8-135a-4434-a410-5049ee285c70) | © Brian Eno / E.G. Records, small thumbnail for commentary | Cover Art Archive / MusicBrainz (Japanese Polydor LP MPF 1229 scan) |
 | John Cage | [Fontana Mix (score materials superimposed), 1958](https://indeterminacy.ac.uk/?p=2636) | © Henmar Press / C. F. Peters (John Cage), small thumbnail for commentary | The Future of Indeterminacy, indeterminacy.ac.uk |
+| Oskar Fischinger | [An American March (graphic notated score), c. 1939–41](https://www.centerforvisualmusic.org/Fischinger/OFProcess.htm) | © Center for Visual Music, small thumbnail for commentary | Center for Visual Music (gift of Fischinger Trust) |
+| Norman McLaren | [Synchromy (film frame), 1971](https://www.youtube.com/watch?v=_UA40sL06sU) | © National Film Board of Canada, small thumbnail for commentary | National Film Board of Canada (NFB YouTube channel) |
+| Len Lye | [A Colour Box (film frame), 1935](https://www.youtube.com/watch?v=fOEqTwwkB3Y) | © Len Lye Foundation / rights holder, small thumbnail for commentary | YouTube transfer by optimisticwombatninja08 |
+| Mary Ellen Bute | [Synchromy No. 4: Escape (film frame), 1937–38](https://www.youtube.com/watch?v=hwIMQcDldu0) | © Estate of Mary Ellen Bute / Center for Visual Music, small thumbnail for commentary | YouTube, Visual Music // Música Visual (Unseen Cinema transfer, courtesy Anthology Film Archives) |
+| John Whitney | [Arabesque (film frame), 1975](https://www.youtube.com/watch?v=cxkbScwt77g) | © Whitney Editions / the estate of John Whitney, small thumbnail for commentary | YouTube, Gorkab (LaserDisc transfer) |
 
 </details>
