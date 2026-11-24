@@ -798,5 +798,105 @@
   "link": "https://otago.ourheritage.ac.nz/items/show/8510",
   "license": "© Pracusa (Sonia Delaunay), small thumbnail for commentary",
   "credit": "OUR Heritage, University of Otago (scan of the 2008-09 Beinecke / Yale University Press facsimile, 1913 sheet)"
+ },
+ {
+  "stem": "topkapi-scroll",
+  "artist": "The Topkapı Scroll masters",
+  "work": "Topkapı Scroll, panel 28 (Necipoğlu cat. no. 28): three superimposed layers, black strapwork, red-dotted polygons, orange large-scale pattern",
+  "year": "late 15th or 16th century",
+  "image": "assets/works/topkapi-scroll.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Panel29.JPG",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons; original Topkapı Palace Museum Library, MS H. 1956"
+ },
+ {
+  "stem": "alhambra",
+  "artist": "The Nasrid workshops at the Alhambra",
+  "work": "Mirador de Lindaraja, entrance jamb: tile dado, inscription bands, carved stucco and muqarnas",
+  "year": "c. 1362-1391 (reign of Muhammad V)",
+  "image": "assets/works/alhambra.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Alhambra_Mirador_of_Lindaraja_DSCF6953.jpg",
+  "license": "CC BY-SA 4.0",
+  "credit": "R Prazeres, Wikimedia Commons"
+ },
+ {
+  "stem": "ibn-al-bawwab",
+  "artist": "Ibn al-Bawwab",
+  "work": "Qur'an of Ibn al-Bawwab, f.9v (Commons f.9b): headings for chapters 1 and 2 with text, verse markers and marginal medallions, Chester Beatty Is 1431",
+  "year": "1000-01 (AH 391)",
+  "image": "assets/works/ibn-al-bawwab.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Headings_for_Chapter_1,_al-Fatiha,_and_for_Chapter_2,_al-Baqara_(CBL_Is_1431,_f.9b).jpg",
+  "license": "Public domain",
+  "credit": "Chester Beatty, Dublin, via Wikimedia Commons"
+ },
+ {
+  "stem": "qavam-al-din",
+  "artist": "Qavam al-Din Shirazi",
+  "work": "Gawhar Shad mausoleum, Herat: painted squinch-net vault seen from below",
+  "year": "1417-38 (mausoleum c. 1432)",
+  "image": "assets/works/qavam-al-din.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:2009_Musalla_Complex_Herat_Afghanistan_4112214896.jpg",
+  "license": "CC BY-SA 2.0",
+  "credit": "Photo: Marius Arnesen, via Wikimedia Commons"
+ },
+ {
+  "stem": "sinan",
+  "artist": "Mimar Sinan",
+  "work": "Selimiye Mosque, Edirne: dome on eight arches, seen from below",
+  "year": "1568-1575",
+  "image": "assets/works/sinan.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Interior_of_dome,_Selimiye_Mosque,_Edirne_-_Tarik_Kaan_Muslu.jpg",
+  "license": "CC BY-SA 4.0",
+  "credit": "Tarik Kaan Muslu (Tarikkaanmuslu), Wikimedia Commons"
+ },
+ {
+  "stem": "monet",
+  "artist": "Claude Monet",
+  "work": "Stacks of Wheat (Sunset, Snow Effect)",
+  "year": "1890-91",
+  "image": "assets/works/monet.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Stacks_of_Wheat_(Sunset,_Snow_Effect)_-_1922.431_-_Art_Institute_of_Chicago.jpg",
+  "license": "Public domain",
+  "credit": "Art Institute of Chicago (1922.431), via Wikimedia Commons"
+ },
+ {
+  "stem": "degas",
+  "artist": "Edgar Degas",
+  "work": "The Dance Lesson",
+  "year": "c. 1879",
+  "image": "assets/works/degas.jpg",
+  "link": "https://www.nga.gov/artworks/93045-dance-lesson",
+  "license": "Public domain",
+  "credit": "National Gallery of Art, Washington (open access file via Wikimedia Commons)"
+ },
+ {
+  "stem": "morisot",
+  "artist": "Berthe Morisot",
+  "work": "In the Dining Room",
+  "year": "1886",
+  "image": "assets/works/morisot.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Berthe_Morisot,_In_the_Dining_Room,_1886,_NGA_46660.jpg",
+  "license": "Public domain",
+  "credit": "National Gallery of Art, Washington (Chester Dale Collection, 1963.10.185), via Wikimedia Commons"
+ },
+ {
+  "stem": "pissarro",
+  "artist": "Camille Pissarro",
+  "work": "The Boulevard Montmartre on a Winter Morning",
+  "year": "1897",
+  "image": "assets/works/pissarro.jpg",
+  "link": "https://www.metmuseum.org/art/collection/search/437310",
+  "license": "Public domain",
+  "credit": "The Metropolitan Museum of Art (Open Access)"
+ },
+ {
+  "stem": "cassatt",
+  "artist": "Mary Cassatt",
+  "work": "The Letter",
+  "year": "1890-1891",
+  "image": "assets/works/cassatt.jpg",
+  "link": "https://www.nga.gov/artworks/46726-letter",
+  "license": "Public domain",
+  "credit": "National Gallery of Art, Washington, 1963.10.251 (open access, CC0; cropped to the plate)"
  }
 ]

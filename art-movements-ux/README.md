@@ -15,9 +15,11 @@
   <img src="assets/works/eames.jpg" height="96" alt="ESU 421-C (Eames Storage Unit)">
   <img src="assets/works/leonardo.jpg" height="96" alt="The muscles of the shoulder and arm">
   <img src="assets/works/gris.jpg" height="96" alt="Fantômas">
+  <img src="assets/works/alhambra.jpg" height="96" alt="Mirador de Lindaraja, entrance jamb: tile dado, inscription bands, carved stucco and muqarnas">
+  <img src="assets/works/monet.jpg" height="96" alt="Stacks of Wheat (Sunset, Snow Effect)">
 </p>
 
-**Seventy artists, fourteen movements, one design system that looks like none of them.** Plus ten composers and filmmakers for anything that moves.
+**Eighty artists, sixteen movements, one design system that looks like none of them.** Plus ten composers and filmmakers for anything that moves.
 
 Ask a model for a UI and you get the statistical median: rounded cards on soft shadows, a centered hero, Inter at three weights, one brand blue. This skill replaces that default with a studio method. It reads your product's real design problems, pulls the artworks that already solved them, and distils those solutions into a locked brand book and UI kit. Every screen is then built from that kit, and only from it.
 
@@ -86,7 +88,7 @@ A mobile bank, end to end: board **"Rail"** → kit → Home → Send money, wit
 
 Read [`references/WORKED-EXAMPLE-rail.md`](references/WORKED-EXAMPLE-rail.md), open the built files in [`references/worked-example/`](references/worked-example/), and see two triad fusions (one plain, one hard) in [`references/EXPLORATION-EXAMPLE.md`](references/EXPLORATION-EXAMPLE.md).
 
-## The library: 14 movements, 70 artists
+## The library: 16 movements, 80 artists
 
 Each image is one work the study examines. Each name links to the full study: key works examined (and which were visually checked), process and measured relations, composition, colour, type, motion, UI translations, what the artist would reject, and sources. One-line summaries live in [`references/library.md`](references/library.md); the problem-to-process index is [`references/principles.md`](references/principles.md).
 
@@ -258,6 +260,30 @@ Each image is one work the study examines. Each name links to the full study: ke
 | <img src="assets/works/leger.jpg" width="150" alt="The City (La Ville)"> | **[Fernand Léger](references/14-cubism/leger.md)**<br><sub>*The City (La Ville)*, 1919</sub> | Sort every element into two classes that never mix: flat areas, which alone take strong colour, and shaded things, which stay near-neutral. Make dark and light working surfaces of a quarter each and put a neutral between any two hues; let no area dominate a dense view, or isolate one object; place one shaded solid off-centre; repeat units in short countable runs; cut uprights with a diagonal. |
 | <img src="assets/works/sonia-delaunay.jpg" width="150" alt="La Prose du Transsibérien, with Blaise Cendrars (detail)"> | **[Sonia Delaunay](references/14-cubism/sonia-delaunay.md)**<br><sub>*La Prose du Transsibérien, with Blaise Cendrars (detail)*, 1913</sub> | Fix a few shared axes with equal columns and staggered rows; run each continuous shape across them and change its fill at every crossing while its path holds; draw no outline and ration contrast edge by edge, with the darkest tone as an area; give words an equal column and put colour only where the lines leave space; open quietly and keep the one picture for the end. |
 
+### 15 · Islamic Geometry
+
+*A whole field grown from one hidden construction: a closed rule, a frame fitted to it, and nested scales that close on the same count.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/topkapi-scroll.jpg" width="150" alt="Topkapı Scroll, panel 28 (Necipoğlu cat. no. 28): three superimposed layers, black strapwork, red-dotted polygons, orange large-scale pattern"> | **[The Topkapı Scroll masters](references/15-islamic-geometry/topkapi-scroll.md)**<br><sub>*Topkapı Scroll, panel 28 (Necipoğlu cat. no. 28): three superimposed layers, black strapwork, red-dotted polygons, orange large-scale pattern*, late 15th or 16th century</sub> | Close a set of two to six directions and cut each panel's proportion to it; lay a hidden scaffold from corners and mid-edges; run every line through the middle of a cell edge until it meets another; leave nodes blank; lock one larger figure to the small centres; erase the scaffold, code layer and state by weight and hue, and ship the smallest unit, frameless where the field continues. |
+| <img src="assets/works/alhambra.jpg" width="150" alt="Mirador de Lindaraja, entrance jamb: tile dado, inscription bands, carved stucco and muqarnas"> | **[The Nasrid workshops at the Alhambra](references/15-islamic-geometry/alhambra.md)**<br><sub>*Mirador de Lindaraja, entrance jamb: tile dado, inscription bands, carved stucco and muqarnas*, c. 1362-1391 (reign of Muhammad V)</sub> | Stack the view in three registers by who touches them, widest contrast at the hand; lay one uniform hidden lattice under each dense field, fitted so no unit is cut, and group only by colour, shared by halves; put the words on the joints as straight bands; close every band's count on the shared width; nest three scales; keep the centre and four fifths of the view plain. |
+| <img src="assets/works/ibn-al-bawwab.jpg" width="150" alt="Qur&#x27;an of Ibn al-Bawwab, f.9v (Commons f.9b): headings for chapters 1 and 2 with text, verse markers and marginal medallions, Chester Beatty Is 1431"> | **[Ibn al-Bawwab](references/15-islamic-geometry/ibn-al-bawwab.md)**<br><sub>*Qur'an of Ibn al-Bawwab, f.9v (Commons f.9b): headings for chapters 1 and 2 with text, verse markers and marginal medallions, Chester Beatty Is 1431*, 1000-01 (AH 391)</sub> | Take the reading face's dot as the unit and set letter height, row interval and a fixed row count from it; leave the reading column bare and put counts and section names in one outer column, level with their lines; never stretch letters, let one stroke and the margin take the slack; keep frames, pattern and the single fenced colour for the first and last views. |
+| <img src="assets/works/qavam-al-din.jpg" width="150" alt="Gawhar Shad mausoleum, Herat: painted squinch-net vault seen from below"> | **[Qavam al-Din Shirazi](references/15-islamic-geometry/qavam-al-din.md)**<br><sub>*Gawhar Shad mausoleum, Herat: painted squinch-net vault seen from below*, 1417-38 (mausoleum c. 1432)</sub> | Name the two frames a view must join and make the join the widest band; lay a few wide plain members across the whole field so their crossings draw the next, smaller figure; double the count at each level until it reads as continuous; keep members one width, carrying only words; vary every cell between them; put light and colour at the seams. |
+| <img src="assets/works/sinan.jpg" width="150" alt="Selimiye Mosque, Edirne: dome on eight arches, seen from below"> | **[Mimar Sinan](references/15-islamic-geometry/sinan.md)**<br><sub>*Selimiye Mosque, Edirne: dome on eight arches, seen from below*, 1568-1575</sub> | Fix one whole figure at half the view's width and carry it on four, six or eight slim supports; step it down to the frame one marked band at a time, in smaller copies of itself; make every count a multiple of the supports and show them by omission; fill between with one constant lattice the boundary crops; keep strong colour for the connectors and one target zone. |
+
+### 16 · Impressionism
+
+*The condition, not the thing: a fixed frame, one variable changed at a time, hue instead of shadow, and the states kept as a series.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/monet.jpg" width="150" alt="Stacks of Wheat (Sunset, Snow Effect)"> | **[Claude Monet](references/16-impressionism/monet.md)**<br><sub>*Stacks of Wheat (Sunset, Snow Effect)*, 1890-91</sub> | Fix one frame, three bands and one plain off-centre outline; for each condition set one key that tints every surface inside a narrow value band; hold the subject at a constant value interval from its surroundings; turn shade to the opposite hue with a small value step; mark the event at equal lightness in the opposing hue, very small; show the states side by side. |
+| <img src="assets/works/degas.jpg" width="150" alt="The Dance Lesson"> | **[Edgar Degas](references/16-impressionism/degas.md)**<br><sub>*The Dance Lesson*, c. 1879</sub> | Keep a small stock of parts, each drawn once, and compose by moving, mirroring and overlapping them; use two sizes three to four times apart, with one near secondary item as the lever; leave one connected empty field of 15–35% opposite the crowd; stand one finished barrier in front; set the frame last so it cuts two sides; then lock positions and change tone alone between states. |
+| <img src="assets/works/morisot.jpg" width="150" alt="In the Dining Room"> | **[Berthe Morisot](references/16-impressionism/morisot.md)**<br><sub>*In the Dining Room*, 1886</sub> | Lay a tinted middle-value ground and let it show; finish one place under 1% of the view and set one thin dark mark against it; step the detail down in four levels to an edge left open; hold subject and ground within 10 L on one side, told apart by hue and mark direction; cross the subject with a plain bar; add one small saturated touch off-centre. |
+| <img src="assets/works/pissarro.jpg" width="150" alt="The Boulevard Montmartre on a Winter Morning"> | **[Camille Pissarro](references/16-impressionism/pissarro.md)**<br><sub>*The Boulevard Montmartre on a Winter Morning*, 1897</sub> | Fix one window, an off-centre far point and a few hard landmarks; build every zone and item from one small unit, so direction and density do the drawing; give each layer its own clock and re-key only the layer that has changed, inside a narrow value band; spread a tiny accent over many items; show the states as a bordered set. |
+| <img src="assets/works/cassatt.jpg" width="150" alt="The Letter"> | **[Mary Cassatt](references/16-impressionism/cassatt.md)**<br><sub>*The Letter*, 1890-1891</sub> | Name the one point where two parties meet and cut it out of the ground, small and off-centre; fuse the parties into one cropped mass around it and close one edge with a plain block; separate near-equal values by ruling one region and leaving the other flat; relay one small accent; then freeze the outline and revise tone only, keeping every state. |
+
 ## Time-based companions: 2 schools, 10 artists
 
 For anything that unfolds in time: a video, an animation, a presentation, kinetic type, a data story. Composers and filmmakers are kept apart from the movements: they are never shuffled into the triads and never own layout, colour or type. One is chosen by fit and paired with a design made from the movements, where it rules timing only. Summaries: [`references/time/library.md`](references/time/library.md).
@@ -293,9 +319,9 @@ art-movements-ux/
 ├── SKILL.md                   the method: stages, lock rules, guardrails, templates
 ├── CHANGELOG.md               every correction made after checking the real works
 ├── references/
-│   ├── library.md             70 artist processes (opened in Stages 2–3 only)
+│   ├── library.md             80 artist processes (opened in Stages 2–3 only)
 │   ├── principles.md          UI problems → processes, calibration ranges, tensions
-│   ├── 01-bauhaus/ … 14-cubism/   one full study per artist
+│   ├── 01-bauhaus/ … 16-impressionism/   one full study per artist
 │   ├── time/                  time-based companions: own library.md, process-music/, visual-music/
 │   ├── WORKED-EXAMPLE-rail.md
 │   ├── EXPLORATION-EXAMPLE.md
@@ -317,7 +343,7 @@ Entries were written from museum, foundation and scholarly sources, then checked
 Thumbnails illustrate the commentary on each artist's method. Copyrighted works are shown small, credited to their rights holders.
 
 <details>
-<summary>All 80 works, sources and licenses</summary>
+<summary>All 90 works, sources and licenses</summary>
 
 | Artist | Work | License | Source |
 |---|---|---|---|
@@ -401,5 +427,15 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Juan Gris | [Fantômas, 1915](https://commons.wikimedia.org/wiki/File:Juan_Gris,_Fant%C3%B4mas,_1915,_NGA_56101.jpg) | CC0 | National Gallery of Art, Washington, via Wikimedia Commons |
 | Fernand Léger | [The City (La Ville), 1919](https://commons.wikimedia.org/wiki/File:Fernand_L%C3%A9ger,_1919,_The_City_(La_Ville),_oil_on_canvas,_231.1_x_298.4_cm,_Philadelphia_Museum_of_Art.jpg) | Public domain | Philadelphia Museum of Art (A. E. Gallatin Collection), via Wikimedia Commons |
 | Sonia Delaunay | [La Prose du Transsibérien, with Blaise Cendrars (detail), 1913](https://otago.ourheritage.ac.nz/items/show/8510) | © Pracusa (Sonia Delaunay), small thumbnail for commentary | OUR Heritage, University of Otago (scan of the 2008-09 Beinecke / Yale University Press facsimile, 1913 sheet) |
+| The Topkapı Scroll masters | [Topkapı Scroll, panel 28 (Necipoğlu cat. no. 28): three superimposed layers, black strapwork, red-dotted polygons, orange large-scale pattern, late 15th or 16th century](https://commons.wikimedia.org/wiki/File:Panel29.JPG) | Public domain | Wikimedia Commons; original Topkapı Palace Museum Library, MS H. 1956 |
+| The Nasrid workshops at the Alhambra | [Mirador de Lindaraja, entrance jamb: tile dado, inscription bands, carved stucco and muqarnas, c. 1362-1391 (reign of Muhammad V)](https://commons.wikimedia.org/wiki/File:Alhambra_Mirador_of_Lindaraja_DSCF6953.jpg) | CC BY-SA 4.0 | R Prazeres, Wikimedia Commons |
+| Ibn al-Bawwab | [Qur'an of Ibn al-Bawwab, f.9v (Commons f.9b): headings for chapters 1 and 2 with text, verse markers and marginal medallions, Chester Beatty Is 1431, 1000-01 (AH 391)](https://commons.wikimedia.org/wiki/File:Headings_for_Chapter_1,_al-Fatiha,_and_for_Chapter_2,_al-Baqara_(CBL_Is_1431,_f.9b).jpg) | Public domain | Chester Beatty, Dublin, via Wikimedia Commons |
+| Qavam al-Din Shirazi | [Gawhar Shad mausoleum, Herat: painted squinch-net vault seen from below, 1417-38 (mausoleum c. 1432)](https://commons.wikimedia.org/wiki/File:2009_Musalla_Complex_Herat_Afghanistan_4112214896.jpg) | CC BY-SA 2.0 | Photo: Marius Arnesen, via Wikimedia Commons |
+| Mimar Sinan | [Selimiye Mosque, Edirne: dome on eight arches, seen from below, 1568-1575](https://commons.wikimedia.org/wiki/File:Interior_of_dome,_Selimiye_Mosque,_Edirne_-_Tarik_Kaan_Muslu.jpg) | CC BY-SA 4.0 | Tarik Kaan Muslu (Tarikkaanmuslu), Wikimedia Commons |
+| Claude Monet | [Stacks of Wheat (Sunset, Snow Effect), 1890-91](https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Stacks_of_Wheat_(Sunset,_Snow_Effect)_-_1922.431_-_Art_Institute_of_Chicago.jpg) | Public domain | Art Institute of Chicago (1922.431), via Wikimedia Commons |
+| Edgar Degas | [The Dance Lesson, c. 1879](https://www.nga.gov/artworks/93045-dance-lesson) | Public domain | National Gallery of Art, Washington (open access file via Wikimedia Commons) |
+| Berthe Morisot | [In the Dining Room, 1886](https://commons.wikimedia.org/wiki/File:Berthe_Morisot,_In_the_Dining_Room,_1886,_NGA_46660.jpg) | Public domain | National Gallery of Art, Washington (Chester Dale Collection, 1963.10.185), via Wikimedia Commons |
+| Camille Pissarro | [The Boulevard Montmartre on a Winter Morning, 1897](https://www.metmuseum.org/art/collection/search/437310) | Public domain | The Metropolitan Museum of Art (Open Access) |
+| Mary Cassatt | [The Letter, 1890-1891](https://www.nga.gov/artworks/46726-letter) | Public domain | National Gallery of Art, Washington, 1963.10.251 (open access, CC0; cropped to the plate) |
 
 </details>

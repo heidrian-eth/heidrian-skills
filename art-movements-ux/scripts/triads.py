@@ -31,6 +31,8 @@ AXES = {
     "JAPANESE MA & WABI-SABI": (0.1, 0, 0.1), "ART NOUVEAU & VIENNA SECESSION": (0.4, 1, 0.3),
     "MINIMALISM / LIGHT & SPACE": (0, 0.2, 0.1), "OP & KINETIC ART": (0.3, 1, 1),
     "POSTMODERN & NEW WAVE": (1, 1, 0.8), "GROWTH & FORM": (0.4, 0.7, 0.6),
+    "IMPRESSIONISM": (0.8, 0.7, 0.5),
+    "ISLAMIC GEOMETRY": (0.0, 0.8, 0.1),
     "CUBISM": (0.4, 0.8, 0.2),
     "RENAISSANCE": (0.0, 0.5, 0.1),
     "CRANBROOK & ORGANIC MODERNISM": (0.2, 0.4, 0.3),
