@@ -14,9 +14,10 @@
   <img src="assets/works/haeckel.jpg" height="96" alt="Kunstformen der Natur, Tafel 4: Diatomea">
   <img src="assets/works/eames.jpg" height="96" alt="ESU 421-C (Eames Storage Unit)">
   <img src="assets/works/leonardo.jpg" height="96" alt="The muscles of the shoulder and arm">
+  <img src="assets/works/gris.jpg" height="96" alt="Fantômas">
 </p>
 
-**Sixty-five artists, thirteen movements, one design system that looks like none of them.** Plus ten composers and filmmakers for anything that moves.
+**Seventy artists, fourteen movements, one design system that looks like none of them.** Plus ten composers and filmmakers for anything that moves.
 
 Ask a model for a UI and you get the statistical median: rounded cards on soft shadows, a centered hero, Inter at three weights, one brand blue. This skill replaces that default with a studio method. It reads your product's real design problems, pulls the artworks that already solved them, and distils those solutions into a locked brand book and UI kit. Every screen is then built from that kit, and only from it.
 
@@ -85,7 +86,7 @@ A mobile bank, end to end: board **"Rail"** → kit → Home → Send money, wit
 
 Read [`references/WORKED-EXAMPLE-rail.md`](references/WORKED-EXAMPLE-rail.md), open the built files in [`references/worked-example/`](references/worked-example/), and see two triad fusions (one plain, one hard) in [`references/EXPLORATION-EXAMPLE.md`](references/EXPLORATION-EXAMPLE.md).
 
-## The library: 13 movements, 65 artists
+## The library: 14 movements, 70 artists
 
 Each image is one work the study examines. Each name links to the full study: key works examined (and which were visually checked), process and measured relations, composition, colour, type, motion, UI translations, what the artist would reject, and sources. One-line summaries live in [`references/library.md`](references/library.md); the problem-to-process index is [`references/principles.md`](references/principles.md).
 
@@ -245,6 +246,18 @@ Each image is one work the study examines. Each name links to the full study: ke
 | <img src="assets/works/durer.jpg" width="150" alt="Constructed capitals K and L, Underweysung der Messung"> | **[Albrecht Dürer](references/13-renaissance/durer.md)**<br><sub>*Constructed capitals K and L, Underweysung der Messung*, 1525</sub> | Declare one square module and take every stroke, gap and size from it; print the rule beside its result at the same height and line weight, one rule feeding a row of outcomes that differ only in where their inner divisions fall; name every division level with its line; sign and date each view in its open corner. |
 | <img src="assets/works/palladio.jpg" width="150" alt="Villa Rotonda, I quattro libri dell'architettura, Book II"> | **[Andrea Palladio](references/13-renaissance/palladio.md)**<br><sub>*Villa Rotonda, I quattro libri dell'architettura, Book II*, 1570</sub> | Draw every size from one short list of whole-number ratios and derive the rest as means; show one object as two views stacked on one axis at one scale and width; write each measure inside the thing it measures; spend tone on openings only. |
 
+### 14 · Cubism
+
+*Several views on one flat plane: shared edges and no gutters, a few exact signs that name the whole, and a change of mode where planes cross.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/picasso.jpg" width="150" alt="Guitar, Sheet Music, and Glass"> | **[Pablo Picasso](references/14-cubism/picasso.md)**<br><sub>*Guitar, Sheet Music, and Glass*, 1912</sub> | Start from one named subject and set its name flat; split it into views and parts, turn each square to the surface and butt them, without gutters, on an upright stack that thickens toward one axis; string a few tiny exact signs down that axis; make each part differently and draw no outline round the whole; state one part by a notch of ground; spend chroma only at the centre. |
+| <img src="assets/works/braque.jpg" width="150" alt="Fruit Dish and Glass"> | **[Georges Braque](references/14-cubism/braque.md)**<br><sub>*Fruit Dish and Glass*, 1912</sub> | Keep line, colour and lettering as separate layers that only overlap: leave over half of one ground open; draw the subject as one cluster with half-closed outlines; keep a few identifying details whole in an open body; park flat colour pieces beside the drawing and let the line cross them, inverting; set one level word as the datum; give the smallest area the strongest contrast. |
+| <img src="assets/works/gris.jpg" width="150" alt="Fantômas"> | **[Juan Gris](references/14-cubism/gris.md)**<br><sub>*Fantômas*, 1915</sub> | Fix two right-angled frames of direction before any content, the format's own and one turned by a single angle; cut an active field into flat planes on them, one mode and one colour per plane; lay the content across the plane edges so it keeps its place and size and changes only its mode; run one word through several planes, changing only its ink; shade edges, never things. |
+| <img src="assets/works/leger.jpg" width="150" alt="The City (La Ville)"> | **[Fernand Léger](references/14-cubism/leger.md)**<br><sub>*The City (La Ville)*, 1919</sub> | Sort every element into two classes that never mix: flat areas, which alone take strong colour, and shaded things, which stay near-neutral. Make dark and light working surfaces of a quarter each and put a neutral between any two hues; let no area dominate a dense view, or isolate one object; place one shaded solid off-centre; repeat units in short countable runs; cut uprights with a diagonal. |
+| <img src="assets/works/sonia-delaunay.jpg" width="150" alt="La Prose du Transsibérien, with Blaise Cendrars (detail)"> | **[Sonia Delaunay](references/14-cubism/sonia-delaunay.md)**<br><sub>*La Prose du Transsibérien, with Blaise Cendrars (detail)*, 1913</sub> | Fix a few shared axes with equal columns and staggered rows; run each continuous shape across them and change its fill at every crossing while its path holds; draw no outline and ration contrast edge by edge, with the darkest tone as an area; give words an equal column and put colour only where the lines leave space; open quietly and keep the one picture for the end. |
+
 ## Time-based companions: 2 schools, 10 artists
 
 For anything that unfolds in time: a video, an animation, a presentation, kinetic type, a data story. Composers and filmmakers are kept apart from the movements: they are never shuffled into the triads and never own layout, colour or type. One is chosen by fit and paired with a design made from the movements, where it rules timing only. Summaries: [`references/time/library.md`](references/time/library.md).
@@ -280,9 +293,9 @@ art-movements-ux/
 ├── SKILL.md                   the method: stages, lock rules, guardrails, templates
 ├── CHANGELOG.md               every correction made after checking the real works
 ├── references/
-│   ├── library.md             65 artist processes (opened in Stages 2–3 only)
+│   ├── library.md             70 artist processes (opened in Stages 2–3 only)
 │   ├── principles.md          UI problems → processes, calibration ranges, tensions
-│   ├── 01-bauhaus/ … 13-renaissance/   one full study per artist
+│   ├── 01-bauhaus/ … 14-cubism/   one full study per artist
 │   ├── time/                  time-based companions: own library.md, process-music/, visual-music/
 │   ├── WORKED-EXAMPLE-rail.md
 │   ├── EXPLORATION-EXAMPLE.md
@@ -304,7 +317,7 @@ Entries were written from museum, foundation and scholarly sources, then checked
 Thumbnails illustrate the commentary on each artist's method. Copyrighted works are shown small, credited to their rights holders.
 
 <details>
-<summary>All 75 works, sources and licenses</summary>
+<summary>All 80 works, sources and licenses</summary>
 
 | Artist | Work | License | Source |
 |---|---|---|---|
@@ -383,5 +396,10 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Len Lye | [A Colour Box (film frame), 1935](https://www.youtube.com/watch?v=fOEqTwwkB3Y) | © Len Lye Foundation / rights holder, small thumbnail for commentary | YouTube transfer by optimisticwombatninja08 |
 | Mary Ellen Bute | [Synchromy No. 4: Escape (film frame), 1937–38](https://www.youtube.com/watch?v=hwIMQcDldu0) | © Estate of Mary Ellen Bute / Center for Visual Music, small thumbnail for commentary | YouTube, Visual Music // Música Visual (Unseen Cinema transfer, courtesy Anthology Film Archives) |
 | John Whitney | [Arabesque (film frame), 1975](https://www.youtube.com/watch?v=cxkbScwt77g) | © Whitney Editions / the estate of John Whitney, small thumbnail for commentary | YouTube, Gorkab (LaserDisc transfer) |
+| Pablo Picasso | [Guitar, Sheet Music, and Glass, 1912](https://www.wikiart.org/en/pablo-picasso/guitar-sheet-music-and-wine-glass-1912) | © Succession Picasso, small thumbnail for commentary | WikiArt (work: McNay Art Museum, San Antonio, 1950.112) |
+| Georges Braque | [Fruit Dish and Glass, 1912](https://www.metmuseum.org/art/collection/search/490612) | © Georges Braque / ARS, New York / ADAGP, Paris, small thumbnail for commentary | The Metropolitan Museum of Art (Leonard A. Lauder Cubist Collection, 2016.237.33); image via WikiArt |
+| Juan Gris | [Fantômas, 1915](https://commons.wikimedia.org/wiki/File:Juan_Gris,_Fant%C3%B4mas,_1915,_NGA_56101.jpg) | CC0 | National Gallery of Art, Washington, via Wikimedia Commons |
+| Fernand Léger | [The City (La Ville), 1919](https://commons.wikimedia.org/wiki/File:Fernand_L%C3%A9ger,_1919,_The_City_(La_Ville),_oil_on_canvas,_231.1_x_298.4_cm,_Philadelphia_Museum_of_Art.jpg) | Public domain | Philadelphia Museum of Art (A. E. Gallatin Collection), via Wikimedia Commons |
+| Sonia Delaunay | [La Prose du Transsibérien, with Blaise Cendrars (detail), 1913](https://otago.ourheritage.ac.nz/items/show/8510) | © Pracusa (Sonia Delaunay), small thumbnail for commentary | OUR Heritage, University of Otago (scan of the 2008-09 Beinecke / Yale University Press facsimile, 1913 sheet) |
 
 </details>

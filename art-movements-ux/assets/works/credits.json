@@ -748,5 +748,55 @@
   "link": "https://www.youtube.com/watch?v=cxkbScwt77g",
   "license": "© Whitney Editions / the estate of John Whitney, small thumbnail for commentary",
   "credit": "YouTube, Gorkab (LaserDisc transfer)"
+ },
+ {
+  "stem": "picasso",
+  "artist": "Pablo Picasso",
+  "work": "Guitar, Sheet Music, and Glass",
+  "year": "1912",
+  "image": "assets/works/picasso.jpg",
+  "link": "https://www.wikiart.org/en/pablo-picasso/guitar-sheet-music-and-wine-glass-1912",
+  "license": "© Succession Picasso, small thumbnail for commentary",
+  "credit": "WikiArt (work: McNay Art Museum, San Antonio, 1950.112)"
+ },
+ {
+  "stem": "braque",
+  "artist": "Georges Braque",
+  "work": "Fruit Dish and Glass",
+  "year": "1912",
+  "image": "assets/works/braque.jpg",
+  "link": "https://www.metmuseum.org/art/collection/search/490612",
+  "license": "© Georges Braque / ARS, New York / ADAGP, Paris, small thumbnail for commentary",
+  "credit": "The Metropolitan Museum of Art (Leonard A. Lauder Cubist Collection, 2016.237.33); image via WikiArt"
+ },
+ {
+  "stem": "gris",
+  "artist": "Juan Gris",
+  "work": "Fantômas",
+  "year": "1915",
+  "image": "assets/works/gris.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Juan_Gris,_Fant%C3%B4mas,_1915,_NGA_56101.jpg",
+  "license": "CC0",
+  "credit": "National Gallery of Art, Washington, via Wikimedia Commons"
+ },
+ {
+  "stem": "leger",
+  "artist": "Fernand Léger",
+  "work": "The City (La Ville)",
+  "year": "1919",
+  "image": "assets/works/leger.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Fernand_L%C3%A9ger,_1919,_The_City_(La_Ville),_oil_on_canvas,_231.1_x_298.4_cm,_Philadelphia_Museum_of_Art.jpg",
+  "license": "Public domain",
+  "credit": "Philadelphia Museum of Art (A. E. Gallatin Collection), via Wikimedia Commons"
+ },
+ {
+  "stem": "sonia-delaunay",
+  "artist": "Sonia Delaunay",
+  "work": "La Prose du Transsibérien, with Blaise Cendrars (detail)",
+  "year": "1913",
+  "image": "assets/works/sonia-delaunay.jpg",
+  "link": "https://otago.ourheritage.ac.nz/items/show/8510",
+  "license": "© Pracusa (Sonia Delaunay), small thumbnail for commentary",
+  "credit": "OUR Heritage, University of Otago (scan of the 2008-09 Beinecke / Yale University Press facsimile, 1913 sheet)"
  }
 ]

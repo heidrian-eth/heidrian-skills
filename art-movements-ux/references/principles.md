@@ -19,6 +19,7 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Make one carrier the whole form and reduce everything else to one-weight infill at one even interval, hung from it; with no second bearing system, a continuous form at 3% of the view still organises it. *Eero Saarinen*
 - Aim every construction line at the subject and back it with the only large area of the extreme value, twice the width of its neighbours; isolate it by a gap, with peers in threes on each side. *Leonardo*
 - Stack every singular element in one channel whose edges agree through all registers within 0.5% of the width, and give it the only large opening (0.18–0.40 of the width); the bays beside it differ from it by 1.5–2.5× and hold one repeated module. *Alberti*
+- Keep the same grain of detail over the whole view and mark the focus by chroma alone: about 4% of the area at two to four times the chroma of the rest, with no added detail, size or border; an equal grain makes the small colour change the only odd thing. *Picasso*
 
 **Many equal things, no hero**
 - Same envelope, different interior. *Judd*
@@ -29,6 +30,7 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - One uncoloured frame of equal cells, each filled as its own decision from 4–6 infill types named by job (open, veiled, closed, textured); strong colour only as single cells that never touch, the most saturated the smallest (1–2%). *Eames*
 - Repeat one kit with every position fixed and change only one plane's hue and one featured item; inside a field of 10–40 identical units, exactly one differs. *Knoll*
 - Hold the key part of every peer in one band about 5% of the height and vary only the interiors; exactly one item drops out of the band (12–15% lower), and it is the one that differs in kind. *Piero*
+- Cap the largest area at 2–4% of the view and vary the sizes widely (the widest part in a row 2–14 times the median), then give rank to kind and not to size: flat parts carry the colour, and the one shaded, near-neutral solid, off-centre, is found first. *Léger*
 
 **Urgent without alarm**
 - Scarcity: one small saturated mark in an otherwise achromatic field. *Klee, Malevich, Mondrian*
@@ -64,6 +66,8 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - One view at 25–30% with 2–8 cut, turned or changed-state views at 0.15–0.25 of its width; notes take the shape of the gaps (down to 6–10 characters) and join their parts by a shared letter, never a leader line. *Leonardo*
 - Letter every referenced point at one equal interval (≈5% of the width) outward from the axis, put the measures in a table in the same view under the same letters, and let the text cite them; marks stay under 1.5% of the surface and about a third of it stays empty. *Piero*
 - Write each value as a bare numeral inside the region it measures, with no legend or leader; tone marks only what is open or missing, and marks stay at 2.5–5.5% of the view. *Palladio*
+- Put the darkest, the lightest or a grey between any two hues, so that one hue meets another on at most 5% of strong edges; make dark and light working areas of 20–35% each and keep three to five flat hues within 7–38%, each then nameable at a 54–64 L step. *Léger*
+- Give words and colour two equal columns at two volumes of the same hues (the text side 25–30 L lighter), and inside the text put colour only in the space the lines leave, stepped to the line ends: fills on 24–32% of the column, under 7% of the text on any fill. *Sonia Delaunay*
 
 **Where am I in a sequence (progress)**
 - One continuous line that walks between the steps. *Klee*
@@ -75,6 +79,7 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - A promenade or ramp: the path itself is the layout. *Le Corbusier, Wright*
 - Keep the item constant and grow the interval geometrically (×1.5–3 per step) from the newest end; crop the old end at the frame and keep the head whole. *Blossfeldt*
 - Hold one centre and change scale by a constant ratio; an outline a tenth of the view's side marks what the next step fills, and the scale is stated twice, in words and as a figure, in the side bands. *Eames*
+- Pace a long sheet by density: fill cover per band swings between about 5% and 55%, fullest at both ends; open with a quiet block of 2.5–5% and hold the one literal picture for the last 6–7%, level with the line that names it; a recurring line keeps its words and size and changes its dress. *Sonia Delaunay*
 
 **Arriving and crossing between contexts**
 - Compress, then release. *Wright, Barragán*
@@ -97,6 +102,7 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Recolour a whole plane or fill a whole cell. *Barragán, Tanaka, Crouwel*
 - A mark beside the thing, not a pill around it. *Hofmann (dot), Ruder (grey step)*
 - Tilt each unit a little differently so the pointer's position lights only 2–9% of them; a pressed unit swings and hands a smaller swing to its neighbours. *Bertoia*
+- Move a plane, not the item: the item keeps its position, size and path and takes the mode of the plane over it (solid to outline, positive to negative, one ink to another), flipping exactly at the plane's edge. *Gris*
 
 **Grouping without boxes**
 - Gap equal to the element. *Judd, van der Leck*
@@ -108,6 +114,10 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Fuse parts by widening one into the next with no line at the joint, and vary thickness with load (thick where things gather, 3–6 : 1 thinner at the free edge), so support and load read as one body. *Eero Saarinen*
 - Keep parts separate and show the joint: a visible gap between any two, bridged by one small connector about 0.1 of the part's width, so each part keeps its own outline and the connector states the relation. *Eames*
 - Draw a region by crowding one repeated unit there and thinning it elsewhere, about 4.5 times denser at the full end across six bands; no outline, tint or rule. *Bertoia*
+- Make each part in a different way (set text as tone, drawn line, regular pattern, plain fill), one kind and one fact per part, 6–10 parts from 2% to 13% of the view butted at shared edges with no gutter; the change of kind is the boundary, and one edge or one shape may serve two neighbours. *Picasso*
+- Close each region on about half its outline: one hard edge, then a fade about five times as wide back to the ground, with the tone deepest at the joint between two regions; the eye completes the thing while its open side joins it to its neighbour. *Braque*
+- Take every edge from two right-angled frames of direction, the format's own and one turned by a single angle of 8–30°, so that 40–70% of straight edges share four directions; unrelated things then read as one structure before they read as things. *Gris*
+- Run one shape across a shared axis and change only its fill at the crossing, keeping path and width; with 30–50% of edges under 15 L (hue alone), the median 15–25 L and one full jump, patches group as one field with no outline and the few value steps lead. *Sonia Delaunay*
 
 **Depth and layering without shadows**
 - Flat planes that overlap and never share an edge. *Rietveld, Popova, Malevich*
@@ -118,6 +128,9 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Split one unit between two planes either side of a hairline lattice, about 3% of the width apart, tiers offset by half a unit, with the ground showing through gaps as wide as the unit. *Bertoia*
 - Recession as intervals shrinking by one ratio (each 0.5–0.7 of the last) toward one point, over a ruled scaffold left visible under freely drawn content. *Leonardo*
 - Two flat layers told apart by regularity: a drawn grid in the second value over a bed that keeps its own irregular rhythm, neither snapped to the other. *Alberti*
+- Keep line, colour and lettering as separate flat layers: 3–6 colour pieces (25–35% of the view) parked beside the drawn content, fitting no outline and touching one or two neighbours, while the line crosses them on one path and flips value; one level word stays fixed as the surface's datum. *Braque*
+- Shade the edge, not the thing: a plane boundary is hard on one side and fades over 3–9% of the width on the other (14–50 L), with no cast shadow and no common light, so stacking order is stated locally and the planes stay flat. *Gris*
+- Keep shading and colour in separate classes: strong colour is flat (value within 6–8 L), anything modelled is near-neutral and lit along its own middle with both edges dark, so no lamp is implied and parts join by overlap alone. *Léger*
 
 **Delight and play that stay adult**
 - A closed set of parts the user may break and rebuild safely. *Le Parc, Vasarely*
@@ -134,6 +147,8 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - An emblem + stripe + colour "uniform". *Stepanova*
 - Ornament only at nodes. *Mackintosh, Mucha, Hoffmann*
 - Pass one plain figure down through every scale, unchanged within a level and altered by one operation between levels, so page, component and detail read as kin without a logo. *Eliel Saarinen*
+- String 4–6 small exact signs (0.3–3% of the view each) down one axis inside a band 5% of the width, in the subject's own order, and draw no outline round the whole; the eye runs the chain and rebuilds the thing. *Picasso*
+- Name a thing by 2–4 small diagnostic details kept whole and exact, a quarter to a third of the view apart, and leave its body open or broken; the widest value step goes to the smallest of them. *Braque*
 
 **Live and changing data**
 - Lanes in which chips tick. *Mondrian (Boogie)*
