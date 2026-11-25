@@ -898,5 +898,55 @@
   "link": "https://www.nga.gov/artworks/46726-letter",
   "license": "Public domain",
   "credit": "National Gallery of Art, Washington, 1963.10.251 (open access, CC0; cropped to the plate)"
+ },
+ {
+  "stem": "boccioni",
+  "artist": "Umberto Boccioni",
+  "work": "States of Mind II: Those Who Go (second version, MoMA)",
+  "year": "1911",
+  "image": "assets/works/boccioni.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:UmbertoBoccioniStatesofMindIIThoseWhoGo1911.jpg",
+  "license": "Public domain (painting); file CC BY-SA 4.0",
+  "credit": "Wikimedia Commons"
+ },
+ {
+  "stem": "balla",
+  "artist": "Giacomo Balla",
+  "work": "Dynamism of a Dog on a Leash",
+  "year": "1912",
+  "image": "assets/works/balla.jpg",
+  "link": "https://buffaloakg.org/artworks/196416-dinamismo-di-un-cane-al-guinzaglio-dynamism-dog-leash",
+  "license": "© holder, small thumbnail for commentary",
+  "credit": "Buffalo AKG Art Museum, 1964:16; © Estate of Giacomo Balla / ARS, New York / SIAE, Rome"
+ },
+ {
+  "stem": "marinetti",
+  "artist": "Filippo Tommaso Marinetti",
+  "work": "Une assemblée tumultueuse. Sensibilité numérique (fold-out)",
+  "year": "1919",
+  "image": "assets/works/marinetti.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:A_Tumultuous_Assembly._Numerical_Sensibility_(Une_Assembl%C3%A9e_tumultueuse._Sensibilit%C3%A9_num%C3%A9rique)_published_in_Les_mots_en_libert%C3%A9_futuristes_MET_DP371750.jpg",
+  "license": "CC0",
+  "credit": "The Metropolitan Museum of Art, via Wikimedia Commons"
+ },
+ {
+  "stem": "depero",
+  "artist": "Fortunato Depero",
+  "work": "Padiglione del Libro / Architettura tipografica, page from Depero Futurista (the bolted book)",
+  "year": "1927",
+  "image": "assets/works/depero.jpg",
+  "link": "https://www.boltedbook.com/page-by-page/",
+  "license": "© Fortunato Depero estate (SIAE), small thumbnail for commentary",
+  "credit": "Designers & Books / boltedbook.com, with Mart (Rovereto) and CIMA; copy No. 843"
+ },
+ {
+  "stem": "santelia",
+  "artist": "Antonio Sant'Elia",
+  "work": "La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels)",
+  "year": "1914",
+  "image": "assets/works/santelia.jpg",
+  "link": "https://commons.wikimedia.org/wiki/File:Casa_Sant%27Elia.jpg",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons"
  }
 ]

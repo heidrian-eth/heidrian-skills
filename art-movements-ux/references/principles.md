@@ -23,6 +23,8 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Fix one undivided figure at half the view's width with clear ground under it and repeat its own shape below at five or six smaller sizes, the next largest no more than 0.42 of it (a step of 2.4 or more) and no second shape anywhere; a family of one shape with one large gap at the top leaves a single winner. *Sinan*
 - Spend finish in one place under 1% of the view and step it down in four levels to bare ground; the place differs from its surroundings in grain only (1.2–1.6 times the mean detail, or 0.5–0.75 in a busy field), with one dark mark under 3% of the area touching it and no outline or enlargement, so density itself points at it. *Morisot*
 - Fuse the two parties to an act into one outline of 35–55% with no ground between, and make their single contact a cut-out of bare ground, 1.5–4% of the view and 3–25% off centre, with two or three edges ending on it. *Cassatt*
+- In a field where everything leans and blends, stand three or four facts upright, flat and fully sharp at 0.3–3% of the view each, one at top contrast and the rest near the ground; the odd upright wins without size. *Boccioni*
+- Keep five views in six one level face on one measure (2–7% marks) and let one bounded passage erupt: one to six shapes carry 40–70% of the marks, the largest 4–35 times the body size, inside an empty margin of 8–15% of the short side, with total marks at 9–13% and never over 25%; the enlargement registers only against the steady text around it. *Marinetti*
 
 **Many equal things, no hero**
 - Same envelope, different interior. *Judd*
@@ -78,6 +80,7 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Take letter height (8 units) and row interval (upright = 0.66 of it) from the face's own dot, fix the rows per view, and charge headings and tables whole rows; the column then needs no frame or rule, and its even tone (marks on 15–20%) makes any aid beside it the odd thing. *Ibn al-Bawwab*
 - Keep members one width and carrying only a line of words, put every variety in the cells between (no two touching cells alike, mirror pairs matching), and raise colour's share as the part shrinks (about 10% on a large panel, about 35% on a strip), so each of four reading distances shows something the others do not. *Qavam al-Din*
 - Fill a region with a lattice of one constant pitch (cell about 0.69 of the pitch) and let the boundary crop it: each row gives up its two end places as the region narrows (7, 5, 3), a vacated place takes one small filler or stays solid, and the lattice never bends to the edge. *Sinan*
+- Blank the masses and spend dense tone only on what moves or opens: busiest band 37–44% marked, a third of the field at 0–6%, three line grades across about 1 to 7, and the same levels repeated beside the full view as a bare section at a seventh of the density. *Sant'Elia*
 
 **Where am I in a sequence (progress)**
 - One continuous line that walks between the steps. *Klee*
@@ -91,6 +94,10 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Hold one centre and change scale by a constant ratio; an outline a tenth of the view's side marks what the next step fills, and the scale is stated twice, in words and as a figure, in the side bands. *Eames*
 - Pace a long sheet by density: fill cover per band swings between about 5% and 55%, fullest at both ends; open with a quiet block of 2.5–5% and hold the one literal picture for the last 6–7%, level with the line that names it; a recurring line keeps its words and size and changes its dress. *Sonia Delaunay*
 - Count in three sizes against frequency: every item a unit-sized mark that takes no space, every fifth a letter-high one, every tenth one that displaces words and is repeated in an outer column (21–24% of the width) level with its line within 0.1–0.3 of a row. *Ibn al-Bawwab*
+- Draw the route as the view's only continuous line with every other line broken, and show travel on one upright body: crisp blunt side ahead, trace attached behind, the next stretch as one firm arc; no row of repeated positions. *Boccioni*
+- Show every position at once along one axis and let the gap be the rate: constant within 3–15% for steady, growing 10–20% a step for faster, shrinking about 11% a step for slower, never random; cross the row with a fixed scale at about 5/6 of the step, so five steps span six divisions and the positions can be counted. *Balla*
+- Step the members of a sequence along one straight line of equal offsets with every word level, shallow (under 25°) for a build and steep (30–45°) for a fading, sizes falling 3.5–4 : 1 toward the far end; keep the plain fact off the line as one level justified block of about 8% of the view, so the path reads in one still frame. *Marinetti*
+- Put the present level on the only flat full-width line, at 0.57–0.78 of the height, and step every other level back from one edge at a fixed rise to recess of about 5 to 1 against a straight opposite edge; the flat line among stepped ones is the position, with no marker. *Sant'Elia*
 
 **Arriving and crossing between contexts**
 - Compress, then release. *Wright, Barragán*
@@ -101,6 +108,9 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Lead along one axis through 4–5 equal quiet stages to a compact goal (about 1/7 of the view's width) that is visible from the first step, open in the middle and closed by a solid bay each side; the even run makes the richer end count. *Eliel Saarinen*
 - Open and close with an inventory of what the whole contains and keep frames, pattern and the one opposed colour (1.8–4.5% of a panel, in closed cells) for those views; in the bare run between, that colour stays under 0.02%. *Ibn al-Bawwab*
 - Join two unlike frames with the join itself: members that span the whole field cross, their inner edges bound the next figure at 0.55–0.9 of the last, and counts double (4, 8, 16, 32) until the steps fuse; the passage is the widest zone on the axis and the band furthest in value from the ground (10–40 L). *Qavam al-Din*
+- Carry the content's bands across the surround at the positions they have inside (about 17% of the area), 15–28 L nearer the ground and mostly under half the chroma, and let the edge cut the series on its way; a later state is the same view minus the event's marks and its hottest colour (16% to none), so what remains is the trace. *Balla*
+- Change the whole ground for a new section and keep the ink: about one view in seven on a different ground, the opening view carrying a two-word title and nothing else; the adapted eye registers the place before it reads a word. *Depero*
+- Take the route out of the content and stand it in front as a separate dark spine (about 0.16 of the width) with a gap and exactly one connector per level; a detached route is counted at a glance where an embedded one is searched for. *Sant'Elia*
 
 **Empty state, invitation**
 - Emptiness as a vessel; name the container by what it is. *Hara*
@@ -136,6 +146,7 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Carry the view on 4, 6 or 8 supports and make every row or ring count a multiple of that number (18 = 6 × 3, 40 = 8 × 5); show each support by a muted unit or a wider gap on its axis, not by a mark, and change the layout only on full-width marked bands, one change per band. *Sinan*
 - Hold a thing within 10 L of its ground along one long side and tell the two apart there by hue and by the direction of their marks, keeping a step of about 20 L on the opposite side; lost on one side and found on the other, it reads as part of its setting and the eye completes the edge. *Morisot*
 - Where two neighbouring regions are within 4–7 L, rule or texture one and leave the other dead flat, with the meaning on the flat one; texture is read before value, so no border or shadow is needed and the view can stay in one narrow value band. *Cassatt*
+- Force every line of a stack to the same left and right edge by letter width, not size, and let the parts touch, divided by one constant-weight rule of about 1% of the block's height; two shared edges make the stack one object with no frame, and size stays free to state rank. *Depero*
 
 **Depth and layering without shadows**
 - Flat planes that overlap and never share an edge. *Rietveld, Popova, Malevich*
@@ -154,6 +165,7 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Show shade and any second state by turning the hue 110–180° from the key with only a 4–12 L step at equal or higher chroma, and keep surfaces in a band 16–37 L wide with no neutral dark, so the subject's interval stays the one large value step. *Monet*
 - Two sizes 3–4 times apart with nothing between, the near one a secondary item at 15–30% of the view cut by the frame on two sides, and one fully finished barrier (5–27% of the width) across part of what lies behind; the size jump and the overlap give the depth. *Degas*
 - Cross the subject with one to four plain bars or a frame strip and let the frame cut the least finished thing on one side; what lies behind a veil keeps sharp edges at under half its contrast, so depth is stated by what is cut and the planes stay equal in value. *Morisot*
+- Swap an element's colour exactly on the line where it crosses from one ground to another and keep its outline, so one form stays continuous over two layers at full contrast; where a solid must show, use three flat values 20–25 L apart with the extreme on the face that is read. *Depero*
 
 **Delight and play that stay adult**
 - A closed set of parts the user may break and rebuild safely. *Le Parc, Vasarely*
@@ -182,6 +194,9 @@ Used in Stage 2 (mood board) only, never while building a screen. Find the produ
 - Freeze the frame and the subject's outline and let each condition re-key the whole view: one tint over every surface, with the subject held at the same 14–26 L interval from its surroundings while the key moves 20 L or more; a tint on everything is read as the light, so the things stay the same things. *Monet*
 - Lock every position (drift under 2% of the width) and let successive states change tone alone, across about 18 L of mean value or a 5–25% dark share, each state complete and kept beside the others; with the drawing fixed, any difference the eye finds is the change. *Degas*
 - Fix the window and a few hard landmarks (drift about 0.1 of the width) and give each layer its own clock: the ambient pair moves together by the hour (about 14 L), one 4% layer by the season (22–26 L), the population by density; a state moves only the layer whose clock has struck, so the kind of change is read as well as its size. *Pissarro*
+- Give each state one governing direction for the fine marks of the whole view, states 50° or more apart, on an identical frame, and show the unresolved state as no agreement of direction (no 15° band above 12%); direction of texture is read across the view before any label. *Boccioni*
+- Keep the body single, opaque and sharp and repeat only the part that changed, 3–4 times for a slow change and 8–12 for a fast one, fading from full strength at the newest to a dotted trace at the oldest with the hard edge always on the same side; draw the path as a separate thin line (0.6% of the width) at the opposite value, never as an outline, so the change is legible with nothing moving. *Balla*
+- Bind each type variable to one property (weight for force, size for amount, cut for stream, position for order) and take sizes from one stated ladder: ×1.2–1.6 a step reads as growth, ×2 or more as an event; hold the block's width within 15% as it grows taller, so a changing value never moves the layout. *Marinetti*
 
 **Comparing and choosing**
 - Parallel columns of honest, unequal length. *Ruder*

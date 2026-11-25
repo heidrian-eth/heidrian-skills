@@ -17,9 +17,10 @@
   <img src="assets/works/gris.jpg" height="96" alt="Fantômas">
   <img src="assets/works/alhambra.jpg" height="96" alt="Mirador de Lindaraja, entrance jamb: tile dado, inscription bands, carved stucco and muqarnas">
   <img src="assets/works/monet.jpg" height="96" alt="Stacks of Wheat (Sunset, Snow Effect)">
+  <img src="assets/works/santelia.jpg" height="96" alt="La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels)">
 </p>
 
-**Eighty artists, sixteen movements, one design system that looks like none of them.** Plus ten composers and filmmakers for anything that moves.
+**Eighty-five artists, seventeen movements, one design system that looks like none of them.** Plus ten composers and filmmakers for anything that moves.
 
 Ask a model for a UI and you get the statistical median: rounded cards on soft shadows, a centered hero, Inter at three weights, one brand blue. This skill replaces that default with a studio method. It reads your product's real design problems, pulls the artworks that already solved them, and distils those solutions into a locked brand book and UI kit. Every screen is then built from that kit, and only from it.
 
@@ -88,7 +89,7 @@ A mobile bank, end to end: board **"Rail"** → kit → Home → Send money, wit
 
 Read [`references/WORKED-EXAMPLE-rail.md`](references/WORKED-EXAMPLE-rail.md), open the built files in [`references/worked-example/`](references/worked-example/), and see two triad fusions (one plain, one hard) in [`references/EXPLORATION-EXAMPLE.md`](references/EXPLORATION-EXAMPLE.md).
 
-## The library: 16 movements, 80 artists
+## The library: 17 movements, 85 artists
 
 Each image is one work the study examines. Each name links to the full study: key works examined (and which were visually checked), process and measured relations, composition, colour, type, motion, UI translations, what the artist would reject, and sources. One-line summaries live in [`references/library.md`](references/library.md); the problem-to-process index is [`references/principles.md`](references/principles.md).
 
@@ -284,6 +285,18 @@ Each image is one work the study examines. Each name links to the full study: ke
 | <img src="assets/works/pissarro.jpg" width="150" alt="The Boulevard Montmartre on a Winter Morning"> | **[Camille Pissarro](references/16-impressionism/pissarro.md)**<br><sub>*The Boulevard Montmartre on a Winter Morning*, 1897</sub> | Fix one window, an off-centre far point and a few hard landmarks; build every zone and item from one small unit, so direction and density do the drawing; give each layer its own clock and re-key only the layer that has changed, inside a narrow value band; spread a tiny accent over many items; show the states as a bordered set. |
 | <img src="assets/works/cassatt.jpg" width="150" alt="The Letter"> | **[Mary Cassatt](references/16-impressionism/cassatt.md)**<br><sub>*The Letter*, 1890-1891</sub> | Name the one point where two parties meet and cut it out of the ground, small and off-centre; fuse the parties into one cropped mass around it and close one edge with a plain block; separate near-equal values by ruling one region and leaving the other flat; relay one small accent; then freeze the outline and revise tone only, keeping every state. |
 
+### 17 · Futurism
+
+*Movement on a still surface: one governing direction or route, each variable bound to one property, and a quiet field that pays for the loud passage.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/boccioni.jpg" width="150" alt="States of Mind II: Those Who Go (second version, MoMA)"> | **[Umberto Boccioni](references/17-futurism/boccioni.md)**<br><sub>*States of Mind II: Those Who Go (second version, MoMA)*, 1911</sub> | Fix one frame for every state and give each state one governing direction, carried by a quiet all-over field of fine marks that runs through the subject too; keep the user's own item central, largest and calmest; draw the route as the only continuous line; give each plane one hard and one lost edge; stand three or four facts upright, flat and sharp, with the strongest colour under 3%. |
+| <img src="assets/works/balla.jpg" width="150" alt="Dynamism of a Dog on a Leash"> | **[Giacomo Balla](references/17-futurism/balla.md)**<br><sub>*Dynamism of a Dog on a Leash*, 1912</sub> | Fix the frame and a few upright references and keep two thirds of the view calm; show a change as all its positions at once, the body single and sharp, its changed part repeated at a ruled interval and fading with age; draw the path as a separate thin line; cross the row with a fixed scale at another pitch; let the surround continue the content's bands more quietly. |
+| <img src="assets/works/marinetti.jpg" width="150" alt="Une assemblée tumultueuse. Sensibilité numérique (fold-out)"> | **[Filippo Tommaso Marinetti](references/17-futurism/marinetti.md)**<br><sub>*Une assemblée tumultueuse. Sensibilité numérique (fold-out)*, 1919</sub> | Keep most views one level text face on one measure; bind weight, size, width and position each to one property of the content, with sizes on one stated ratio ladder; let one bounded passage carry most of the marks inside an empty margin; step its sequence along one shared direction with every word level; keep the plain fact as one level block; run concurrent streams as parallel columns. |
+| <img src="assets/works/depero.jpg" width="150" alt="Padiglione del Libro / Architettura tipografica, page from Depero Futurista (the bolted book)"> | **[Fortunato Depero](references/17-futurism/depero.md)**<br><sub>*Padiglione del Libro / Architettura tipografica, page from Depero Futurista (the bolted book)*, 1927</sub> | Pack one idea into one compact, plain-edged block held clear in an undivided ground; let the parts touch and fit every display line to one measure by letter width; rank loudness in steps of two from a single head; make the names of the parts the block's edges; keep sentences level; swap an element's colour where it crosses a boundary; change the ground, never the ink, for a new section. |
+| <img src="assets/works/santelia.jpg" width="150" alt="La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels)"> | **[Antonio Sant'Elia](references/17-futurism/santelia.md)**<br><sub>*La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels)*, 1914</sub> | List the levels and the ways between them; stand the route in front of the content as one thin dark spine with one connector per level; put the present level on a single flat line and step the others back from one edge at a fixed ratio; leave the masses blank, spend tone only on what moves or opens, and keep a third of the view empty. |
+
 ## Time-based companions: 2 schools, 10 artists
 
 For anything that unfolds in time: a video, an animation, a presentation, kinetic type, a data story. Composers and filmmakers are kept apart from the movements: they are never shuffled into the triads and never own layout, colour or type. One is chosen by fit and paired with a design made from the movements, where it rules timing only. Summaries: [`references/time/library.md`](references/time/library.md).
@@ -319,9 +332,9 @@ art-movements-ux/
 ├── SKILL.md                   the method: stages, lock rules, guardrails, templates
 ├── CHANGELOG.md               every correction made after checking the real works
 ├── references/
-│   ├── library.md             80 artist processes (opened in Stages 2–3 only)
+│   ├── library.md             85 artist processes (opened in Stages 2–3 only)
 │   ├── principles.md          UI problems → processes, calibration ranges, tensions
-│   ├── 01-bauhaus/ … 16-impressionism/   one full study per artist
+│   ├── 01-bauhaus/ … 17-futurism/   one full study per artist
 │   ├── time/                  time-based companions: own library.md, process-music/, visual-music/
 │   ├── WORKED-EXAMPLE-rail.md
 │   ├── EXPLORATION-EXAMPLE.md
@@ -343,7 +356,7 @@ Entries were written from museum, foundation and scholarly sources, then checked
 Thumbnails illustrate the commentary on each artist's method. Copyrighted works are shown small, credited to their rights holders.
 
 <details>
-<summary>All 90 works, sources and licenses</summary>
+<summary>All 95 works, sources and licenses</summary>
 
 | Artist | Work | License | Source |
 |---|---|---|---|
@@ -437,5 +450,10 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Berthe Morisot | [In the Dining Room, 1886](https://commons.wikimedia.org/wiki/File:Berthe_Morisot,_In_the_Dining_Room,_1886,_NGA_46660.jpg) | Public domain | National Gallery of Art, Washington (Chester Dale Collection, 1963.10.185), via Wikimedia Commons |
 | Camille Pissarro | [The Boulevard Montmartre on a Winter Morning, 1897](https://www.metmuseum.org/art/collection/search/437310) | Public domain | The Metropolitan Museum of Art (Open Access) |
 | Mary Cassatt | [The Letter, 1890-1891](https://www.nga.gov/artworks/46726-letter) | Public domain | National Gallery of Art, Washington, 1963.10.251 (open access, CC0; cropped to the plate) |
+| Umberto Boccioni | [States of Mind II: Those Who Go (second version, MoMA), 1911](https://commons.wikimedia.org/wiki/File:UmbertoBoccioniStatesofMindIIThoseWhoGo1911.jpg) | Public domain (painting); file CC BY-SA 4.0 | Wikimedia Commons |
+| Giacomo Balla | [Dynamism of a Dog on a Leash, 1912](https://buffaloakg.org/artworks/196416-dinamismo-di-un-cane-al-guinzaglio-dynamism-dog-leash) | © holder, small thumbnail for commentary | Buffalo AKG Art Museum, 1964:16; © Estate of Giacomo Balla / ARS, New York / SIAE, Rome |
+| Filippo Tommaso Marinetti | [Une assemblée tumultueuse. Sensibilité numérique (fold-out), 1919](https://commons.wikimedia.org/wiki/File:A_Tumultuous_Assembly._Numerical_Sensibility_(Une_Assembl%C3%A9e_tumultueuse._Sensibilit%C3%A9_num%C3%A9rique)_published_in_Les_mots_en_libert%C3%A9_futuristes_MET_DP371750.jpg) | CC0 | The Metropolitan Museum of Art, via Wikimedia Commons |
+| Fortunato Depero | [Padiglione del Libro / Architettura tipografica, page from Depero Futurista (the bolted book), 1927](https://www.boltedbook.com/page-by-page/) | © Fortunato Depero estate (SIAE), small thumbnail for commentary | Designers & Books / boltedbook.com, with Mart (Rovereto) and CIMA; copy No. 843 |
+| Antonio Sant'Elia | [La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels), 1914](https://commons.wikimedia.org/wiki/File:Casa_Sant%27Elia.jpg) | Public domain | Wikimedia Commons |
 
 </details>

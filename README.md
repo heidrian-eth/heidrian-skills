@@ -8,7 +8,7 @@ Out of the box, a model designs, writes and plans toward the middle of its train
 
 ### [art-movements-ux](art-movements-ux/)
 
-> **80 artists. 16 movements. One design system that looks like none of them.**
+> **85 artists. 17 movements. One design system that looks like none of them.**
 
 Ask for a UI and you get rounded cards, soft shadows and one brand blue. This skill sends the agent to Leonardo, Albers, Barragán, the Eameses, Riley, Hara and more than seventy others, not to copy their look, but to borrow *how they solved problems* your product actually has. It builds a mood board, distils it into a locked brand book and UI kit, and generates every screen from that kit alone.
 

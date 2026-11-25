@@ -14,7 +14,7 @@ Constraints (so random stays useful):
   * each triad spans at least 2 movements (3 whenever possible) and at least 2 different
     corners of the axes map (order/expression, void/density, still/kinetic);
   * no artist appears in more than 2 triads (schools: at most 4 when drawing schools); no two triads share two members;
-  * every movement appears at least once across the draw when n >= 4.
+  * every movement appears at least once when the draw has a slot for each (3 * n >= movements).
 Time-based companions (references/time/) are never in the draw; they are chosen by fit, for dynamic content only.
 The script prints each member's one-line process from references/library.md, so fusion can start.
 Do not hand-pick replacements: re-draw a member only when its "Fails when" matches the case (see SKILL.md).
@@ -31,6 +31,7 @@ AXES = {
     "JAPANESE MA & WABI-SABI": (0.1, 0, 0.1), "ART NOUVEAU & VIENNA SECESSION": (0.4, 1, 0.3),
     "MINIMALISM / LIGHT & SPACE": (0, 0.2, 0.1), "OP & KINETIC ART": (0.3, 1, 1),
     "POSTMODERN & NEW WAVE": (1, 1, 0.8), "GROWTH & FORM": (0.4, 0.7, 0.6),
+    "FUTURISM": (0.7, 0.7, 1.0),
     "IMPRESSIONISM": (0.8, 0.7, 0.5),
     "ISLAMIC GEOMETRY": (0.0, 0.8, 0.1),
     "CUBISM": (0.4, 0.8, 0.2),
@@ -69,6 +70,8 @@ def valid(tri, level):
 
 
 def draw(pool, n, level, rng, tries=20000):
+    need = {m["movement"] for m in pool}
+    cover = 3 * n >= len(need)
     cap = 2 if len(pool) >= 3 * n / 2 else -(-3 * n // len(pool)) + 1  # max uses per member
     for _ in range(200):
         out, use = [], {}
@@ -85,11 +88,13 @@ def draw(pool, n, level, rng, tries=20000):
                 continue
             if level != "movements" and len({m["movement"] for m in tri}) < 3 and rng.random() < 0.7:
                 continue  # prefer three movements
+            left = need - {m["movement"] for t in out + [tri] for m in t}
+            if cover and len(left) > 3 * (n - len(out) - 1):
+                continue
             out.append(tri)
             for x in names:
                 use[x] = use.get(x, 0) + 1
-        covered = {m["movement"] for t in out for m in t}
-        if len(out) == n and (n < 4 or len(covered) >= min(len(AXES), n * 3 // 2, 11)):
+        if len(out) == n:
             return out
     sys.exit("could not satisfy constraints; lower --n or loosen --exclude")
 
