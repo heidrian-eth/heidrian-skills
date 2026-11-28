@@ -15,7 +15,7 @@ Ask for a UI and you get rounded cards, soft shadows and one brand blue. This sk
 - **Processes, not pastiche.** Every artist is an ordered, parameterised process with the reason it works and when it fails.
 - **Checked against the real works.** Key works were colour-sampled from open-access collections and the entries corrected to match.
 - **Exploration mode.** Ten random triads of artists, fused into ten boards, rendered side by side. Pick one or mix by layer.
-- **Time-based companions.** For video, animation and presentations, ten composers and abstract filmmakers (Reich, Eno, Cage, McLaren, Whitney…) lend their timing to the design, chosen by fit and kept out of the draw.
+- **Time-based companions.** For video, animation and presentations, fifteen composers, abstract filmmakers and title designers (Reich, Eno, McLaren, Whitney, Bass, Eisenstein…) lend their timing to the design, chosen by fit and kept out of the draw.
 - **Built-in guardrails.** WCAG contrast, reduced motion, tap targets, and a detector for the generic look.
 
 [Read the skill →](art-movements-ux/)

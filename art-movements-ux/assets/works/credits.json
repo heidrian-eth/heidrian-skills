@@ -948,5 +948,55 @@
   "link": "https://commons.wikimedia.org/wiki/File:Casa_Sant%27Elia.jpg",
   "license": "Public domain",
   "credit": "Wikimedia Commons"
+ },
+ {
+  "stem": "bass",
+  "artist": "Saul Bass",
+  "work": "Anatomy of a Murder, title sequence (frame at the moment the cut-out body is complete and the title lands)",
+  "year": "1959",
+  "image": "assets/works/bass.jpg",
+  "link": "https://www.youtube.com/watch?v=QccJ2L-7DVk",
+  "license": "© Columbia Pictures / Saul Bass estate, small thumbnail for commentary",
+  "credit": "YouTube, MovieTitles channel (The Movie Title Stills Collection)"
+ },
+ {
+  "stem": "ferro",
+  "artist": "Pablo Ferro",
+  "work": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb, main titles (Peter Sellers credit)",
+  "year": "1964",
+  "image": "assets/works/ferro.jpg",
+  "link": "https://www.youtube.com/watch?v=e5hX0RdD34s",
+  "license": "© Columbia Pictures, small thumbnail for commentary",
+  "credit": "YouTube, MovieTitles channel"
+ },
+ {
+  "stem": "cooper",
+  "artist": "Kyle Cooper",
+  "work": "Se7en (main title sequence, title card frame)",
+  "year": "1995",
+  "image": "assets/works/cooper.jpg",
+  "link": "https://www.youtube.com/watch?v=FD7w2l88dl8",
+  "license": "© New Line Cinema, small thumbnail for commentary",
+  "credit": "YouTube upload (Andrew P. Alderete); title design Kyle Cooper / R/Greenberg Associates"
+ },
+ {
+  "stem": "eisenstein",
+  "artist": "Sergei Eisenstein",
+  "work": "Battleship Potemkin, the third of the three stone lions (the risen pose), film 54:49; the three poses are cut at one seat and scale so only the state changes",
+  "year": "1925",
+  "image": "assets/works/eisenstein.jpg",
+  "link": "https://www.youtube.com/watch?v=a_bkBbrdyyw",
+  "license": "Public domain",
+  "credit": "Mosfilm (official YouTube channel)"
+ },
+ {
+  "stem": "vertov",
+  "artist": "Dziga Vertov",
+  "work": "Man with a Movie Camera (Elizaveta Svilova at the editing table, film 23:08)",
+  "year": "1929",
+  "image": "assets/works/vertov.jpg",
+  "link": "https://www.youtube.com/watch?v=64jLxgCWukY",
+  "license": "Public domain",
+  "credit": "YouTube upload of the 1929 VUFKU film (Harry Steiman channel)"
  }
 ]

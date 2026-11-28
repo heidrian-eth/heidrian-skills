@@ -20,7 +20,7 @@
   <img src="assets/works/santelia.jpg" height="96" alt="La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels)">
 </p>
 
-**Eighty-five artists, seventeen movements, one design system that looks like none of them.** Plus ten composers and filmmakers for anything that moves.
+**Eighty-five artists, seventeen movements, one design system that looks like none of them.** Plus fifteen composers, filmmakers and title designers for anything that moves.
 
 Ask a model for a UI and you get the statistical median: rounded cards on soft shadows, a centered hero, Inter at three weights, one brand blue. This skill replaces that default with a studio method. It reads your product's real design problems, pulls the artworks that already solved them, and distils those solutions into a locked brand book and UI kit. Every screen is then built from that kit, and only from it.
 
@@ -54,7 +54,7 @@ When nobody knows the direction yet, the skill draws **ten random triads** of ar
 
 ### Dynamic content: time-based companions
 
-Asked for a video, an animation or a presentation, the skill makes the still design first, then pairs it with one composer or filmmaker chosen by fit (two at most: one for the long form, one for the single event). The companion owns timing only, and the work starts from a written score and storyboard. Every frame must hold when frozen, work without sound, and survive reduced motion.
+Asked for a video, an animation or a presentation, the skill makes the still design first, then pairs it with one composer or filmmaker chosen by fit (two at most, from different territories: the long form, the single event, or the join between pieces). The companion owns timing only, and the work starts from a written score and storyboard. Every frame must hold when frozen, work without sound, and survive reduced motion.
 
 ## Use it
 
@@ -297,7 +297,7 @@ Each image is one work the study examines. Each name links to the full study: ke
 | <img src="assets/works/depero.jpg" width="150" alt="Padiglione del Libro / Architettura tipografica, page from Depero Futurista (the bolted book)"> | **[Fortunato Depero](references/17-futurism/depero.md)**<br><sub>*Padiglione del Libro / Architettura tipografica, page from Depero Futurista (the bolted book)*, 1927</sub> | Pack one idea into one compact, plain-edged block held clear in an undivided ground; let the parts touch and fit every display line to one measure by letter width; rank loudness in steps of two from a single head; make the names of the parts the block's edges; keep sentences level; swap an element's colour where it crosses a boundary; change the ground, never the ink, for a new section. |
 | <img src="assets/works/santelia.jpg" width="150" alt="La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels)"> | **[Antonio Sant'Elia](references/17-futurism/santelia.md)**<br><sub>*La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels)*, 1914</sub> | List the levels and the ways between them; stand the route in front of the content as one thin dark spine with one connector per level; put the present level on a single flat line and step the others back from one edge at a fixed ratio; leave the masses blank, spend tone only on what moves or opens, and keep a third of the view empty. |
 
-## Time-based companions: 2 schools, 10 artists
+## Time-based companions: 3 schools, 15 artists
 
 For anything that unfolds in time: a video, an animation, a presentation, kinetic type, a data story. Composers and filmmakers are kept apart from the movements: they are never shuffled into the triads and never own layout, colour or type. One is chosen by fit and paired with a design made from the movements, where it rules timing only. Summaries: [`references/time/library.md`](references/time/library.md).
 
@@ -324,6 +324,17 @@ For anything that unfolds in time: a video, an animation, a presentation, kineti
 | <img src="assets/works/lye.jpg" width="150" alt="A Colour Box (film frame)"> | **[Len Lye](references/time/visual-music/lye.md)**<br><sub>*A Colour Box (film frame)*, 1935</sub> | Cut the run into short phrases at the joins the process already has. Hold one figure and one ground through each phrase and swap one of them in a single step. Redraw a working thing in place, move a travelling one at constant speed, show every pause as bare ground for under a second, and stop nearly all motion while words are read. |
 | <img src="assets/works/bute.jpg" width="150" alt="Synchromy No. 4: Escape (film frame)"> | **[Mary Ellen Bute](references/time/visual-music/bute.md)**<br><sub>*Synchromy No. 4: Escape (film frame)*, 1937–38</sub> | List the events before drawing; give each kind one plain mark at a fixed seat on a carrier that stays still; let a mark either stay to be counted or flash to acknowledge, never both; time to the frame only the sparse, sharp events and carry the rest by slow light; raise emphasis by peak or rate, and close on one figure held still. |
 | <img src="assets/works/whitney.jpg" width="150" alt="Arabesque (film frame)"> | **[John Whitney](references/time/visual-music/whitney.md)**<br><sub>*Arabesque (film frame)*, 1975</sub> | Give every member of a set one rule of motion and a whole-number rate of its own on one shared period. Choose the simple fractions at which the rates agree, slow and dwell there, and let the set drift between. Loop exactly, enter copies a fixed step apart, start each new figure in the gap of the last, and show only the resolved states when motion is off. |
+### Film Titles & Montage
+
+*Hold what must be read, change what is under it, and spend pace in steps: every cut keeps one thing, every burst is paid for with stillness.*
+
+| Work | Artist | Process |
+|:---:|---|---|
+| <img src="assets/works/bass.jpg" width="150" alt="Anatomy of a Murder, title sequence (frame at the moment the cut-out body is complete and the title lands)"> | **[Saul Bass](references/time/titles-montage/bass.md)**<br><sub>*Anatomy of a Murder, title sequence (frame at the moment the cut-out body is complete and the title lands)*, 1959</sub> | Reduce the content to one figure of a few parts and give every ordinary line the same hold, sized to the longest line. Add one part per step in a short hard move, then hold everything still while that part's line is read inside it. Complete the figure once and hold the key line about twice as long. Clear before each new build, and allow one burst. |
+| <img src="assets/works/ferro.jpg" width="150" alt="Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb, main titles (Peter Sellers credit)"> | **[Pablo Ferro](references/time/titles-montage/ferro.md)**<br><sub>*Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb, main titles (Peter Sellers credit)*, 1964</sub> | Keep one carrier running and never stop it for a word; put words that must be read on one fixed period, counted at 3–6 characters a second; hold what successive cards share; give a glance-sentence one word per card at one seat, between pictures of matching value; divide the held frame instead of cutting it; land on the longest wordless hold. |
+| <img src="assets/works/cooper.jpg" width="150" alt="Se7en (main title sequence, title card frame)"> | **[Kyle Cooper](references/time/titles-montage/cooper.md)**<br><sub>*Se7en (main title sequence, title card frame)*, 1995</sub> | Count each short line's characters and set its hold from the count. Keep the line small and still at one seat while the layer beneath changes around one kept shape. Give every line the same entry, exit and slot. Show the key term in its source before setting it. Open on one unchanging state, let change step up from it, and show one numbered still per line without motion. |
+| <img src="assets/works/eisenstein.jpg" width="150" alt="Battleship Potemkin, the third of the three stone lions (the risen pose), film 54:49; the three poses are cut at one seat and scale so only the state changes"> | **[Sergei Eisenstein](references/time/titles-montage/eisenstein.md)**<br><sub>*Battleship Potemkin, the third of the three stone lions (the risen pose), film 54:49; the three poses are cut at one seat and scale so only the state changes*, 1925</sub> | Find two unlike pieces that make a point only together. Alternate them at fixed seats until known, then shorten toward one event. Show that event three or four times from different sides. Pay for the burst with a hold several times its length. Cut words in as pieces of their own, sized by weight, held by length. Carry one thing across every join. |
+| <img src="assets/works/vertov.jpg" width="150" alt="Man with a Movie Camera (Elizaveta Svilova at the editing table, film 23:08)"> | **[Dziga Vertov](references/time/titles-montage/vertov.md)**<br><sub>*Man with a Movie Camera (Elizaveta Svilova at the editing table, film 23:08)*, 1929</sub> | Plan the run as a few level tempos and step between them, never ramp. Open on words alone. Weigh every word and let weight, not length, set its hold and size. Cross-cut three strands and tighten by dropping a member. Stop the motion once and lay out the stock as stills. Set one long piece in a short slow block inside the fast stretch. |
 
 ## What's inside
 
@@ -335,7 +346,7 @@ art-movements-ux/
 │   ├── library.md             85 artist processes (opened in Stages 2–3 only)
 │   ├── principles.md          UI problems → processes, calibration ranges, tensions
 │   ├── 01-bauhaus/ … 17-futurism/   one full study per artist
-│   ├── time/                  time-based companions: own library.md, process-music/, visual-music/
+│   ├── time/                  time-based companions: own library.md, process-music/, visual-music/, titles-montage/
 │   ├── WORKED-EXAMPLE-rail.md
 │   ├── EXPLORATION-EXAMPLE.md
 │   ├── worked-example/        kit.css, brand-book.html, home.html, send.html
@@ -356,7 +367,7 @@ Entries were written from museum, foundation and scholarly sources, then checked
 Thumbnails illustrate the commentary on each artist's method. Copyrighted works are shown small, credited to their rights holders.
 
 <details>
-<summary>All 95 works, sources and licenses</summary>
+<summary>All 100 works, sources and licenses</summary>
 
 | Artist | Work | License | Source |
 |---|---|---|---|
@@ -455,5 +466,10 @@ Thumbnails illustrate the commentary on each artist's method. Copyrighted works 
 | Filippo Tommaso Marinetti | [Une assemblée tumultueuse. Sensibilité numérique (fold-out), 1919](https://commons.wikimedia.org/wiki/File:A_Tumultuous_Assembly._Numerical_Sensibility_(Une_Assembl%C3%A9e_tumultueuse._Sensibilit%C3%A9_num%C3%A9rique)_published_in_Les_mots_en_libert%C3%A9_futuristes_MET_DP371750.jpg) | CC0 | The Metropolitan Museum of Art, via Wikimedia Commons |
 | Fortunato Depero | [Padiglione del Libro / Architettura tipografica, page from Depero Futurista (the bolted book), 1927](https://www.boltedbook.com/page-by-page/) | © Fortunato Depero estate (SIAE), small thumbnail for commentary | Designers & Books / boltedbook.com, with Mart (Rovereto) and CIMA; copy No. 843 |
 | Antonio Sant'Elia | [La Città Nuova. Particolare (apartment building with external lifts, gallery and covered passage on three street levels), 1914](https://commons.wikimedia.org/wiki/File:Casa_Sant%27Elia.jpg) | Public domain | Wikimedia Commons |
+| Saul Bass | [Anatomy of a Murder, title sequence (frame at the moment the cut-out body is complete and the title lands), 1959](https://www.youtube.com/watch?v=QccJ2L-7DVk) | © Columbia Pictures / Saul Bass estate, small thumbnail for commentary | YouTube, MovieTitles channel (The Movie Title Stills Collection) |
+| Pablo Ferro | [Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb, main titles (Peter Sellers credit), 1964](https://www.youtube.com/watch?v=e5hX0RdD34s) | © Columbia Pictures, small thumbnail for commentary | YouTube, MovieTitles channel |
+| Kyle Cooper | [Se7en (main title sequence, title card frame), 1995](https://www.youtube.com/watch?v=FD7w2l88dl8) | © New Line Cinema, small thumbnail for commentary | YouTube upload (Andrew P. Alderete); title design Kyle Cooper / R/Greenberg Associates |
+| Sergei Eisenstein | [Battleship Potemkin, the third of the three stone lions (the risen pose), film 54:49; the three poses are cut at one seat and scale so only the state changes, 1925](https://www.youtube.com/watch?v=a_bkBbrdyyw) | Public domain | Mosfilm (official YouTube channel) |
+| Dziga Vertov | [Man with a Movie Camera (Elizaveta Svilova at the editing table, film 23:08), 1929](https://www.youtube.com/watch?v=64jLxgCWukY) | Public domain | YouTube upload of the 1929 VUFKU film (Harry Steiman channel) |
 
 </details>
